@@ -9,39 +9,39 @@
             {{ range first 1 (where .Site.RegularPages "Params.featured" true) }}
             <div class="group cursor-pointer">
                 <div class="flex items-center gap-2 mb-4">
-                    <span class="bg-black text-white px-3 py-1 text-sm font-bold">
+                    <span class="bg-primary text-primary-foreground px-3 py-1 text-sm font-bold rounded-sm">
                         {{ range first 1 .Params.categories }}{{ . }}{{ end }}
                     </span>
                     <span class="text-muted-foreground text-sm">{{ .Date.Format "02 Jan 2006" }}</span>
                 </div>
                 <a href="{{ .RelPermalink }}">
-                    <h2 class="text-4xl md:text-6xl font-black leading-tight mb-6 group-hover:underline decoration-4 underline-offset-8 decoration-black">
+                    <h2 class="text-4xl md:text-6xl font-black leading-tight mb-6 group-hover:text-primary transition-colors">
                         {{ .Title }}
                     </h2>
                 </a>
                 <p class="text-xl md:text-2xl font-serif text-muted-foreground leading-relaxed mb-4">
                     {{ .Summary }}
                 </p>
-                <div class="flex items-center gap-2 text-sm font-bold">
+                <div class="flex items-center gap-2 text-sm font-bold text-primary">
                     <span>بقلـم: {{ .Params.author }}</span>
                 </div>
             </div>
             {{ end }}
 
-            <div class="my-12 border-t border-black"></div>
+            <div class="my-12 border-t border-black/10"></div>
 
             <!-- Sub Featured Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {{ range first 4 (after 1 (where .Site.RegularPages "Params.featured" true)) }}
                 <div class="group cursor-pointer">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-xs font-bold uppercase tracking-wider border border-black px-2 py-0.5">
+                        <span class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">
                             {{ range first 1 .Params.categories }}{{ . }}{{ end }}
                         </span>
                         <span class="text-muted-foreground text-xs">{{ .Date.Format "02 Jan" }}</span>
                     </div>
                     <a href="{{ .RelPermalink }}">
-                        <h3 class="text-2xl font-bold mb-3 leading-snug group-hover:underline decoration-2 underline-offset-4">
+                        <h3 class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">
                             {{ .Title }}
                         </h3>
                     </a>
@@ -58,12 +58,12 @@
             
             <!-- Opinion Section -->
             <div>
-                <h4 class="text-2xl font-black mb-6 pb-2 border-b-4 border-black inline-block">آراء ومقالات</h4>
+                <h4 class="text-2xl font-black mb-6 pb-2 border-b-4 border-primary inline-block">آراء ومقالات</h4>
                 <div class="space-y-6">
                     {{ range first 4 (where .Site.RegularPages "Type" "opinion") }}
                     <div class="group cursor-pointer border-b border-black/10 pb-4 last:border-0">
                         <a href="{{ .RelPermalink }}">
-                            <h5 class="text-lg font-bold mb-1 group-hover:text-muted-foreground transition-colors">
+                            <h5 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
                                 {{ .Title }}
                             </h5>
                         </a>
@@ -76,24 +76,24 @@
             </div>
 
             <!-- Latest News List -->
-            <div class="bg-secondary p-6">
-                <h4 class="text-xl font-black mb-6">آخر الأخبار</h4>
+            <div class="bg-secondary/50 p-6 rounded-sm border border-black/5">
+                <h4 class="text-xl font-black mb-6 text-primary">آخر الأخبار</h4>
                 <div class="space-y-4">
                     {{ range first 5 .Site.RegularPages }}
                     <div class="flex justify-between items-start gap-4 group cursor-pointer">
                         <div>
-                            <span class="text-xs font-bold text-black/60 block mb-1">
+                            <span class="text-xs font-bold text-primary/80 block mb-1">
                                 {{ range first 1 .Params.categories }}{{ . }}{{ end }}
                             </span>
                             <a href="{{ .RelPermalink }}">
-                                <h6 class="font-medium leading-snug group-hover:underline">{{ .Title }}</h6>
+                                <h6 class="font-medium leading-snug group-hover:text-primary transition-colors">{{ .Title }}</h6>
                             </a>
                         </div>
                         <span class="text-xs text-muted-foreground whitespace-nowrap font-mono mt-1">{{ .Date.Format "15:04" }}</span>
                     </div>
                     {{ end }}
                 </div>
-                <a href="{{ "news" | relURL }}" class="block w-full mt-6 border border-black py-3 text-center text-sm font-bold hover:bg-black hover:text-white transition-colors uppercase tracking-widest">
+                <a href="{{ "news" | relURL }}" class="block w-full mt-6 border border-primary text-primary py-3 text-center text-sm font-bold hover:bg-primary hover:text-white transition-colors uppercase tracking-widest rounded-sm">
                     المزيد من الأخبار
                 </a>
             </div>

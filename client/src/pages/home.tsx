@@ -52,31 +52,31 @@ export default function Home() {
           <div className="lg:col-span-8">
             <div className="group cursor-pointer">
               <div className="flex items-center gap-2 mb-4">
-                <span className="bg-black text-white px-3 py-1 text-sm font-bold">{FEATURED_STORY.category}</span>
+                <span className="bg-primary text-primary-foreground px-3 py-1 text-sm font-bold rounded-sm">{FEATURED_STORY.category}</span>
                 <span className="text-muted-foreground text-sm">{FEATURED_STORY.date}</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-black leading-tight mb-6 group-hover:underline decoration-4 underline-offset-8 decoration-black">
+              <h2 className="text-4xl md:text-6xl font-black leading-tight mb-6 group-hover:text-primary transition-colors">
                 {FEATURED_STORY.title}
               </h2>
               <p className="text-xl md:text-2xl font-serif text-muted-foreground leading-relaxed mb-4">
                 {FEATURED_STORY.excerpt}
               </p>
-              <div className="flex items-center gap-2 text-sm font-bold">
+              <div className="flex items-center gap-2 text-sm font-bold text-primary">
                 <span>بقلـم: {FEATURED_STORY.author}</span>
               </div>
             </div>
 
-            <Separator className="my-12 bg-black" />
+            <Separator className="my-12" />
 
             {/* Sub Featured Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {SUB_FEATURED.map((story, idx) => (
                 <div key={idx} className="group cursor-pointer">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-bold uppercase tracking-wider border border-black px-2 py-0.5">{story.category}</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">{story.category}</span>
                     <span className="text-muted-foreground text-xs">{story.date}</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-3 leading-snug group-hover:underline decoration-2 underline-offset-4">
+                  <h3 className="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">
                     {story.title}
                   </h3>
                   <p className="text-muted-foreground font-serif leading-relaxed">
@@ -92,11 +92,11 @@ export default function Home() {
             
             {/* Opinion Section */}
             <div>
-              <h4 className="text-2xl font-black mb-6 pb-2 border-b-4 border-black inline-block">آراء ومقالات</h4>
+              <h4 className="text-2xl font-black mb-6 pb-2 border-b-4 border-primary inline-block">آراء ومقالات</h4>
               <div className="space-y-6">
                 {OPINION_PIECES.map((piece, idx) => (
                   <div key={idx} className="group cursor-pointer border-b border-border pb-4 last:border-0">
-                    <h5 className="text-lg font-bold mb-1 group-hover:text-muted-foreground transition-colors">
+                    <h5 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
                       {piece.title}
                     </h5>
                     <span className="text-sm text-muted-foreground font-serif italic">
@@ -108,20 +108,20 @@ export default function Home() {
             </div>
 
             {/* Latest News List */}
-            <div className="bg-secondary p-6">
-              <h4 className="text-xl font-black mb-6">آخر الأخبار</h4>
+            <div className="bg-secondary/50 p-6 rounded-sm border border-border">
+              <h4 className="text-xl font-black mb-6 text-primary">آخر الأخبار</h4>
               <div className="space-y-4">
                 {LATEST_NEWS.map((news, idx) => (
                   <div key={idx} className="flex justify-between items-start gap-4 group cursor-pointer">
                     <div>
-                      <span className="text-xs font-bold text-primary/60 block mb-1">{news.category}</span>
-                      <h6 className="font-medium leading-snug group-hover:underline">{news.title}</h6>
+                      <span className="text-xs font-bold text-primary/80 block mb-1">{news.category}</span>
+                      <h6 className="font-medium leading-snug group-hover:text-primary transition-colors">{news.title}</h6>
                     </div>
                     <span className="text-xs text-muted-foreground whitespace-nowrap font-mono mt-1">{news.time}</span>
                   </div>
                 ))}
               </div>
-              <button className="w-full mt-6 border border-black py-3 text-sm font-bold hover:bg-black hover:text-white transition-colors uppercase tracking-widest">
+              <button className="w-full mt-6 border border-primary text-primary py-3 text-sm font-bold hover:bg-primary hover:text-primary-foreground transition-colors uppercase tracking-widest rounded-sm">
                 المزيد من الأخبار
               </button>
             </div>
@@ -130,8 +130,8 @@ export default function Home() {
         </div>
 
         {/* Full Width Banner/Statement */}
-        <div className="border-y-4 border-black py-16 text-center my-20">
-          <h3 className="text-3xl md:text-5xl font-black leading-tight max-w-4xl mx-auto">
+        <div className="border-y-4 border-primary/20 py-16 text-center my-20 bg-secondary/10">
+          <h3 className="text-3xl md:text-5xl font-black leading-tight max-w-4xl mx-auto text-primary">
             "الحقيقة هي الضحية الأولى في الحرب، ولكن هنا.. الحقيقة هي سلاحنا الوحيد."
           </h3>
         </div>
@@ -140,14 +140,14 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {['تكنولوجيا', 'علوم', 'صحة'].map((cat) => (
             <div key={cat}>
-              <h4 className="text-2xl font-black mb-6 pb-2 border-b border-black flex justify-between items-end">
+              <h4 className="text-2xl font-black mb-6 pb-2 border-b border-border flex justify-between items-end">
                 {cat}
-                <span className="text-sm font-normal text-muted-foreground cursor-pointer hover:underline">عرض الكل</span>
+                <span className="text-sm font-normal text-muted-foreground cursor-pointer hover:text-primary transition-colors">عرض الكل</span>
               </h4>
               <div className="space-y-8">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="group cursor-pointer">
-                    <h5 className="text-xl font-bold mb-2 group-hover:underline leading-snug">عنوان خبر طويل ومفصل يتعلق بقسم {cat} يعطي فكرة واضحة عن المحتوى</h5>
+                    <h5 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors leading-snug">عنوان خبر طويل ومفصل يتعلق بقسم {cat} يعطي فكرة واضحة عن المحتوى</h5>
                     <p className="text-muted-foreground text-sm font-serif line-clamp-2">
                       هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى...
                     </p>

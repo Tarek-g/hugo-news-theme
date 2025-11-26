@@ -18,6 +18,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
+    darkMode: 'class', // or 'media'
     theme: {
       extend: {
         fontFamily: {
@@ -25,26 +26,70 @@
           serif: ['Amiri', 'serif'],
         },
         colors: {
-          background: '#ffffff',
-          foreground: '#000000',
-          muted: {
-            DEFAULT: '#f4f4f5',
-            foreground: '#71717a',
+          background: 'var(--background)',
+          foreground: 'var(--foreground)',
+          primary: {
+            DEFAULT: 'var(--primary)',
+            foreground: 'var(--primary-foreground)',
           },
           secondary: {
-             DEFAULT: '#f4f4f5',
-             foreground: '#000000',
-          }
+             DEFAULT: 'var(--secondary)',
+             foreground: 'var(--secondary-foreground)',
+          },
+          muted: {
+            DEFAULT: 'var(--muted)',
+            foreground: 'var(--muted-foreground)',
+          },
+          border: 'var(--border)',
         },
         borderRadius: {
-          DEFAULT: '0px',
-          md: '0px',
-          lg: '0px',
+          DEFAULT: '0.5rem',
+          md: '0.5rem',
+          lg: '0.5rem',
         }
       }
     }
   }
 </script>
+
+<!-- Custom CSS for Variables -->
+<style>
+  :root {
+    /* Light Mode */
+    --background: #ffffff;
+    --foreground: #0f172a;
+    
+    --primary: #1d4ed8; /* Blue 700 */
+    --primary-foreground: #eff6ff;
+    
+    --secondary: #f1f5f9; /* Slate 100 */
+    --secondary-foreground: #0f172a;
+    
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    
+    --border: #e2e8f0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+       /* Dark Mode */
+      --background: #0f172a; /* Slate 950 */
+      --foreground: #f8fafc;
+      
+      --primary: #3b82f6; /* Blue 500 */
+      --primary-foreground: #0f172a;
+      
+      --secondary: #1e293b; /* Slate 800 */
+      --secondary-foreground: #f8fafc;
+      
+      --muted: #1e293b;
+      --muted-foreground: #94a3b8;
+      
+      --border: #1e293b;
+    }
+  }
+</style>
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
