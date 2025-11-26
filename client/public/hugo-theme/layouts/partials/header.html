@@ -1,0 +1,51 @@
+<!-- Top Bar -->
+<header class="border-b border-black/10">
+    <div class="container mx-auto px-4 h-12 flex items-center justify-between text-sm text-muted-foreground">
+        <span>{{ now.Format "Monday, 02 January 2006" }}</span>
+        <div class="flex gap-4">
+            <a href="{{ "about" | relURL }}" class="hover:text-foreground">عن الصحيفة</a>
+            <a href="{{ "contact" | relURL }}" class="hover:text-foreground">اتصل بنا</a>
+        </div>
+    </div>
+</header>
+
+<!-- Main Header -->
+<div class="border-b border-black/10 py-8">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+        <button class="md:hidden p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+        
+        <a href="{{ .Site.BaseURL }}">
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter cursor-pointer">{{ .Site.Title }}</h1>
+        </a>
+        
+        <button class="p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="border-b border-black/10 sticky top-0 bg-white/95 backdrop-blur-sm z-50 hidden md:block">
+    <div class="container mx-auto px-4">
+        <ul class="flex justify-center gap-8 py-4 text-lg font-medium">
+            {{ range .Site.Menus.main }}
+            <li>
+                <a href="{{ .URL }}" class="hover:underline decoration-2 underline-offset-4 decoration-black {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}underline{{ end }}">
+                    {{ .Name }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>
+
+<!-- Ticker -->
+<div class="bg-black text-white py-2 overflow-hidden whitespace-nowrap relative">
+    <div class="animate-marquee inline-block px-4">
+        {{ range first 5 (where .Site.RegularPages "Type" "breaking") }}
+        <span class="mx-4">🔴 {{ .Title }}</span>
+        {{ end }}
+    </div>
+</div>

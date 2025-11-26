@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-12 max-w-4xl">
+    <article>
+        <header class="mb-8">
+            <div class="flex items-center gap-2 mb-4">
+                <span class="bg-black text-white px-3 py-1 text-sm font-bold">
+                    {{ range first 1 .Params.categories }}{{ . }}{{ end }}
+                </span>
+                <span class="text-muted-foreground text-sm">{{ .Date.Format "02 Jan 2006" }}</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+                {{ .Title }}
+            </h1>
+            <div class="flex items-center justify-between border-y border-black/10 py-4">
+                <div class="font-bold">بقلـم: {{ .Params.author }}</div>
+                <div class="text-muted-foreground text-sm">قراءة 5 دقائق</div>
+            </div>
+        </header>
+
+        <div class="prose prose-xl prose-gray max-w-none font-serif leading-loose">
+            {{ .Content }}
+        </div>
+    </article>
+</div>
+{{ end }}

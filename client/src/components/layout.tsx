@@ -95,6 +95,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </div>
         <div className="container mx-auto px-4 mt-12 pt-8 border-t border-border/20 text-center text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} الصحيفة. جميع الحقوق محفوظة.
+          <span className="mx-2">|</span>
+          <a href="/hugo" className="hover:underline">Hugo Theme</a>
         </div>
       </footer>
     </div>

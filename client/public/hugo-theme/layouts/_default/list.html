@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-black mb-12 border-b border-black pb-4">{{ .Title }}</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        {{ range .Paginator.Pages }}
+        <div class="group cursor-pointer">
+            <div class="flex items-center gap-2 mb-3">
+                <span class="text-muted-foreground text-xs">{{ .Date.Format "02 Jan 2006" }}</span>
+            </div>
+            <a href="{{ .RelPermalink }}">
+                <h2 class="text-2xl font-bold mb-3 leading-snug group-hover:underline decoration-2 underline-offset-4">
+                    {{ .Title }}
+                </h2>
+            </a>
+            <p class="text-muted-foreground font-serif leading-relaxed line-clamp-3">
+                {{ .Summary }}
+            </p>
+        </div>
+        {{ end }}
+    </div>
+
+    {{ partial "pagination.html" . }}
+</div>
+{{ end }}
