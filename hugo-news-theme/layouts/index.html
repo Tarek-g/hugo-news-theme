@@ -1,0 +1,146 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-12">
+
+    <!-- Top Section: Hero + Sidebar -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+
+        <!-- Main Featured Story (8 cols) -->
+        <div class="lg:col-span-8">
+            {{ $featured := first 1 (where .Site.RegularPages "Params.featured" true) }}
+            {{ range $featured }}
+            <div class="group cursor-pointer">
+                <a href="{{ .RelPermalink }}">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="bg-primary text-primary-foreground px-3 py-1 text-sm font-bold rounded-sm">{{
+                            .Params.category }}</span>
+                        <span class="text-muted-foreground text-sm">{{ .Date.Format "2006-01-02" }}</span>
+                    </div>
+                    <h2
+                        class="text-4xl md:text-6xl font-black leading-tight mb-6 group-hover:text-primary transition-colors">
+                        {{ .Title }}
+                    </h2>
+                    <p class="text-xl md:text-2xl font-serif text-muted-foreground leading-relaxed mb-4">
+                        {{ .Summary | truncate 150 }}
+                    </p>
+                    <div class="flex items-center gap-2 text-sm font-bold text-primary">
+                        <span>بقلـم: {{ .Params.author }}</span>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+
+            <div class="my-12 h-[1px] bg-border w-full"></div>
+
+            <!-- Sub Featured Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {{ $subFeatured := first 4 (where .Site.RegularPages "Params.sub_featured" true) }}
+                {{ range $subFeatured }}
+                <div class="group cursor-pointer">
+                    <a href="{{ .RelPermalink }}">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span
+                                class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">{{
+                                .Params.category }}</span>
+                            <span class="text-muted-foreground text-xs">{{ .Date.Format "2006-01-02" }}</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">
+                            {{ .Title }}
+                        </h3>
+                        <p class="text-muted-foreground font-serif leading-relaxed">
+                            {{ .Summary | truncate 100 }}
+                        </p>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Sidebar / Latest News (4 cols) -->
+        <div class="lg:col-span-4 flex flex-col gap-12 border-r border-border pr-0 lg:pr-12">
+
+            <!-- Opinion Section -->
+            <div>
+                <h4 class="text-2xl font-black mb-6 pb-2 border-b-4 border-primary inline-block">آراء ومقالات</h4>
+                <div class="space-y-6">
+                    {{ $opinions := first 4 (where .Site.RegularPages "Section" "opinion") }}
+                    {{ range $opinions }}
+                    <div class="group cursor-pointer border-b border-border pb-4 last:border-0">
+                        <a href="{{ .RelPermalink }}">
+                            <h5 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                                {{ .Title }}
+                            </h5>
+                            <span class="text-sm text-muted-foreground font-serif italic">
+                                {{ .Params.author }}
+                            </span>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- Latest News List -->
+            <div class="bg-secondary/50 p-6 rounded-sm border border-border">
+                <h4 class="text-xl font-black mb-6 text-primary">آخر الأخبار</h4>
+                <div class="space-y-4">
+                    {{ $latest := first 5 (where .Site.RegularPages "Section" "posts") }}
+                    {{ range $latest }}
+                    <div class="flex justify-between items-start gap-4 group cursor-pointer">
+                        <a href="{{ .RelPermalink }}" class="block w-full">
+                            <div>
+                                <span class="text-xs font-bold text-primary/80 block mb-1">{{ .Params.category }}</span>
+                                <h6 class="font-medium leading-snug group-hover:text-primary transition-colors">{{
+                                    .Title }}</h6>
+                            </div>
+                            <span
+                                class="text-xs text-muted-foreground whitespace-nowrap font-mono mt-1 block text-left">{{
+                                .Date.Format "15:04" }}</span>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+                <button
+                    class="w-full mt-6 border border-primary text-primary py-3 text-sm font-bold hover:bg-primary hover:text-primary-foreground transition-colors uppercase tracking-widest rounded-sm">
+                    المزيد من الأخبار
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Full Width Banner/Statement -->
+    <div class="border-y-4 border-primary/20 py-16 text-center my-20 bg-secondary/10">
+        <h3 class="text-3xl md:text-5xl font-black leading-tight max-w-4xl mx-auto text-primary">
+            "الحقيقة هي الضحية الأولى في الحرب، ولكن هنا.. الحقيقة هي سلاحنا الوحيد."
+        </h3>
+    </div>
+
+    <!-- Grid Layout for Categories -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        {{ range $cat := slice "تكنولوجيا" "علوم" "صحة" }}
+        <div>
+            <h4 class="text-2xl font-black mb-6 pb-2 border-b border-border flex justify-between items-end">
+                {{ $cat }}
+                <span
+                    class="text-sm font-normal text-muted-foreground cursor-pointer hover:text-primary transition-colors">عرض
+                    الكل</span>
+            </h4>
+            <div class="space-y-8">
+                {{ $catPosts := first 3 (where $.Site.RegularPages "Params.category" $cat) }}
+                {{ range $catPosts }}
+                <div class="group cursor-pointer">
+                    <a href="{{ .RelPermalink }}">
+                        <h5 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors leading-snug">{{
+                            .Title }}</h5>
+                        <p class="text-muted-foreground text-sm font-serif line-clamp-2">
+                            {{ .Summary | truncate 80 }}
+                        </p>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+
+</div>
+{{ end }}

@@ -1,0 +1,31 @@
+<footer class="border-t border-border mt-20 py-12 bg-secondary text-secondary-foreground">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="col-span-1 md:col-span-2">
+            <h2 class="text-3xl font-bold mb-4">الصحيفة</h2>
+            <p class="text-muted-foreground max-w-md leading-relaxed font-serif text-lg">
+                منصة إخبارية مستقلة تهدف إلى تقديم الخبر بدقة وموضوعية. نؤمن بقوة الكلمة وأهمية المعرفة في بناء المجتمع.
+            </p>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4 text-lg">أقسام</h3>
+            <ul class="space-y-2 text-muted-foreground">
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}" class="hover:text-foreground">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4 text-lg">تابعنا</h3>
+            <ul class="space-y-2 text-muted-foreground">
+                <li><a href="#" class="hover:text-foreground">تويتر</a></li>
+                <li><a href="#" class="hover:text-foreground">فيسبوك</a></li>
+                <li><a href="#" class="hover:text-foreground">لينكد إن</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 mt-12 pt-8 border-t border-border/20 text-center text-sm text-muted-foreground">
+        &copy; {{ now.Year }} الصحيفة. جميع الحقوق محفوظة.
+        <span class="mx-2">|</span>
+        <a href="https://gohugo.io" class="hover:underline">Hugo Theme</a>
+    </div>
+</footer>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on Arabic News Portal</title>
+    <link>http://localhost:1313/tags/books/</link>
+    <description>Recent content in Books on Arabic News Portal</description>
+    <generator>Hugo</generator>
+    <language>ar</language>
+    <lastBuildDate>Wed, 25 Oct 2023 09:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>أهمية القراءة في عصر السرعة</title>
+      <link>http://localhost:1313/opinion/editorial/</link>
+      <pubDate>Wed, 25 Oct 2023 09:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/opinion/editorial/</guid>
+      <description>&lt;p&gt;في ظل تسارع وتيرة الحياة وهيمنة وسائل التواصل الاجتماعي، يبدو أن عادة القراءة العميقة بدأت تتلاشى تدريجياً. نحن نستهلك كميات هائلة من المعلومات يومياً، ولكن هل نقرأ حقاً؟&lt;/p&gt;&#xA;&lt;h2 id=&#34;القراءة-كغذاء-للروح&#34;&gt;القراءة كغذاء للروح&lt;/h2&gt;&#xA;&lt;p&gt;القراءة ليست مجرد وسيلة للحصول على المعلومات، بل هي تمرين للعقل وتهذيب للنفس. الكتاب الجيد يأخذك في رحلة إلى عوالم أخرى، ويمنحك فرصة لعيش تجارب لم تمر بها من قبل.&lt;/p&gt;&#xA;&lt;h2 id=&#34;التحدي-الرقمي&#34;&gt;التحدي الرقمي&lt;/h2&gt;&#xA;&lt;p&gt;التحدي الأكبر الذي يواجهنا اليوم هو تشتت الانتباه. الإشعارات المستمرة والمحتوى القصير السريع يجعل من الصعب التركيز على كتاب واحد لفترة طويلة. لكن هذا بالضبط ما نحتاجه: التباطؤ والتركيز.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

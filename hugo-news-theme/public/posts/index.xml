@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Arabic News Portal</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Arabic News Portal</description>
+    <generator>Hugo</generator>
+    <language>ar</language>
+    <lastBuildDate>Thu, 27 Nov 2025 10:15:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>الذكاء الاصطناعي يغير وجه الصناعة</title>
+      <link>http://localhost:1313/posts/tech-ai-industry/</link>
+      <pubDate>Thu, 27 Nov 2025 10:15:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/tech-ai-industry/</guid>
+      <description>&lt;p&gt;تشهد الصناعات العالمية تحولاً جذرياً بفضل تقنيات الذكاء الاصطناعي، مما يعد بثورة في الإنتاجية والكفاءة.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>اكتشاف كوكب جديد يشبه الأرض</title>
+      <link>http://localhost:1313/posts/science-planet/</link>
+      <pubDate>Thu, 27 Nov 2025 09:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/science-planet/</guid>
+      <description>&lt;p&gt;فريق من علماء الفلك يعلن عن اكتشاف كوكب خارجي يدور في المنطقة الصالحة للحياة حول نجمه، مما يثير التساؤلات حول إمكانية الحياة خارج الأرض.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>فوائد النوم الجيد على الصحة العقلية</title>
+      <link>http://localhost:1313/posts/health-sleep/</link>
+      <pubDate>Thu, 27 Nov 2025 08:30:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/health-sleep/</guid>
+      <description>&lt;p&gt;الأبحاث الحديثة تؤكد العلاقة القوية بين جودة النوم والصحة العقلية، وتقدم نصائح عملية لتحسين نوعية النوم.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>تطبيقات الواقع المعزز في التعليم والطب</title>
+      <link>http://localhost:1313/posts/tech-ar-apps/</link>
+      <pubDate>Wed, 26 Nov 2025 16:20:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/tech-ar-apps/</guid>
+      <description>&lt;p&gt;الواقع المعزز يفتح آفاقاً جديدة في مجالات التعليم والطب، موفراً تجارب تفاعلية غير مسبوقة للمتعلمين والأطباء.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>التغذية السليمة: مفتاح الوقاية من الأمراض</title>
+      <link>http://localhost:1313/posts/health-nutrition/</link>
+      <pubDate>Wed, 26 Nov 2025 13:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/health-nutrition/</guid>
+      <description>&lt;p&gt;خبراء التغذية يشددون على أهمية النظام الغذائي المتوازن في الوقاية من الأمراض المزمنة وتعزيز المناعة.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>علماء يطورون طريقة جديدة لتنقية الماء</title>
+      <link>http://localhost:1313/posts/science-water/</link>
+      <pubDate>Wed, 26 Nov 2025 11:30:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/science-water/</guid>
+      <description>&lt;p&gt;تقنية جديدة ومبتكرة لتنقية المياه باستخدام مواد نانوية قد تحل أزمة المياه النظيفة في العديد من المناطق حول العالم.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>دراسة جديدة عن التغير المناخي وتأثيره</title>
+      <link>http://localhost:1313/posts/science-climate/</link>
+      <pubDate>Tue, 25 Nov 2025 15:45:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/science-climate/</guid>
+      <description>&lt;p&gt;تكشف دراسة علمية حديثة عن تسارع وتيرة التغير المناخي وتأثيراته المتزايدة على النظم البيئية العالمية، مما يستدعي اتخاذ إجراءات عاجلة.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>الحوسبة الكمومية: المستقبل القريب</title>
+      <link>http://localhost:1313/posts/tech-quantum/</link>
+      <pubDate>Tue, 25 Nov 2025 14:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/tech-quantum/</guid>
+      <description>&lt;p&gt;الحوسبة الكمومية تقترب من أن تصبح واقعاً عملياً، مما سيحدث ثورة في معالجة البيانات وحل المشكلات المعقدة.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>الرياضة اليومية: 30 دقيقة تحدث الفرق</title>
+      <link>http://localhost:1313/posts/health-exercise/</link>
+      <pubDate>Tue, 25 Nov 2025 10:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/health-exercise/</guid>
+      <description>&lt;p&gt;دراسات علمية تثبت أن ممارسة الرياضة لمدة 30 دقيقة يومياً كافية لتحسين الصحة العامة والوقاية من العديد من الأمراض.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>الفريق الوطني يستعد للمباراة الحاسمة</title>
+      <link>http://localhost:1313/posts/news-1/</link>
+      <pubDate>Sun, 26 Nov 2023 10:30:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/news-1/</guid>
+      <description>&lt;p&gt;تفاصيل استعدادات الفريق الوطني.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>قمة المناخ تخرج بتوصيات تاريخية للحفاظ على البيئة</title>
+      <link>http://localhost:1313/posts/featured-story/</link>
+      <pubDate>Sun, 26 Nov 2023 10:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/featured-story/</guid>
+      <description>&lt;p&gt;بعد مفاوضات استمرت لأسبوعين، توصل قادة العالم إلى اتفاق شامل يهدف إلى خفض الانبعاثات الكربونية بنسبة 50% بحلول عام 2030. الاتفاق يُعد خطوة محورية في جهود مكافحة التغير المناخي.&lt;/p&gt;&#xA;&lt;p&gt;شهدت القمة العالمية للمناخ نقاشات مكثفة بين ممثلي أكثر من 190 دولة، تمحورت حول ضرورة اتخاذ إجراءات عاجلة للحد من تداعيات التغير المناخي. وقد أكد المشاركون على أهمية التعاون الدولي في مواجهة هذا التحدي الذي يهدد مستقبل كوكب الأرض.&lt;/p&gt;&#xA;&lt;p&gt;تضمنت التوصيات النهائية التزامات ملزمة بخفض الانبعاثات الكربونية، وزيادة الاستثمار في الطاقة المتجددة، بالإضافة إلى إنشاء صندوق دولي لدعم الدول النامية في جهودها للتكيف مع آثار التغير المناخي.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>معرض الكتاب الدولي يفتح أبوابه للزوار</title>
+      <link>http://localhost:1313/posts/news-2/</link>
+      <pubDate>Sun, 26 Nov 2023 09:15:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/news-2/</guid>
+      <description>&lt;p&gt;تغطية افتتاح معرض الكتاب.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>البنك المركزي يرفع أسعار الفائدة للمرة الثالثة هذا العام</title>
+      <link>http://localhost:1313/posts/sub-featured-1/</link>
+      <pubDate>Sun, 26 Nov 2023 08:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/sub-featured-1/</guid>
+      <description>&lt;p&gt;في محاولة لكبح جماح التضخم، أعلن البنك المركزي اليوم عن رفع جديد لأسعار الفائدة، مما أثار ردود فعل متباينة في الأوساط الاقتصادية.&lt;/p&gt;&#xA;&lt;p&gt;جاء القرار ضمن سياسة نقدية تقييدية تهدف إلى السيطرة على معدلات التضخم المتصاعدة. وأشار محافظ البنك المركزي في بيان صحفي إلى أن هذه الخطوة ضرورية للحفاظ على استقرار الاقتصاد الوطني.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>إطلاق جيل جديد من المعالجات الذكية يغير قواعد اللعبة</title>
+      <link>http://localhost:1313/posts/sub-featured-2/</link>
+      <pubDate>Sun, 26 Nov 2023 06:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/sub-featured-2/</guid>
+      <description>&lt;p&gt;الشركة الرائدة في مجال التكنولوجيا تكشف عن رقاقة جديدة تعتمد على الذكاء الاصطناعي لتحسين الأداء وتقليل استهلاك الطاقة.&lt;/p&gt;&#xA;&lt;p&gt;تمثل المعالجات الجديدة قفزة نوعية في عالم الحوسبة، حيث تجمع بين السرعة الفائقة والكفاءة في استهلاك الطاقة. وتعد بتغيير جذري في طريقة معالجة البيانات والتطبيقات الذكية.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>الاستثمار في الطاقة المتجددة: فرص واعدة للمستقبل</title>
+      <link>http://localhost:1313/posts/sub-featured-3/</link>
+      <pubDate>Sat, 25 Nov 2023 14:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/sub-featured-3/</guid>
+      <description>&lt;p&gt;يشهد قطاع الطاقة المتجددة نمواً متسارعاً مع توجه الدول والشركات نحو الاستدامة. الاستثمار في هذا المجال يعد بعوائد مجزية على المدى الطويل.&lt;/p&gt;&#xA;&lt;p&gt;التحول نحو الاقتصاد الأخضر يفتح آفاقاً جديدة للمستثمرين، حيث تتزايد الفرص في مشاريع الطاقة الشمسية وطاقة الرياح والهيدروجين الأخضر.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>تطورات جديدة في عالم السيارات الكهربائية</title>
+      <link>http://localhost:1313/posts/sub-featured-4/</link>
+      <pubDate>Sat, 25 Nov 2023 12:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/sub-featured-4/</guid>
+      <description>&lt;p&gt;شركات السيارات العالمية تتسابق لطرح موديلات جديدة من السيارات الكهربائية بمدى أطول وتقنيات شحن أسرع، مما يعزز من انتشارها في الأسواق.&lt;/p&gt;&#xA;&lt;p&gt;المنافسة تشتد بين العمالقة التقليديين والشركات الناشئة، مما يصب في مصلحة المستهلك من خلال تقديم خيارات متنوعة وأسعار تنافسية.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ناسا تكتشف كوكباً جديداً صالحاً للحياة</title>
+      <link>http://localhost:1313/posts/news-3/</link>
+      <pubDate>Sat, 25 Nov 2023 10:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/news-3/</guid>
+      <description>&lt;p&gt;اكتشاف علمي جديد.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ثورة الذكاء الاصطناعي: كيف تغير التكنولوجيا حياتنا اليومية</title>
+      <link>http://localhost:1313/posts/tech-news/</link>
+      <pubDate>Fri, 27 Oct 2023 10:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/tech-news/</guid>
+      <description>&lt;p&gt;يشهد العالم اليوم تحولاً جذرياً بفضل التطور المتسارع في مجال الذكاء الاصطناعي. لم تعد هذه التكنولوجيا مجرد خيال علمي، بل أصبحت جزءاً لا يتجزأ من واقعنا اليومي.&lt;/p&gt;&#xA;&lt;h2 id=&#34;التأثير-على-سوق-العمل&#34;&gt;التأثير على سوق العمل&lt;/h2&gt;&#xA;&lt;p&gt;تُظهر الدراسات الحديثة أن الذكاء الاصطناعي سيغير طبيعة الوظائف بشكل كبير. فبينما قد تختفي بعض الوظائف التقليدية، ستظهر فرص عمل جديدة تتطلب مهارات مختلفة تماماً، تركز على الإبداع وحل المشكلات المعقدة.&lt;/p&gt;&#xA;&lt;h2 id=&#34;في-المجال-الطبي&#34;&gt;في المجال الطبي&lt;/h2&gt;&#xA;&lt;p&gt;يساهم الذكاء الاصطناعي في إحداث ثورة في مجال الرعاية الصحية، من التشخيص المبكر للأمراض إلى تطوير علاجات مخصصة لكل مريض. الخوارزميات الذكية قادرة الآن على تحليل صور الأشعة بدقة تفوق أحياناً دقة الأطباء البشر.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>نهائي الكأس: مباراة للتاريخ وتنظيم استثنائي</title>
+      <link>http://localhost:1313/posts/sports-update/</link>
+      <pubDate>Thu, 26 Oct 2023 20:30:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/sports-update/</guid>
+      <description>&lt;p&gt;شهد ملعب العاصمة أمس أمسية كروية لا تُنسى، حيث التقى عملاقا الكرة المحلية في نهائي الكأس المنتظر. المباراة لم تكن مجرد تنافس رياضي، بل كانت احتفالية جماهيرية بامتياز.&lt;/p&gt;&#xA;&lt;h2 id=&#34;الشوط-الأول&#34;&gt;الشوط الأول&lt;/h2&gt;&#xA;&lt;p&gt;بدأت المباراة بحذر من الفريقين، حيث سيطر التكتيك الدفاعي على مجريات اللعب في الدقائق الأولى. ومع ذلك، سرعان ما ارتفع النسق وتبادل الفريقان الهجمات الخطيرة.&lt;/p&gt;&#xA;&lt;h2 id=&#34;هدف-الحسم&#34;&gt;هدف الحسم&lt;/h2&gt;&#xA;&lt;p&gt;في الدقيقة الأخيرة من الوقت بدل الضائع، تمكن المهاجم الشاب من تسجيل هدف الفوز القاتل، ليشعل مدرجات الملعب فرحاً. هذا الهدف سيبقى محفوراً في ذاكرة الجماهير لسنوات طويلة.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

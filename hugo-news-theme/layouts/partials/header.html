@@ -1,0 +1,107 @@
+{{ $currentDate := now.Format "Monday, 2 January, 2006" }}
+<!-- Note: Date formatting in Hugo uses Go's reference time. Localization needs i18n but for now we'll hardcode or use simple formatting. 
+     Ideally, we should use {{ now | time.Format ":date_long" }} with proper locale setup. -->
+
+<div class="min-h-screen bg-background font-sans flex flex-col transition-colors duration-300">
+    <!-- Top Bar -->
+    <header class="border-b border-border bg-card/50">
+        <div class="container mx-auto px-4 h-12 flex items-center justify-between text-sm text-muted-foreground">
+            <span>{{ now | time.Format "2006-01-02" }}</span> <!-- Simplified date for now -->
+            <div class="flex items-center gap-4">
+                <!-- Theme toggle implementation would require JS, skipping for static MVP or adding simple JS later -->
+                <button class="h-8 w-8 ghost icon" id="theme-toggle">
+                    <!-- Icons here -->
+                    <span class="sr-only">Toggle theme</span>
+                </button>
+                <span class="cursor-pointer hover:text-primary transition-colors">عن الصحيفة</span>
+                <span class="cursor-pointer hover:text-primary transition-colors">اتصل بنا</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Header -->
+    <div class="border-b border-border py-8 bg-card">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <button class="md:hidden ghost icon">
+                <!-- Menu Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu h-6 w-6">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+
+            <a href="{{ .Site.BaseURL }}">
+                <h1 class="text-5xl md:text-7xl font-black tracking-tighter cursor-pointer text-foreground">
+                    <span class="text-primary">ال</span>صحيفة
+                </h1>
+            </a>
+
+            <button class="ghost icon">
+                <!-- Search Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search h-5 w-5">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50 hidden md:block shadow-sm">
+        <div class="container mx-auto px-4">
+            <ul class="flex justify-center gap-8 py-4 text-lg font-medium">
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}"
+                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                        {{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
+
+    <style>
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 40s linear infinite;
+        }
+    </style>
+
+    <!-- Ticker -->
+    <div class="bg-primary text-primary-foreground py-2 overflow-hidden relative shadow-inner">
+        <div class="animate-marquee whitespace-nowrap inline-flex">
+            {{ range first 10 (where .Site.RegularPages "Type" "posts") }}
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="{{ .RelPermalink }}" class="hover:underline transition-colors">
+                    {{ .Title }}
+                </a>
+            </span>
+            {{ end }}
+            <!-- Duplicate for seamless loop -->
+            {{ range first 10 (where .Site.RegularPages "Type" "posts") }}
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="{{ .RelPermalink }}" class="hover:underline transition-colors">
+                    {{ .Title }}
+                </a>
+            </span>
+            {{ end }}
+        </div>
+    </div>

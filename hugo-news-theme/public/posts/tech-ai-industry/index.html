@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+<title>الذكاء الاصطناعي يغير وجه الصناعة | Arabic News Portal</title>
+
+<meta property="og:title" content="الذكاء الاصطناعي يغير وجه الصناعة" />
+<meta property="og:description" content="A modern Arabic news portal" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="الذكاء الاصطناعي يغير وجه الصناعة" />
+<meta name="twitter:description" content="A modern Arabic news portal" />
+
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    
+
+
+<div class="min-h-screen bg-background font-sans flex flex-col transition-colors duration-300">
+    
+    <header class="border-b border-border bg-card/50">
+        <div class="container mx-auto px-4 h-12 flex items-center justify-between text-sm text-muted-foreground">
+            <span>2025-11-28</span> 
+            <div class="flex items-center gap-4">
+                
+                <button class="h-8 w-8 ghost icon" id="theme-toggle">
+                    
+                    <span class="sr-only">Toggle theme</span>
+                </button>
+                <span class="cursor-pointer hover:text-primary transition-colors">عن الصحيفة</span>
+                <span class="cursor-pointer hover:text-primary transition-colors">اتصل بنا</span>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="border-b border-border py-8 bg-card">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <button class="md:hidden ghost icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu h-6 w-6">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+
+            <a href="http://localhost:1313/">
+                <h1 class="text-5xl md:text-7xl font-black tracking-tighter cursor-pointer text-foreground">
+                    <span class="text-primary">ال</span>صحيفة
+                </h1>
+            </a>
+
+            <button class="ghost icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search h-5 w-5">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    
+    <nav class="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50 hidden md:block shadow-sm">
+        <div class="container mx-auto px-4">
+            <ul class="flex justify-center gap-8 py-4 text-lg font-medium">
+                
+                <li>
+                    <a href="/"
+                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                        الرئيسية
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/politics"
+                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                        سياسة
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/economy"
+                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                        اقتصاد
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/sports"
+                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                        رياضة
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/culture"
+                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                        ثقافة
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/technology"
+                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                        تكنولوجيا
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="/opinion"
+                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                        آراء
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <style>
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 40s linear infinite;
+        }
+    </style>
+
+    
+    <div class="bg-primary text-primary-foreground py-2 overflow-hidden relative shadow-inner">
+        <div class="animate-marquee whitespace-nowrap inline-flex">
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/tech-ai-industry/" class="hover:underline transition-colors">
+                    الذكاء الاصطناعي يغير وجه الصناعة
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/science-planet/" class="hover:underline transition-colors">
+                    اكتشاف كوكب جديد يشبه الأرض
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/health-sleep/" class="hover:underline transition-colors">
+                    فوائد النوم الجيد على الصحة العقلية
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/tech-ar-apps/" class="hover:underline transition-colors">
+                    تطبيقات الواقع المعزز في التعليم والطب
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/health-nutrition/" class="hover:underline transition-colors">
+                    التغذية السليمة: مفتاح الوقاية من الأمراض
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/science-water/" class="hover:underline transition-colors">
+                    علماء يطورون طريقة جديدة لتنقية الماء
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/science-climate/" class="hover:underline transition-colors">
+                    دراسة جديدة عن التغير المناخي وتأثيره
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/tech-quantum/" class="hover:underline transition-colors">
+                    الحوسبة الكمومية: المستقبل القريب
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/health-exercise/" class="hover:underline transition-colors">
+                    الرياضة اليومية: 30 دقيقة تحدث الفرق
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/news-1/" class="hover:underline transition-colors">
+                    الفريق الوطني يستعد للمباراة الحاسمة
+                </a>
+            </span>
+            
+            
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/tech-ai-industry/" class="hover:underline transition-colors">
+                    الذكاء الاصطناعي يغير وجه الصناعة
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/science-planet/" class="hover:underline transition-colors">
+                    اكتشاف كوكب جديد يشبه الأرض
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/health-sleep/" class="hover:underline transition-colors">
+                    فوائد النوم الجيد على الصحة العقلية
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/tech-ar-apps/" class="hover:underline transition-colors">
+                    تطبيقات الواقع المعزز في التعليم والطب
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/health-nutrition/" class="hover:underline transition-colors">
+                    التغذية السليمة: مفتاح الوقاية من الأمراض
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/science-water/" class="hover:underline transition-colors">
+                    علماء يطورون طريقة جديدة لتنقية الماء
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/science-climate/" class="hover:underline transition-colors">
+                    دراسة جديدة عن التغير المناخي وتأثيره
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/tech-quantum/" class="hover:underline transition-colors">
+                    الحوسبة الكمومية: المستقبل القريب
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/health-exercise/" class="hover:underline transition-colors">
+                    الرياضة اليومية: 30 دقيقة تحدث الفرق
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <a href="/posts/news-1/" class="hover:underline transition-colors">
+                    الفريق الوطني يستعد للمباراة الحاسمة
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+    <main class="flex-1">
+        
+<div class="container mx-auto px-4 py-12">
+    <article class="max-w-4xl mx-auto">
+        <header class="mb-8">
+            <div class="flex items-center gap-2 mb-4">
+                
+                <span class="bg-primary text-primary-foreground px-3 py-1 text-sm font-bold rounded-sm">تكنولوجيا</span>
+                
+                <span class="text-muted-foreground text-sm">2025-11-27</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">الذكاء الاصطناعي يغير وجه الصناعة</h1>
+            
+            <div class="flex items-center gap-2 text-sm font-bold text-primary">
+                <span>بقلـم: محمد العلي</span>
+            </div>
+            
+        </header>
+
+        
+
+        <div class="prose prose-lg dark:prose-invert max-w-none font-serif leading-loose">
+            <p>تشهد الصناعات العالمية تحولاً جذرياً بفضل تقنيات الذكاء الاصطناعي، مما يعد بثورة في الإنتاجية والكفاءة.</p>
+
+        </div>
+    </article>
+</div>
+
+    </main>
+
+    <footer class="border-t border-border mt-20 py-12 bg-secondary text-secondary-foreground">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="col-span-1 md:col-span-2">
+            <h2 class="text-3xl font-bold mb-4">الصحيفة</h2>
+            <p class="text-muted-foreground max-w-md leading-relaxed font-serif text-lg">
+                منصة إخبارية مستقلة تهدف إلى تقديم الخبر بدقة وموضوعية. نؤمن بقوة الكلمة وأهمية المعرفة في بناء المجتمع.
+            </p>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4 text-lg">أقسام</h3>
+            <ul class="space-y-2 text-muted-foreground">
+                
+                <li><a href="/" class="hover:text-foreground">الرئيسية</a></li>
+                
+                <li><a href="/categories/politics" class="hover:text-foreground">سياسة</a></li>
+                
+                <li><a href="/categories/economy" class="hover:text-foreground">اقتصاد</a></li>
+                
+                <li><a href="/categories/sports" class="hover:text-foreground">رياضة</a></li>
+                
+                <li><a href="/categories/culture" class="hover:text-foreground">ثقافة</a></li>
+                
+                <li><a href="/categories/technology" class="hover:text-foreground">تكنولوجيا</a></li>
+                
+                <li><a href="/opinion" class="hover:text-foreground">آراء</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4 text-lg">تابعنا</h3>
+            <ul class="space-y-2 text-muted-foreground">
+                <li><a href="#" class="hover:text-foreground">تويتر</a></li>
+                <li><a href="#" class="hover:text-foreground">فيسبوك</a></li>
+                <li><a href="#" class="hover:text-foreground">لينكد إن</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 mt-12 pt-8 border-t border-border/20 text-center text-sm text-muted-foreground">
+        &copy; 2025 الصحيفة. جميع الحقوق محفوظة.
+        <span class="mx-2">|</span>
+        <a href="https://gohugo.io" class="hover:underline">Hugo Theme</a>
+    </div>
+</footer>
+</body>
+
+</html>
