@@ -1,0 +1,43 @@
+baseURL = 'https://your-domain.com/'
+languageCode = 'ar'
+title = 'Arabic News Portal'
+direction = 'rtl'
+
+[params]
+  description = "A modern Arabic news portal"
+  author = "Your Name"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = 'الرئيسية'
+    url = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'سياسة'
+    url = '/categories/politics'
+    weight = 20
+  [[menus.main]]
+    name = 'اقتصاد'
+    url = '/categories/economy'
+    weight = 30
+  [[menus.main]]
+    name = 'رياضة'
+    url = '/categories/sports'
+    weight = 40
+  [[menus.main]]
+    name = 'ثقافة'
+    url = '/categories/culture'
+    weight = 50
+  [[menus.main]]
+    name = 'تكنولوجيا'
+    url = '/categories/technology'
+    weight = 60
+  [[menus.main]]
+    name = 'آراء'
+    url = '/opinion'
+    weight = 70
