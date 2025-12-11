@@ -2,217 +2,369 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:57352/</loc>
     <lastmod>2025-11-27T10:15:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:57352/posts/</loc>
     <lastmod>2025-11-27T10:15:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:57352/tags/</loc>
     <lastmod>2025-11-27T10:15:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/tech-ai-industry/</loc>
+    <loc>http://localhost:57352/posts/tech-ai-industry/</loc>
     <lastmod>2025-11-27T10:15:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%AA%D9%82%D9%86%D9%8A%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%AA%D9%82%D9%86%D9%8A%D8%A9/</loc>
     <lastmod>2025-11-27T10:15:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A/</loc>
+    <loc>http://localhost:57352/tags/%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A/</loc>
     <lastmod>2025-11-27T10:15:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%B5%D9%86%D8%A7%D8%B9%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%B5%D9%86%D8%A7%D8%B9%D8%A9/</loc>
     <lastmod>2025-11-27T10:15:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/science-planet/</loc>
+    <loc>http://localhost:57352/posts/science-planet/</loc>
     <lastmod>2025-11-27T09:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%A7%D9%83%D8%AA%D8%B4%D8%A7%D9%81%D8%A7%D8%AA/</loc>
+    <loc>http://localhost:57352/tags/%D8%A7%D9%83%D8%AA%D8%B4%D8%A7%D9%81%D8%A7%D8%AA/</loc>
     <lastmod>2025-11-27T09:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%81%D8%B6%D8%A7%D8%A1/</loc>
+    <loc>http://localhost:57352/tags/%D9%81%D8%B6%D8%A7%D8%A1/</loc>
     <lastmod>2025-11-27T09:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%83%D9%88%D8%A7%D9%83%D8%A8/</loc>
+    <loc>http://localhost:57352/tags/%D9%83%D9%88%D8%A7%D9%83%D8%A8/</loc>
     <lastmod>2025-11-27T09:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%B5%D8%AD%D8%A9-%D9%86%D9%81%D8%B3%D9%8A%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%B5%D8%AD%D8%A9-%D9%86%D9%81%D8%B3%D9%8A%D8%A9/</loc>
     <lastmod>2025-11-27T08:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/health-sleep/</loc>
+    <loc>http://localhost:57352/posts/health-sleep/</loc>
     <lastmod>2025-11-27T08:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%86%D8%B5%D8%A7%D8%A6%D8%AD/</loc>
+    <loc>http://localhost:57352/tags/%D9%86%D8%B5%D8%A7%D8%A6%D8%AD/</loc>
     <lastmod>2025-11-27T08:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%86%D9%88%D9%85/</loc>
+    <loc>http://localhost:57352/tags/%D9%86%D9%88%D9%85/</loc>
     <lastmod>2025-11-27T08:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/tech-ar-apps/</loc>
+    <loc>http://localhost:57352/posts/tech-ar-apps/</loc>
     <lastmod>2025-11-26T16:20:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%AA%D8%B9%D9%84%D9%8A%D9%85/</loc>
+    <loc>http://localhost:57352/tags/%D8%AA%D8%B9%D9%84%D9%8A%D9%85/</loc>
     <lastmod>2025-11-26T16:20:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%B7%D8%A8/</loc>
+    <loc>http://localhost:57352/tags/%D8%B7%D8%A8/</loc>
     <lastmod>2025-11-26T16:20:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%88%D8%A7%D9%82%D8%B9-%D9%85%D8%B9%D8%B2%D8%B2/</loc>
+    <loc>http://localhost:57352/tags/%D9%88%D8%A7%D9%82%D8%B9-%D9%85%D8%B9%D8%B2%D8%B2/</loc>
     <lastmod>2025-11-26T16:20:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/opinion/</loc>
+    <loc>http://localhost:57352/opinion/</loc>
     <lastmod>2025-11-26T14:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/opinion/opinion-3/</loc>
+    <loc>http://localhost:57352/opinion/opinion-3/</loc>
     <lastmod>2025-11-26T14:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/</loc>
+    <loc>http://localhost:57352/tags/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/</loc>
     <lastmod>2025-11-26T14:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/</loc>
+    <loc>http://localhost:57352/tags/%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/</loc>
     <lastmod>2025-11-26T14:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/health-nutrition/</loc>
+    <loc>http://localhost:57352/posts/health-nutrition/</loc>
     <lastmod>2025-11-26T13:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%AA%D8%BA%D8%B0%D9%8A%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%AA%D8%BA%D8%B0%D9%8A%D8%A9/</loc>
     <lastmod>2025-11-26T13:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%B5%D8%AD%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%B5%D8%AD%D8%A9/</loc>
     <lastmod>2025-11-26T13:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%88%D9%82%D8%A7%D9%8A%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D9%88%D9%82%D8%A7%D9%8A%D8%A9/</loc>
     <lastmod>2025-11-26T13:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1/</loc>
+    <loc>http://localhost:57352/tags/%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1/</loc>
     <lastmod>2025-11-26T11:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%A8%D9%8A%D8%A6%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%A8%D9%8A%D8%A6%D8%A9/</loc>
     <lastmod>2025-11-26T11:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/science-water/</loc>
+    <loc>http://localhost:57352/posts/science-water/</loc>
     <lastmod>2025-11-26T11:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%85%D8%A7%D8%A1/</loc>
+    <loc>http://localhost:57352/tags/%D9%85%D8%A7%D8%A1/</loc>
     <lastmod>2025-11-26T11:30:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%A3%D8%A8%D8%AD%D8%A7%D8%AB/</loc>
+    <loc>http://localhost:57352/tags/%D8%A3%D8%A8%D8%AD%D8%A7%D8%AB/</loc>
     <lastmod>2025-11-25T15:45:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/science-climate/</loc>
+    <loc>http://localhost:57352/posts/science-climate/</loc>
     <lastmod>2025-11-25T15:45:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%85%D9%86%D8%A7%D8%AE/</loc>
+    <loc>http://localhost:57352/tags/%D9%85%D9%86%D8%A7%D8%AE/</loc>
     <lastmod>2025-11-25T15:45:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/tech-quantum/</loc>
+    <loc>http://localhost:57352/posts/tech-quantum/</loc>
     <lastmod>2025-11-25T14:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9-%D9%83%D9%85%D9%88%D9%85%D9%8A%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9-%D9%83%D9%85%D9%88%D9%85%D9%8A%D8%A9/</loc>
     <lastmod>2025-11-25T14:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%B9%D9%84%D9%88%D9%85/</loc>
+    <loc>http://localhost:57352/tags/%D8%B9%D9%84%D9%88%D9%85/</loc>
     <lastmod>2025-11-25T14:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/health-exercise/</loc>
+    <loc>http://localhost:57352/posts/health-exercise/</loc>
     <lastmod>2025-11-25T10:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/</loc>
     <lastmod>2025-11-25T10:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D8%B5%D8%AD%D8%A9-%D8%A8%D8%AF%D9%86%D9%8A%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D8%B5%D8%AD%D8%A9-%D8%A8%D8%AF%D9%86%D9%8A%D8%A9/</loc>
     <lastmod>2025-11-25T10:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%D9%84%D9%8A%D8%A7%D9%82%D8%A9/</loc>
+    <loc>http://localhost:57352/tags/%D9%84%D9%8A%D8%A7%D9%82%D8%A9/</loc>
     <lastmod>2025-11-25T10:00:00+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:57352/contact/</loc>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:57352/about/</loc>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:57352/categories/</loc>
     <lastmod>2023-11-26T10:30:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/sports/</loc>
+    <loc>http://localhost:57352/categories/sports/</loc>
     <lastmod>2023-11-26T10:30:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/news-1/</loc>
+    <loc>http://localhost:57352/posts/news-1/</loc>
     <lastmod>2023-11-26T10:30:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/politics/</loc>
+    <loc>http://localhost:57352/categories/politics/</loc>
     <lastmod>2023-11-26T10:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/featured-story/</loc>
+    <loc>http://localhost:57352/posts/featured-story/</loc>
     <lastmod>2023-11-26T10:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/culture/</loc>
+    <loc>http://localhost:57352/categories/culture/</loc>
     <lastmod>2023-11-26T09:15:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/news-2/</loc>
+    <loc>http://localhost:57352/posts/news-2/</loc>
     <lastmod>2023-11-26T09:15:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/opinion/opinion-2/</loc>
+    <loc>http://localhost:57352/opinion/opinion-2/</loc>
     <lastmod>2023-11-26T09:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/opinion/opinion-1/</loc>
+    <loc>http://localhost:57352/opinion/opinion-1/</loc>
     <lastmod>2023-11-26T09:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/economy/</loc>
+    <loc>http://localhost:57352/categories/economy/</loc>
     <lastmod>2023-11-26T08:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/sub-featured-1/</loc>
+    <loc>http://localhost:57352/posts/sub-featured-1/</loc>
     <lastmod>2023-11-26T08:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/technology/</loc>
+    <loc>http://localhost:57352/categories/technology/</loc>
     <lastmod>2023-11-26T06:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/sub-featured-2/</loc>
+    <loc>http://localhost:57352/posts/sub-featured-2/</loc>
     <lastmod>2023-11-26T06:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/sub-featured-3/</loc>
+    <loc>http://localhost:57352/posts/sub-featured-3/</loc>
     <lastmod>2023-11-25T14:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/sub-featured-4/</loc>
+    <loc>http://localhost:57352/posts/sub-featured-4/</loc>
     <lastmod>2023-11-25T12:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/science/</loc>
+    <loc>http://localhost:57352/categories/science/</loc>
     <lastmod>2023-11-25T10:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/news-3/</loc>
+    <loc>http://localhost:57352/posts/news-3/</loc>
     <lastmod>2023-11-25T10:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>http://localhost:57352/tags/ai/</loc>
     <lastmod>2023-10-27T10:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/future/</loc>
+    <loc>http://localhost:57352/tags/future/</loc>
     <lastmod>2023-10-27T10:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/innovation/</loc>
+    <loc>http://localhost:57352/tags/innovation/</loc>
     <lastmod>2023-10-27T10:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/tech-news/</loc>
+    <loc>http://localhost:57352/posts/tech-news/</loc>
     <lastmod>2023-10-27T10:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/championship/</loc>
+    <loc>http://localhost:57352/tags/championship/</loc>
     <lastmod>2023-10-26T20:30:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/football/</loc>
+    <loc>http://localhost:57352/tags/football/</loc>
     <lastmod>2023-10-26T20:30:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/local/</loc>
+    <loc>http://localhost:57352/tags/local/</loc>
     <lastmod>2023-10-26T20:30:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/sports-update/</loc>
+    <loc>http://localhost:57352/posts/sports-update/</loc>
     <lastmod>2023-10-26T20:30:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/books/</loc>
+    <loc>http://localhost:57352/tags/books/</loc>
     <lastmod>2023-10-25T09:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/mindfulness/</loc>
+    <loc>http://localhost:57352/tags/mindfulness/</loc>
     <lastmod>2023-10-25T09:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/opinion/</loc>
+    <loc>http://localhost:57352/categories/opinion/</loc>
     <lastmod>2023-10-25T09:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/reading/</loc>
+    <loc>http://localhost:57352/tags/reading/</loc>
     <lastmod>2023-10-25T09:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/opinion/editorial/</loc>
+    <loc>http://localhost:57352/opinion/editorial/</loc>
     <lastmod>2023-10-25T09:00:00+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

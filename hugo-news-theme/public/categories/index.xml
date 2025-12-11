@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Arabic News Portal</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>http://localhost:57352/categories/</link>
     <description>Recent content in Categories on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Sun, 26 Nov 2023 10:30:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57352/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sports</title>
-      <link>http://localhost:1313/categories/sports/</link>
+      <link>http://localhost:57352/categories/sports/</link>
       <pubDate>Sun, 26 Nov 2023 10:30:00 +0300</pubDate>
-      <guid>http://localhost:1313/categories/sports/</guid>
+      <guid>http://localhost:57352/categories/sports/</guid>
       <description></description>
     </item>
     <item>
       <title>Politics</title>
-      <link>http://localhost:1313/categories/politics/</link>
+      <link>http://localhost:57352/categories/politics/</link>
       <pubDate>Sun, 26 Nov 2023 10:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/categories/politics/</guid>
+      <guid>http://localhost:57352/categories/politics/</guid>
       <description></description>
     </item>
     <item>
       <title>Culture</title>
-      <link>http://localhost:1313/categories/culture/</link>
+      <link>http://localhost:57352/categories/culture/</link>
       <pubDate>Sun, 26 Nov 2023 09:15:00 +0300</pubDate>
-      <guid>http://localhost:1313/categories/culture/</guid>
+      <guid>http://localhost:57352/categories/culture/</guid>
       <description></description>
     </item>
     <item>
       <title>Economy</title>
-      <link>http://localhost:1313/categories/economy/</link>
+      <link>http://localhost:57352/categories/economy/</link>
       <pubDate>Sun, 26 Nov 2023 08:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/categories/economy/</guid>
+      <guid>http://localhost:57352/categories/economy/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>http://localhost:1313/categories/technology/</link>
+      <link>http://localhost:57352/categories/technology/</link>
       <pubDate>Sun, 26 Nov 2023 06:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/categories/technology/</guid>
+      <guid>http://localhost:57352/categories/technology/</guid>
       <description></description>
     </item>
     <item>
       <title>Science</title>
-      <link>http://localhost:1313/categories/science/</link>
+      <link>http://localhost:57352/categories/science/</link>
       <pubDate>Sat, 25 Nov 2023 10:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/categories/science/</guid>
+      <guid>http://localhost:57352/categories/science/</guid>
       <description></description>
     </item>
     <item>
       <title>Opinion</title>
-      <link>http://localhost:1313/categories/opinion/</link>
+      <link>http://localhost:57352/categories/opinion/</link>
       <pubDate>Wed, 25 Oct 2023 09:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/categories/opinion/</guid>
+      <guid>http://localhost:57352/categories/opinion/</guid>
       <description></description>
     </item>
   </channel>

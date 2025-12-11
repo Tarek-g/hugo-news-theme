@@ -38,8 +38,7 @@
 
     --radius: 0.5rem;
 
-    --font-sans: 'Tajawal', sans-serif;
-    --font-serif: 'Amiri', serif;
+    --radius: 0.5rem;
   }
 
   .dark {
@@ -83,6 +82,8 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground selection:bg-primary selection:text-primary-foreground;
+    font-family: var(--font-serif) !important;
+    /* Enforce Body Font */
   }
 
   h1,
@@ -92,6 +93,8 @@
   h5,
   h6 {
     @apply font-bold tracking-tight;
+    font-family: var(--font-sans) !important;
+    /* Enforce Heading Font */
   }
 }
 

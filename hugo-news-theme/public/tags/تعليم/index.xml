@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>تعليم on Arabic News Portal</title>
-    <link>http://localhost:1313/tags/%D8%AA%D8%B9%D9%84%D9%8A%D9%85/</link>
+    <link>http://localhost:57352/tags/%D8%AA%D8%B9%D9%84%D9%8A%D9%85/</link>
     <description>Recent content in تعليم on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
-    <lastBuildDate>Wed, 26 Nov 2025 14:30:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%D8%AA%D8%B9%D9%84%D9%8A%D9%85/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Nov 2025 16:20:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:57352/tags/%D8%AA%D8%B9%D9%84%D9%8A%D9%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>تطبيقات الواقع المعزز في التعليم والطب</title>
+      <link>http://localhost:57352/posts/tech-ar-apps/</link>
+      <pubDate>Wed, 26 Nov 2025 16:20:00 +0100</pubDate>
+      <guid>http://localhost:57352/posts/tech-ar-apps/</guid>
+      <description>&lt;p&gt;الواقع المعزز يفتح آفاقاً جديدة في مجالات التعليم والطب، موفراً تجارب تفاعلية غير مسبوقة للمتعلمين والأطباء.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>التعليم في العصر الرقمي: فرص وتحديات</title>
-      <link>http://localhost:1313/opinion/opinion-3/</link>
+      <link>http://localhost:57352/opinion/opinion-3/</link>
       <pubDate>Wed, 26 Nov 2025 14:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/opinion/opinion-3/</guid>
+      <guid>http://localhost:57352/opinion/opinion-3/</guid>
       <description>&lt;p&gt;التحول الرقمي في التعليم لم يعد خياراً بل ضرورة. نحتاج إلى إعادة التفكير في أساليبنا التعليمية لمواكبة العصر مع الحفاظ على القيم التربوية الأساسية.&lt;/p&gt;</description>
     </item>
   </channel>

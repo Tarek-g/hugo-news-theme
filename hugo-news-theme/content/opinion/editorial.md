@@ -6,7 +6,6 @@ categories: ["culture", "opinion"]
 category: "آراء"
 tags: ["Reading", "Books", "Mindfulness"]
 author: "د. خالد عمر"
-image: "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3"
 description: "مقال رأي يناقش لماذا يجب علينا التمسك بعادة القراءة في ظل هيمنة المحتوى الرقمي السريع."
 ---
 

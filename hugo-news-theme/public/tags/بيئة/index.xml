@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>بيئة on Arabic News Portal</title>
-    <link>http://localhost:1313/tags/%D8%A8%D9%8A%D8%A6%D8%A9/</link>
+    <link>http://localhost:57352/tags/%D8%A8%D9%8A%D8%A6%D8%A9/</link>
     <description>Recent content in بيئة on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Wed, 26 Nov 2025 11:30:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%D8%A8%D9%8A%D8%A6%D8%A9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57352/tags/%D8%A8%D9%8A%D8%A6%D8%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>علماء يطورون طريقة جديدة لتنقية الماء</title>
-      <link>http://localhost:1313/posts/science-water/</link>
+      <link>http://localhost:57352/posts/science-water/</link>
       <pubDate>Wed, 26 Nov 2025 11:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/science-water/</guid>
+      <guid>http://localhost:57352/posts/science-water/</guid>
       <description>&lt;p&gt;تقنية جديدة ومبتكرة لتنقية المياه باستخدام مواد نانوية قد تحل أزمة المياه النظيفة في العديد من المناطق حول العالم.&lt;/p&gt;</description>
     </item>
     <item>
       <title>دراسة جديدة عن التغير المناخي وتأثيره</title>
-      <link>http://localhost:1313/posts/science-climate/</link>
+      <link>http://localhost:57352/posts/science-climate/</link>
       <pubDate>Tue, 25 Nov 2025 15:45:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/science-climate/</guid>
+      <guid>http://localhost:57352/posts/science-climate/</guid>
       <description>&lt;p&gt;تكشف دراسة علمية حديثة عن تسارع وتيرة التغير المناخي وتأثيراته المتزايدة على النظم البيئية العالمية، مما يستدعي اتخاذ إجراءات عاجلة.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>وقاية on Arabic News Portal</title>
-    <link>http://localhost:1313/tags/%D9%88%D9%82%D8%A7%D9%8A%D8%A9/</link>
+    <link>http://localhost:57352/tags/%D9%88%D9%82%D8%A7%D9%8A%D8%A9/</link>
     <description>Recent content in وقاية on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Wed, 26 Nov 2025 13:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%D9%88%D9%82%D8%A7%D9%8A%D8%A9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57352/tags/%D9%88%D9%82%D8%A7%D9%8A%D8%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>التغذية السليمة: مفتاح الوقاية من الأمراض</title>
-      <link>http://localhost:1313/posts/health-nutrition/</link>
+      <link>http://localhost:57352/posts/health-nutrition/</link>
       <pubDate>Wed, 26 Nov 2025 13:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/health-nutrition/</guid>
+      <guid>http://localhost:57352/posts/health-nutrition/</guid>
       <description>&lt;p&gt;خبراء التغذية يشددون على أهمية النظام الغذائي المتوازن في الوقاية من الأمراض المزمنة وتعزيز المناعة.&lt;/p&gt;</description>
     </item>
   </channel>

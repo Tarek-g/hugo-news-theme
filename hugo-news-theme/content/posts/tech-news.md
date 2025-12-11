@@ -7,7 +7,6 @@ category: "تكنولوجيا"
 featured: true
 tags: ["AI", "Future", "Innovation"]
 author: "أحمد محمد"
-image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3"
 description: "استكشاف تأثير الذكاء الاصطناعي المتزايد على مختلف جوانب حياتنا، من العمل إلى الترفيه."
 ---
 

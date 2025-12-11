@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI on Arabic News Portal</title>
-    <link>http://localhost:1313/tags/ai/</link>
+    <link>http://localhost:57352/tags/ai/</link>
     <description>Recent content in AI on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Fri, 27 Oct 2023 10:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57352/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ثورة الذكاء الاصطناعي: كيف تغير التكنولوجيا حياتنا اليومية</title>
-      <link>http://localhost:1313/posts/tech-news/</link>
+      <link>http://localhost:57352/posts/tech-news/</link>
       <pubDate>Fri, 27 Oct 2023 10:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/tech-news/</guid>
+      <guid>http://localhost:57352/posts/tech-news/</guid>
       <description>&lt;p&gt;يشهد العالم اليوم تحولاً جذرياً بفضل التطور المتسارع في مجال الذكاء الاصطناعي. لم تعد هذه التكنولوجيا مجرد خيال علمي، بل أصبحت جزءاً لا يتجزأ من واقعنا اليومي.&lt;/p&gt;&#xA;&lt;h2 id=&#34;التأثير-على-سوق-العمل&#34;&gt;التأثير على سوق العمل&lt;/h2&gt;&#xA;&lt;p&gt;تُظهر الدراسات الحديثة أن الذكاء الاصطناعي سيغير طبيعة الوظائف بشكل كبير. فبينما قد تختفي بعض الوظائف التقليدية، ستظهر فرص عمل جديدة تتطلب مهارات مختلفة تماماً، تركز على الإبداع وحل المشكلات المعقدة.&lt;/p&gt;&#xA;&lt;h2 id=&#34;في-المجال-الطبي&#34;&gt;في المجال الطبي&lt;/h2&gt;&#xA;&lt;p&gt;يساهم الذكاء الاصطناعي في إحداث ثورة في مجال الرعاية الصحية، من التشخيص المبكر للأمراض إلى تطوير علاجات مخصصة لكل مريض. الخوارزميات الذكية قادرة الآن على تحليل صور الأشعة بدقة تفوق أحياناً دقة الأطباء البشر.&lt;/p&gt;</description>
     </item>
   </channel>

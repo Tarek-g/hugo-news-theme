@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
+    <h1 class="text-9xl font-black text-primary mb-4 opacity-20">404</h1>
+    <h2 class="text-4xl font-bold mb-6">الصفحة غير موجودة</h2>
+    <p class="text-muted-foreground text-xl mb-8 max-w-md">
+        عذراً، الصفحة التي تبحث عنها قد تم نقلها أو حذفها أو لم تكن موجودة أصلاً.
+    </p>
+    <a href="{{ .Site.BaseURL }}"
+        class="bg-primary text-primary-foreground px-8 py-3 rounded-md font-bold hover:bg-primary/90 transition-colors inline-block">
+        العودة للرئيسية
+    </a>
+</div>
+{{ end }}

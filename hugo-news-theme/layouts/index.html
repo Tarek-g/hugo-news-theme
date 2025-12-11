@@ -1,39 +1,52 @@
 {{ define "main" }}
 <div class="container mx-auto px-4 py-12">
 
-    <!-- Top Section: Hero + Sidebar -->
+    {{ range site.Params.homepage.sections }}
+
+    {{/* --- HERO SECTION (Featured + Sidebar) --- */}}
+    {{ if eq .type "hero" }}
+    {{ $section := . }}
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
 
-        <!-- Main Featured Story (8 cols) -->
-        <div class="lg:col-span-8">
-            {{ $featured := first 1 (where .Site.RegularPages "Params.featured" true) }}
-            {{ range $featured }}
+        {{/* Main Featured Area */}}
+        <div class="{{ if .sidebar.enable }}lg:col-span-8{{ else }}col-span-12{{ end }}">
+            {{ $featuredCount := .featured.count | default 5 }}
+            {{ $featuredPosts := first 1 (where $.Site.RegularPages "Params.featured" true) }}
+
+            {{ range $featuredPosts }}
             <div class="group cursor-pointer">
                 <a href="{{ .RelPermalink }}">
                     <div class="flex items-center gap-2 mb-4">
                         <span class="bg-primary text-primary-foreground px-3 py-1 text-sm font-bold rounded-sm">{{
                             .Params.category }}</span>
-                        <span class="text-muted-foreground text-sm">{{ .Date.Format "2006-01-02" }}</span>
+                        {{ if $section.featured.show_date }}<span class="text-muted-foreground text-sm">{{ .Date.Format
+                            "2006-01-02"
+                            }}</span>{{ end }}
                     </div>
                     <h2
                         class="text-4xl md:text-6xl font-black leading-tight mb-6 group-hover:text-primary transition-colors">
                         {{ .Title }}
                     </h2>
+                    {{ if $section.featured.show_summary }}
                     <p class="text-xl md:text-2xl font-serif text-muted-foreground leading-relaxed mb-4">
                         {{ .Summary | truncate 150 }}
                     </p>
+                    {{ end }}
+                    {{ if $section.featured.show_author }}
                     <div class="flex items-center gap-2 text-sm font-bold text-primary">
                         <span>بقلـم: {{ .Params.author }}</span>
                     </div>
+                    {{ end }}
                 </a>
             </div>
             {{ end }}
 
             <div class="my-12 h-[1px] bg-border w-full"></div>
 
-            <!-- Sub Featured Grid -->
+            {{/* Sub Featured Grid */}}
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {{ $subFeatured := first 4 (where .Site.RegularPages "Params.sub_featured" true) }}
+                {{ $subFeatured := first (sub $featuredCount 1) (where $.Site.RegularPages "Params.sub_featured" true)
+                }}
                 {{ range $subFeatured }}
                 <div class="group cursor-pointer">
                     <a href="{{ .RelPermalink }}">
@@ -55,14 +68,16 @@
             </div>
         </div>
 
-        <!-- Sidebar / Latest News (4 cols) -->
+        {{/* Sidebar Area */}}
+        {{ if .sidebar.enable }}
         <div class="lg:col-span-4 flex flex-col gap-12 border-r border-border pr-0 lg:pr-12">
 
-            <!-- Opinion Section -->
+            {{/* Opinion Widget */}}
+            {{ with .sidebar.opinion }}
             <div>
-                <h4 class="text-2xl font-black mb-6 pb-2 border-b-4 border-primary inline-block">آراء ومقالات</h4>
+                <h4 class="text-2xl font-black mb-6 pb-2 border-b-4 border-primary inline-block">{{ .title }}</h4>
                 <div class="space-y-6">
-                    {{ $opinions := first 4 (where .Site.RegularPages "Section" "opinion") }}
+                    {{ $opinions := first .count (where $.Site.RegularPages "Section" .source) }}
                     {{ range $opinions }}
                     <div class="group cursor-pointer border-b border-border pb-4 last:border-0">
                         <a href="{{ .RelPermalink }}">
@@ -77,12 +92,14 @@
                     {{ end }}
                 </div>
             </div>
+            {{ end }}
 
-            <!-- Latest News List -->
+            {{/* Latest News Widget */}}
+            {{ with .sidebar.latest }}
             <div class="bg-secondary/50 p-6 rounded-sm border border-border">
-                <h4 class="text-xl font-black mb-6 text-primary">آخر الأخبار</h4>
+                <h4 class="text-xl font-black mb-6 text-primary">{{ .title }}</h4>
                 <div class="space-y-4">
-                    {{ $latest := first 5 (where .Site.RegularPages "Section" "posts") }}
+                    {{ $latest := first .count (where $.Site.RegularPages "Section" .source) }}
                     {{ range $latest }}
                     <div class="flex justify-between items-start gap-4 group cursor-pointer">
                         <a href="{{ .RelPermalink }}" class="block w-full">
@@ -103,29 +120,40 @@
                     المزيد من الأخبار
                 </button>
             </div>
+            {{ end }}
 
         </div>
+        {{ end }}
     </div>
+    {{ end }}
 
-    <!-- Full Width Banner/Statement -->
+    {{/* --- QUOTE SECTION --- */}}
+    {{ if eq .type "quote" }}
     <div class="border-y-4 border-primary/20 py-16 text-center my-20 bg-secondary/10">
         <h3 class="text-3xl md:text-5xl font-black leading-tight max-w-4xl mx-auto text-primary">
-            "الحقيقة هي الضحية الأولى في الحرب، ولكن هنا.. الحقيقة هي سلاحنا الوحيد."
+            "{{ .text }}"
         </h3>
+        {{ with .author }}
+        <p class="mt-4 text-muted-foreground font-serif italic">- {{ . }}</p>
+        {{ end }}
     </div>
+    {{ end }}
 
-    <!-- Grid Layout for Categories -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        {{ range $cat := slice "تكنولوجيا" "علوم" "صحة" }}
+    {{/* --- CATEGORY GRID SECTION --- */}}
+    {{ if eq .type "grid" }}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        {{ $count := .count_per_category | default 3 }}
+        {{ range .categories }}
+        {{ $catName := . }}
         <div>
             <h4 class="text-2xl font-black mb-6 pb-2 border-b border-border flex justify-between items-end">
-                {{ $cat }}
-                <span
+                {{ $catName }}
+                <a href="/categories/{{ $catName }}"
                     class="text-sm font-normal text-muted-foreground cursor-pointer hover:text-primary transition-colors">عرض
-                    الكل</span>
+                    الكل</a>
             </h4>
             <div class="space-y-8">
-                {{ $catPosts := first 3 (where $.Site.RegularPages "Params.category" $cat) }}
+                {{ $catPosts := first $count (where $.Site.RegularPages "Params.category" $catName) }}
                 {{ range $catPosts }}
                 <div class="group cursor-pointer">
                     <a href="{{ .RelPermalink }}">
@@ -141,6 +169,9 @@
         </div>
         {{ end }}
     </div>
+    {{ end }}
+
+    {{ end }} {{/* End Range Sections */}}
 
 </div>
 {{ end }}

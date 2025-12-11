@@ -7,7 +7,6 @@ category: "رياضة"
 sub_featured: true
 tags: ["Football", "Championship", "Local"]
 author: "سارة علي"
-image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3"
 description: "تغطية شاملة لأحداث المباراة النهائية للكأس، واللحظات الحاسمة التي غيرت مجرى اللعب."
 ---
 

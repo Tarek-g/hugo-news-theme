@@ -4,13 +4,79 @@ title = 'Arabic News Portal'
 direction = 'rtl'
 
 [params]
-  description = "A modern Arabic news portal"
-  author = "Antigravity"
+  description = "بوابة أخبار عربية شاملة تغطي آخر المستجدات في السياسة والاقتصاد والرياضة والتكنولوجيا."
+  author = "Arabic News Portal"
+  keywords = "أخبار, سياسة, اقتصاد, رياضة, تكنولوجيا, ثقافة"
+  
+  [params.colors]
+    primary = "221 83% 53%"        # Bright Royal Blue
+    secondary = "210 40% 96.1%"    # Very Light Blue-Grey
+    background = "0 0% 100%"       # White
+    foreground = "222 47% 11%"     # Dark Slate Blue
+
+  # Site Fonts
+  [params.fonts]
+    # Google Fonts URL (Load all weights needed)
+    google_fonts_url = "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    
+    # Font Families (CSS values)
+    heading_font = "'IBM Plex Sans Arabic', sans-serif"
+    body_font = "'IBM Plex Sans Arabic', sans-serif"
+
+  # Homepage Sections Configuration
+  [params.homepage]
+    # 1. Hero Section (Featured Story + Sidebar)
+    [[params.homepage.sections]]
+      type = "hero"
+      
+      [params.homepage.sections.featured]
+        title = "قصص مميزة"
+        source = "featured"  # Uses 'featured: true'
+        count = 5            # 1 main + 4 sub
+        show_summary = true
+        show_author = true
+        show_date = true
+
+      [params.homepage.sections.sidebar]
+        enable = true
+        
+        [params.homepage.sections.sidebar.opinion]
+          title = "آراء ومقالات"
+          source = "opinion"
+          count = 4
+          
+        [params.homepage.sections.sidebar.latest]
+          title = "آخر الأخبار"
+          source = "posts"
+          count = 5
+
+    # 2. Quote Section
+    [[params.homepage.sections]]
+      type = "quote"
+      text = "الحقيقة هي الضحية الأولى في الحرب، ولكن هنا.. الحقيقة هي سلاحنا الوحيد."
+      author = "Arabic News Portal"
+
+    # 3. Category Grid Section
+    [[params.homepage.sections]]
+      type = "grid"
+      title = "أقسام مختارة"
+      categories = ["تكنولوجيا", "علوم", "صحة"]
+      count_per_category = 3
+
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[outputs]
+  home = ["HTML", "JSON"]
 
 [menus]
   [[menus.main]]
@@ -41,3 +107,35 @@ direction = 'rtl'
     name = 'آراء'
     url = '/opinion'
     weight = 70
+  [[menus.main]]
+    name = 'من نحن'
+    url = '/about'
+    weight = 80
+  [[menus.main]]
+    name = 'اتصل بنا'
+    url = '/contact'
+    weight = 90
+
+  # Top Bar Menu
+  [[menus.topbar]]
+    name = 'من نحن'
+    url = '/about'
+    weight = 10
+  [[menus.topbar]]
+    name = 'اتصل بنا'
+    url = '/contact'
+    weight = 20
+
+  # Footer Configuration
+  [params.footer]
+    description = "المصدر الأول للأخبار العربية الموثوقة. نلتزم بالمصداقية والشفافية في نقل الحدث."
+    copyright = "جميع الحقوق محفوظة © 2024"
+    
+    [[params.footer.social]]
+      name = "Twitter"
+      url = "https://twitter.com"
+      icon = "twitter" # You can implement icon logic in footer.html
+    [[params.footer.social]]
+      name = "Facebook"
+      url = "https://facebook.com"
+      icon = "facebook"

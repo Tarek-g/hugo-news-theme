@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>صحة نفسية on Arabic News Portal</title>
-    <link>http://localhost:1313/tags/%D8%B5%D8%AD%D8%A9-%D9%86%D9%81%D8%B3%D9%8A%D8%A9/</link>
+    <link>http://localhost:57352/tags/%D8%B5%D8%AD%D8%A9-%D9%86%D9%81%D8%B3%D9%8A%D8%A9/</link>
     <description>Recent content in صحة نفسية on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Thu, 27 Nov 2025 08:30:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%D8%B5%D8%AD%D8%A9-%D9%86%D9%81%D8%B3%D9%8A%D8%A9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57352/tags/%D8%B5%D8%AD%D8%A9-%D9%86%D9%81%D8%B3%D9%8A%D8%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>فوائد النوم الجيد على الصحة العقلية</title>
-      <link>http://localhost:1313/posts/health-sleep/</link>
+      <link>http://localhost:57352/posts/health-sleep/</link>
       <pubDate>Thu, 27 Nov 2025 08:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/health-sleep/</guid>
+      <guid>http://localhost:57352/posts/health-sleep/</guid>
       <description>&lt;p&gt;الأبحاث الحديثة تؤكد العلاقة القوية بين جودة النوم والصحة العقلية، وتقدم نصائح عملية لتحسين نوعية النوم.&lt;/p&gt;</description>
     </item>
   </channel>
