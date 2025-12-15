@@ -1,6 +1,5 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
 {{/* --- SEO META TAGS --- */}}
@@ -14,15 +13,13 @@
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
-{{ with .Params.image }}
-<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
 
 {{/* --- TWITTER CARDS --- */}}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ .Title | default .Site.Title }}" />
 <meta name="twitter:description" content="{{ .Params.Description | default .Site.Params.description }}" />
-{{ with .Params.image }}
-<meta name="twitter:image" content="{{ . | absURL }}" />{{ end }}
+{{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ end }}
 
 <link rel="icon" type="image/png" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,77 +32,16 @@
 {{/* --- DYNAMIC THEMING --- */}}
 <style>
   :root {
-      {
-        {
-        with site.Params.colors
-      }
-    }
-
-    --primary: {
-        {
-        .primary
-      }
-    }
-
-    ;
-
-    --secondary: {
-        {
-        .secondary
-      }
-    }
-
-    ;
-
-    --background: {
-        {
-        .background
-      }
-    }
-
-    ;
-
-    --foreground: {
-        {
-        .foreground
-      }
-    }
-
-    ;
-
-      {
-        {
-        end
-      }
-    }
-
-      {
-        {
-        with site.Params.fonts
-      }
-    }
-
-    --font-sans: {
-        {
-        .heading_font | safeHTML
-      }
-    }
-
-    ;
-
-    --font-serif: {
-        {
-        .body_font | safeHTML
-      }
-    }
-
-    ;
-
-      {
-        {
-        end
-      }
-    }
+    {{ with site.Params.colors }}
+    --primary: {{ .primary }};
+    --secondary: {{ .secondary }};
+    --background: {{ .background }};
+    --foreground: {{ .foreground }};
+    {{ end }}
+    {{ with site.Params.fonts }}
+    --font-sans: {{ .heading_font | safeHTML }};
+    --font-serif: {{ .body_font | safeHTML }};
+    {{ end }}
   }
 </style>
 
