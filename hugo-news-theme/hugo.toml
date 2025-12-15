@@ -140,3 +140,9 @@ paginate = 20
       name = "Facebook"
       url = "https://facebook.com"
       icon = "facebook"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  location = "locations"
+  person = "people"

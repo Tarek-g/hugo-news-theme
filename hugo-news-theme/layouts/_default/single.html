@@ -60,6 +60,27 @@
 
         <div class="prose prose-lg dark:prose-invert max-w-none font-serif leading-loose">
             {{ .Content }}
+
+        </div>
+
+        {{/* --- DYNAMIC TAXONOMIES (Tags, Locations, People, etc.) --- */}}
+        <div class="mt-8 space-y-4">
+            {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+            {{ if (not (eq $taxonomyname "categories")) }}
+            {{ with (index $.Params $taxonomyname) }}
+            <div class="flex flex-wrap items-center gap-2">
+                <span class="font-bold text-muted-foreground capitalize">{{ $taxonomyname | humanize }}:</span>
+                {{ range . }}
+                {{ $termURL := printf "/%s/%s" $taxonomyname (. | urlize) | absURL }}
+                <a href="{{ $termURL }}"
+                    class="bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground px-3 py-1 rounded-full text-sm transition-colors">
+                    #{{ . }}
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
         </div>
 
         {{/* --- RELATED POSTS --- */}}
