@@ -1,5 +1,20 @@
-{{- $.Scratch.Add "index" slice -}}
-{{- range .Site.RegularPages -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "permalink" .RelPermalink "summary" (plainify .Summary | truncate 150) "content" (plainify .Content | truncate 300) "category" (delimit (.Params.categories | default slice) ", " ) "image" (.Params.image | default "")) -}}
-{{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+{
+    {- $.Scratch.Add "index" slice -
+    }
+}
+{
+    {- range .Site.RegularPages -
+    }
+}
+    {
+    {- $.Scratch.Add "index" (dict "title" .Title "permalink" .RelPermalink "summary" (plainify .Summary | truncate 150) "content" (plainify .Content | truncate 300) "category" (delimit (.Params.categories | default slice) ", " ) "tags" (delimit (.Params.tags | default slice) ", " ) "people" (delimit (.Params.people | default slice) ", " ) "locations" (delimit (.Params.locations | default slice) ", " ) "image" (.Params.image | default "")) -
+    }
+}
+{
+    {- end -
+    }
+}
+{
+    {- $.Scratch.Get "index" | jsonify -
+    }
+}

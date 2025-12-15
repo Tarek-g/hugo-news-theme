@@ -24,10 +24,10 @@
     <div class="bg-card border border-border rounded-lg p-6 shadow-sm">
         <h3 class="font-bold text-lg mb-4 border-b border-border pb-2">{{ i18n "tags" }}</h3>
         <div class="flex flex-wrap gap-2">
-            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-            <a href="{{ " /tags/" | relURL }}{{ $name | urlize }}"
+            {{ range first 20 .Site.Taxonomies.tags.ByCount }}
+            <a href="{{ " /tags/" | relURL }}{{ .Name | urlize }}"
                 class="text-sm bg-secondary hover:bg-primary hover:text-white px-3 py-1 rounded-full transition-colors">
-                {{ $name }}
+                {{ .Name }}
             </a>
             {{ end }}
         </div>

@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const data = await response.json();
 
                 const options = {
-                    keys: ['title', 'summary', 'content', 'category'],
+                    keys: ['title', 'summary', 'content', 'category', 'tags', 'people', 'locations'],
                     threshold: 0.4, // Match sensitivity
                     ignoreLocation: true
                 };
