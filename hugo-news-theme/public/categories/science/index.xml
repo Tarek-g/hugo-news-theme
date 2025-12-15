@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Science on Arabic News Portal</title>
-    <link>http://localhost:57352/categories/science/</link>
+    <link>http://localhost:1313/categories/science/</link>
     <description>Recent content in Science on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Sat, 25 Nov 2023 10:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:57352/categories/science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ناسا تكتشف كوكباً جديداً صالحاً للحياة</title>
-      <link>http://localhost:57352/posts/news-3/</link>
+      <link>http://localhost:1313/posts/news-3/</link>
       <pubDate>Sat, 25 Nov 2023 10:00:00 +0300</pubDate>
-      <guid>http://localhost:57352/posts/news-3/</guid>
+      <guid>http://localhost:1313/posts/news-3/</guid>
       <description>&lt;p&gt;اكتشاف علمي جديد.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Local on Arabic News Portal</title>
-    <link>http://localhost:57352/tags/local/</link>
+    <link>http://localhost:1313/tags/local/</link>
     <description>Recent content in Local on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Thu, 26 Oct 2023 20:30:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:57352/tags/local/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/local/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>نهائي الكأس: مباراة للتاريخ وتنظيم استثنائي</title>
-      <link>http://localhost:57352/posts/sports-update/</link>
+      <link>http://localhost:1313/posts/sports-update/</link>
       <pubDate>Thu, 26 Oct 2023 20:30:00 +0300</pubDate>
-      <guid>http://localhost:57352/posts/sports-update/</guid>
+      <guid>http://localhost:1313/posts/sports-update/</guid>
       <description>&lt;p&gt;شهد ملعب العاصمة أمس أمسية كروية لا تُنسى، حيث التقى عملاقا الكرة المحلية في نهائي الكأس المنتظر. المباراة لم تكن مجرد تنافس رياضي، بل كانت احتفالية جماهيرية بامتياز.&lt;/p&gt;&#xA;&lt;h2 id=&#34;الشوط-الأول&#34;&gt;الشوط الأول&lt;/h2&gt;&#xA;&lt;p&gt;بدأت المباراة بحذر من الفريقين، حيث سيطر التكتيك الدفاعي على مجريات اللعب في الدقائق الأولى. ومع ذلك، سرعان ما ارتفع النسق وتبادل الفريقان الهجمات الخطيرة.&lt;/p&gt;&#xA;&lt;h2 id=&#34;هدف-الحسم&#34;&gt;هدف الحسم&lt;/h2&gt;&#xA;&lt;p&gt;في الدقيقة الأخيرة من الوقت بدل الضائع، تمكن المهاجم الشاب من تسجيل هدف الفوز القاتل، ليشعل مدرجات الملعب فرحاً. هذا الهدف سيبقى محفوراً في ذاكرة الجماهير لسنوات طويلة.&lt;/p&gt;</description>
     </item>
   </channel>

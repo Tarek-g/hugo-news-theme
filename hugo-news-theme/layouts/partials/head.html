@@ -39,8 +39,8 @@
     --foreground: {{ .foreground }};
     {{ end }}
     {{ with site.Params.fonts }}
-    --font-sans: {{ .heading_font | safeHTML }};
-    --font-serif: {{ .body_font | safeHTML }};
+    --font-sans: {{ .heading_font | safeCSS }};
+    --font-serif: {{ .body_font | safeCSS }};
     {{ end }}
   }
 </style>

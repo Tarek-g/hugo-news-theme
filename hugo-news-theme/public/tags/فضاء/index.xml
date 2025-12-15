@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>فضاء on Arabic News Portal</title>
-    <link>http://localhost:57352/tags/%D9%81%D8%B6%D8%A7%D8%A1/</link>
+    <link>http://localhost:1313/tags/%D9%81%D8%B6%D8%A7%D8%A1/</link>
     <description>Recent content in فضاء on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar</language>
     <lastBuildDate>Thu, 27 Nov 2025 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:57352/tags/%D9%81%D8%B6%D8%A7%D8%A1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%D9%81%D8%B6%D8%A7%D8%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>اكتشاف كوكب جديد يشبه الأرض</title>
-      <link>http://localhost:57352/posts/science-planet/</link>
+      <link>http://localhost:1313/posts/science-planet/</link>
       <pubDate>Thu, 27 Nov 2025 09:00:00 +0100</pubDate>
-      <guid>http://localhost:57352/posts/science-planet/</guid>
+      <guid>http://localhost:1313/posts/science-planet/</guid>
       <description>&lt;p&gt;فريق من علماء الفلك يعلن عن اكتشاف كوكب خارجي يدور في المنطقة الصالحة للحياة حول نجمه، مما يثير التساؤلات حول إمكانية الحياة خارج الأرض.&lt;/p&gt;</description>
     </item>
   </channel>
