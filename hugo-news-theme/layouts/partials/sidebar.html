@@ -1,0 +1,52 @@
+<aside class="space-y-8">
+    {{/* --- ADSENSE WIDGET --- */}}
+    {{ if and .Site.Params.sidebar.show_ads .Site.Params.adsense.enable }}
+    <div class="bg-card border border-border rounded-lg p-4 shadow-sm">
+        <span class="text-xs font-bold text-muted-foreground mb-2 block text-center">إعلان</span>
+        <div class="w-full h-64 bg-secondary/50 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- AdSense Code Placeholder -->
+            {{ if ne .Site.Params.adsense.client_id "ca-pub-XXXXXXXXXXXXXXXX" }}
+            <ins class="adsbygoogle" style="display:block" data-ad-client="{{ .Site.Params.adsense.client_id }}"
+                data-ad-slot="{{ .Site.Params.adsense.sidebar_slot_id }}" data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            {{ else }}
+            <span class="text-muted-foreground text-sm">مساحة إعلانية (AdSense)</span>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{/* --- TAG CLOUD WIDGET --- */}}
+    {{ if .Site.Params.sidebar.show_tags }}
+    <div class="bg-card border border-border rounded-lg p-6 shadow-sm">
+        <h3 class="font-bold text-lg mb-4 border-b border-border pb-2">{{ i18n "tags" }}</h3>
+        <div class="flex flex-wrap gap-2">
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            <a href="{{ " /tags/" | relURL }}{{ $name | urlize }}"
+                class="text-sm bg-secondary hover:bg-primary hover:text-white px-3 py-1 rounded-full transition-colors">
+                {{ $name }}
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{/* --- RECENT POSTS WIDGET --- */}}
+    {{ if .Site.Params.sidebar.show_recent }}
+    <div class="bg-card border border-border rounded-lg p-6 shadow-sm">
+        <h3 class="font-bold text-lg mb-4 border-b border-border pb-2">أحدث المقالات</h3>
+        <div class="space-y-4">
+            {{ range first 5 .Site.RegularPages }}
+            <a href="{{ .RelPermalink }}" class="block group">
+                <h4 class="text-sm font-semibold group-hover:text-primary transition-colors line-clamp-2">{{ .Title }}
+                </h4>
+                <span class="text-xs text-muted-foreground">{{ .Date.Format "2006-01-02" }}</span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</aside>

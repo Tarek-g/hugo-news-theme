@@ -1,6 +1,8 @@
 baseURL = 'http://example.org/'
-languageCode = 'ar'
-title = 'Arabic News Portal'
+languageCode = "ar-sa"
+defaultContentLanguage = "ar"
+title = "Arabic News Portal"
+
 direction = 'rtl'
 
 [params]
@@ -140,6 +142,17 @@ paginate = 20
       name = "Facebook"
       url = "https://facebook.com"
       icon = "facebook"
+
+  [params.adsense]
+    enable = true
+    client_id = "ca-pub-XXXXXXXXXXXXXXXX" # ضع معرف أدسنس الخاص بك هنا
+    sidebar_slot_id = "1234567890"        # معرف الوحدة الإعلانية الجانبية
+
+  [params.sidebar]
+    enable = true
+    show_ads = true
+    show_tags = true
+    show_recent = true
 
 [taxonomies]
   category = "categories"
