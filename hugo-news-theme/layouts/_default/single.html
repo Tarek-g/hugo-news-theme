@@ -13,8 +13,10 @@
                         {{ end }}
                         <span class="text-muted-foreground text-sm">{{ .Date.Format "2006-01-02" }}</span>
                         <span class="text-muted-foreground text-sm mx-2">•</span>
-                        <span class="text-muted-foreground text-sm">⏱️ {{ i18n "read_time" }} {{ math.Round (div
-                            (countwords .Content) 200.0) }} {{ i18n "minute" }}</span>
+                        <span class="text-muted-foreground text-sm">⏱️ {{ i18n "read_time" }}
+                            {{ $readTime := math.Round (div (countwords .Content) 200.0) }}
+                            {{ if lt $readTime 1.0 }}1{{ else }}{{ $readTime }}{{ end }}
+                            {{ i18n "minute" }}</span>
                     </div>
                     <h1 class="text-3xl md:text-5xl font-black leading-tight mb-6">{{ .Title }}</h1>
                     {{ with .Params.author }}

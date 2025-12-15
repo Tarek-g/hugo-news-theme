@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (!isIndexLoaded) {
             try {
-                const response = await fetch('/index.json');
+                const response = await fetch('/index.json?v=' + new Date().getTime());
                 const data = await response.json();
 
                 const options = {
