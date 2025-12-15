@@ -112,4 +112,12 @@
   .animate-marquee {
     animation: marquee 30s linear infinite;
   }
+
+  .sticky-header {
+    @apply sticky top-0 z-50 w-full backdrop-blur-lg bg-background/80 border-b border-border transition-all duration-300;
+  }
+
+  .fade-in {
+    @apply animate-in fade-in zoom-in-95 duration-500;
+  }
 }

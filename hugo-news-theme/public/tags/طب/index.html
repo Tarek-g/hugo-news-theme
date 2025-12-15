@@ -12,9 +12,10 @@
 <link rel="canonical" href="http://localhost:1313/tags/%D8%B7%D8%A8/" />
 
 
-
-
-
+  
+    
+    
+  
 
 
 
@@ -42,77 +43,16 @@
 
 <style>
   :root {
-      {
-        {
-        with site.Params.colors
-      }
-    }
-
-    --primary: {
-        {
-        .primary
-      }
-    }
-
-    ;
-
-    --secondary: {
-        {
-        .secondary
-      }
-    }
-
-    ;
-
-    --background: {
-        {
-        .background
-      }
-    }
-
-    ;
-
-    --foreground: {
-        {
-        .foreground
-      }
-    }
-
-    ;
-
-      {
-        {
-        end
-      }
-    }
-
-      {
-        {
-        with site.Params.fonts
-      }
-    }
-
-    --font-sans: {
-        {
-        .heading_font | safeCSS
-      }
-    }
-
-    ;
-
-    --font-serif: {
-        {
-        .body_font | safeCSS
-      }
-    }
-
-    ;
-
-      {
-        {
-        end
-      }
-    }
+    
+    --primary: 221 83% 53%;
+    --secondary: 210 40% 96.1%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    
+    
+    --font-sans: 'IBM Plex Sans Arabic', sans-serif;
+    --font-serif: 'IBM Plex Sans Arabic', sans-serif;
+    
   }
 </style>
 
@@ -164,6 +104,7 @@
   ]
 }
 </script>
+
 </head>
 
 <body>
@@ -172,7 +113,7 @@
 
 <div class="min-h-screen bg-background font-sans flex flex-col transition-colors duration-300">
     
-    <header class="border-b border-border bg-card/50">
+    <header class="sticky-header border-b border-border bg-card/50">
         <div class="container mx-auto px-4 h-12 flex items-center justify-between text-sm text-muted-foreground">
             <span>2025-12-15</span>
             <div class="flex items-center gap-4">
