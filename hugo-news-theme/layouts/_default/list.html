@@ -3,7 +3,8 @@
     <h1 class="text-4xl font-black mb-12 border-b-4 border-primary inline-block pb-2">{{ .Title }}</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {{ range .Pages }}
+        {{ $paginator := .Paginator }}
+        {{ range $paginator.Pages }}
         <div class="group cursor-pointer h-full">
             <a href="{{ .RelPermalink }}"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
@@ -31,5 +32,24 @@
         </div>
         {{ end }}
     </div>
+
+    {{/* --- PAGINATION CONTROLS --- */}}
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="flex justify-center mt-12 gap-2" dir="rtl">
+        {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}"
+            class="px-4 py-2 border border-border rounded hover:bg-secondary transition-colors font-bold">السابق</a>
+        {{ end }}
+
+        <span class="px-4 py-2 font-bold text-primary flex items-center">
+            صفحة {{ $paginator.PageNumber }} من {{ $paginator.TotalPages }}
+        </span>
+
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}"
+            class="px-4 py-2 border border-border rounded hover:bg-secondary transition-colors font-bold">التالي</a>
+        {{ end }}
+    </div>
+    {{ end }}
 </div>
 {{ end }}

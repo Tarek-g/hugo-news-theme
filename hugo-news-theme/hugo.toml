@@ -64,6 +64,7 @@ direction = 'rtl'
       count_per_category = 3
 
 enableRobotsTXT = true
+paginate = 20
 
 [sitemap]
   changefreq = "daily"

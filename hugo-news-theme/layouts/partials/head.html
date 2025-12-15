@@ -6,6 +6,14 @@
 <meta name="description" content="{{ .Params.Description | default .Site.Params.description }}" />
 <meta name="keywords" content="{{ .Params.Keywords | default .Site.Params.keywords }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
+{{ if not .IsPage }}
+{{ if .Paginator }}
+{{ if .Paginator.HasPrev }}
+<link rel="prev" href="{{ .Paginator.Prev.URL }}" />{{ end }}
+{{ if .Paginator.HasNext }}
+<link rel="next" href="{{ .Paginator.Next.URL }}" />{{ end }}
+{{ end }}
+{{ end }}
 
 {{/* --- OPEN GRAPH --- */}}
 <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
@@ -13,13 +21,15 @@
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
-{{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
 
 {{/* --- TWITTER CARDS --- */}}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ .Title | default .Site.Title }}" />
 <meta name="twitter:description" content="{{ .Params.Description | default .Site.Params.description }}" />
-{{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ end }}
+{{ with .Params.image }}
+<meta name="twitter:image" content="{{ . | absURL }}" />{{ end }}
 
 <link rel="icon" type="image/png" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,16 +42,77 @@
 {{/* --- DYNAMIC THEMING --- */}}
 <style>
   :root {
-    {{ with site.Params.colors }}
-    --primary: {{ .primary }};
-    --secondary: {{ .secondary }};
-    --background: {{ .background }};
-    --foreground: {{ .foreground }};
-    {{ end }}
-    {{ with site.Params.fonts }}
-    --font-sans: {{ .heading_font | safeCSS }};
-    --font-serif: {{ .body_font | safeCSS }};
-    {{ end }}
+      {
+        {
+        with site.Params.colors
+      }
+    }
+
+    --primary: {
+        {
+        .primary
+      }
+    }
+
+    ;
+
+    --secondary: {
+        {
+        .secondary
+      }
+    }
+
+    ;
+
+    --background: {
+        {
+        .background
+      }
+    }
+
+    ;
+
+    --foreground: {
+        {
+        .foreground
+      }
+    }
+
+    ;
+
+      {
+        {
+        end
+      }
+    }
+
+      {
+        {
+        with site.Params.fonts
+      }
+    }
+
+    --font-sans: {
+        {
+        .heading_font | safeCSS
+      }
+    }
+
+    ;
+
+    --font-serif: {
+        {
+        .body_font | safeCSS
+      }
+    }
+
+    ;
+
+      {
+        {
+        end
+      }
+    }
   }
 </style>
 
@@ -69,5 +140,27 @@
     }
   },
   "datePublished": "{{ .Date.Format "2006-01-02" }}"
+}
+</script>
+
+{{/* --- BREADCRUMB SCHEMA --- */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "{{ site.BaseURL }}"
+    }{{ if not .IsHome }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }{{ end }}
+  ]
 }
 </script>

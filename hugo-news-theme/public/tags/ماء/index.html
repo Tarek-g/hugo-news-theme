@@ -12,6 +12,12 @@
 <link rel="canonical" href="http://localhost:1313/tags/%D9%85%D8%A7%D8%A1/" />
 
 
+
+
+
+
+
+
 <meta property="og:title" content="ماء" />
 <meta property="og:description" content="بوابة أخبار عربية شاملة تغطي آخر المستجدات في السياسة والاقتصاد والرياضة والتكنولوجيا." />
 <meta property="og:type" content="article" />
@@ -36,16 +42,77 @@
 
 <style>
   :root {
-    
-    --primary: 221 83% 53%;
-    --secondary: 210 40% 96.1%;
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
-    
-    
-    --font-sans: 'IBM Plex Sans Arabic', sans-serif;
-    --font-serif: 'IBM Plex Sans Arabic', sans-serif;
-    
+      {
+        {
+        with site.Params.colors
+      }
+    }
+
+    --primary: {
+        {
+        .primary
+      }
+    }
+
+    ;
+
+    --secondary: {
+        {
+        .secondary
+      }
+    }
+
+    ;
+
+    --background: {
+        {
+        .background
+      }
+    }
+
+    ;
+
+    --foreground: {
+        {
+        .foreground
+      }
+    }
+
+    ;
+
+      {
+        {
+        end
+      }
+    }
+
+      {
+        {
+        with site.Params.fonts
+      }
+    }
+
+    --font-sans: {
+        {
+        .heading_font | safeCSS
+      }
+    }
+
+    ;
+
+    --font-serif: {
+        {
+        .body_font | safeCSS
+      }
+    }
+
+    ;
+
+      {
+        {
+        end
+      }
+    }
   }
 </style>
 
@@ -76,6 +143,27 @@
 }
 </script>
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "http:\/\/localhost:1313\/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ماء",
+      "item": "http:\/\/localhost:1313\/tags\/%D9%85%D8%A7%D8%A1\/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -398,6 +486,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
+        
         <div class="group cursor-pointer h-full">
             <a href="/posts/science-water/"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
@@ -424,6 +513,9 @@
         </div>
         
     </div>
+
+    
+    
 </div>
 
     </main>

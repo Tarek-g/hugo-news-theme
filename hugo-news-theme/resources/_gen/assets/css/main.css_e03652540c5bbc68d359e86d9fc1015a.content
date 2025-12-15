@@ -909,6 +909,9 @@ video {
 .whitespace-nowrap {
   white-space: nowrap;
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1262,6 +1265,9 @@ video {
 }
 .hover\:bg-primary\/90:hover {
   background-color: hsl(var(--primary) / 0.9);
+}
+.hover\:bg-secondary:hover {
+  background-color: hsl(var(--secondary));
 }
 .hover\:text-foreground:hover {
   color: hsl(var(--foreground));

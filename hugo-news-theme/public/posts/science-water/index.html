@@ -12,6 +12,7 @@
 <link rel="canonical" href="http://localhost:1313/posts/science-water/" />
 
 
+
 <meta property="og:title" content="علماء يطورون طريقة جديدة لتنقية الماء" />
 <meta property="og:description" content="بوابة أخبار عربية شاملة تغطي آخر المستجدات في السياسة والاقتصاد والرياضة والتكنولوجيا." />
 <meta property="og:type" content="article" />
@@ -36,16 +37,77 @@
 
 <style>
   :root {
-    
-    --primary: 221 83% 53%;
-    --secondary: 210 40% 96.1%;
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
-    
-    
-    --font-sans: 'IBM Plex Sans Arabic', sans-serif;
-    --font-serif: 'IBM Plex Sans Arabic', sans-serif;
-    
+      {
+        {
+        with site.Params.colors
+      }
+    }
+
+    --primary: {
+        {
+        .primary
+      }
+    }
+
+    ;
+
+    --secondary: {
+        {
+        .secondary
+      }
+    }
+
+    ;
+
+    --background: {
+        {
+        .background
+      }
+    }
+
+    ;
+
+    --foreground: {
+        {
+        .foreground
+      }
+    }
+
+    ;
+
+      {
+        {
+        end
+      }
+    }
+
+      {
+        {
+        with site.Params.fonts
+      }
+    }
+
+    --font-sans: {
+        {
+        .heading_font | safeCSS
+      }
+    }
+
+    ;
+
+    --font-serif: {
+        {
+        .body_font | safeCSS
+      }
+    }
+
+    ;
+
+      {
+        {
+        end
+      }
+    }
   }
 </style>
 
@@ -76,6 +138,27 @@
 }
 </script>
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "http:\/\/localhost:1313\/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "علماء يطورون طريقة جديدة لتنقية الماء",
+      "item": "http:\/\/localhost:1313\/posts\/science-water\/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
