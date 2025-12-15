@@ -1,19 +1,55 @@
 {{ define "main" }}
 <div class="container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-black mb-12 border-b-4 border-primary inline-block pb-2">
-        {{ if eq .Data.Plural "tags" }}{{ i18n "tags" }}{{ else }}{{ i18n .Data.Plural | default .Title }}{{ end }}
-    </h1>
+    <h1 class="text-4xl font-black mb-12 border-b-4 border-primary inline-block pb-2">{{ .Title }}</h1>
 
-    <div class="flex flex-wrap gap-4">
-        {{ range .Data.Terms.ByCount }}
-        <a href="{{ .Page.RelPermalink }}"
-            class="group bg-card border border-border px-6 py-4 rounded-lg hover:bg-primary hover:text-white transition-all shadow-sm flex items-center gap-3">
-            <span class="font-bold text-lg">#{{ .Page.Title }}</span>
-            <span
-                class="bg-secondary text-secondary-foreground group-hover:bg-white/20 group-hover:text-white text-xs font-bold px-2 py-1 rounded-full transition-colors">{{
-                .Count }}</span>
-        </a>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{ $paginator := .Paginator }}
+        {{ range $paginator.Pages }}
+        <div class="group cursor-pointer h-full">
+            <a href="{{ .RelPermalink }}"
+                class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-2 mb-4 flex-shrink-0">
+                    {{ with .Params.category }}
+                    <span
+                        class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">{{
+                        . }}</span>
+                    {{ end }}
+                    <span class="text-muted-foreground text-xs">{{ .Date.Format "2006-01-02" }}</span>
+                </div>
+                <h2
+                    class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
+                    {{ .Title }}
+                </h2>
+                <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
+                    {{ .Summary }}
+                </p>
+                <div
+                    class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
+                    <span>اقرأ المزيد</span>
+                    <span class="group-hover:-translate-x-1 transition-transform">←</span>
+                </div>
+            </a>
+        </div>
         {{ end }}
     </div>
+
+    {{/* --- PAGINATION CONTROLS --- */}}
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="flex justify-center mt-12 gap-2" dir="rtl">
+        {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}"
+            class="px-4 py-2 border border-border rounded hover:bg-secondary transition-colors font-bold">السابق</a>
+        {{ end }}
+
+        <span class="px-4 py-2 font-bold text-primary flex items-center">
+            صفحة {{ $paginator.PageNumber }} من {{ $paginator.TotalPages }}
+        </span>
+
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}"
+            class="px-4 py-2 border border-border rounded hover:bg-secondary transition-colors font-bold">التالي</a>
+        {{ end }}
+    </div>
+    {{ end }}
 </div>
 {{ end }}
