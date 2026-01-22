@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://example.org/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow
+Disallow: /admin/
+Disallow: /private/

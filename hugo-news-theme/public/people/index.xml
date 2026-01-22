@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>People on Arabic News Portal</title>
-    <link>http://localhost:1313/people/</link>
+    <link>http://example.org/people/</link>
     <description>Recent content in People on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar-sa</language>
     <lastBuildDate>Tue, 25 Nov 2025 15:45:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/people/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://example.org/people/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>غوتيريش</title>
-      <link>http://localhost:1313/people/%D8%BA%D9%88%D8%AA%D9%8A%D8%B1%D9%8A%D8%B4/</link>
+      <link>http://example.org/people/%D8%BA%D9%88%D8%AA%D9%8A%D8%B1%D9%8A%D8%B4/</link>
       <pubDate>Tue, 25 Nov 2025 15:45:00 +0100</pubDate>
-      <guid>http://localhost:1313/people/%D8%BA%D9%88%D8%AA%D9%8A%D8%B1%D9%8A%D8%B4/</guid>
+      <guid>http://example.org/people/%D8%BA%D9%88%D8%AA%D9%8A%D8%B1%D9%8A%D8%B4/</guid>
       <description></description>
     </item>
     <item>
       <title>أحمد الشقيري</title>
-      <link>http://localhost:1313/people/%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B4%D9%82%D9%8A%D8%B1%D9%8A/</link>
+      <link>http://example.org/people/%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B4%D9%82%D9%8A%D8%B1%D9%8A/</link>
       <pubDate>Sun, 26 Nov 2023 10:30:00 +0300</pubDate>
-      <guid>http://localhost:1313/people/%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B4%D9%82%D9%8A%D8%B1%D9%8A/</guid>
+      <guid>http://example.org/people/%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B4%D9%82%D9%8A%D8%B1%D9%8A/</guid>
       <description></description>
     </item>
   </channel>

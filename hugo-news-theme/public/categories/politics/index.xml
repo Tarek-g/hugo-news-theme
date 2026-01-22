@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Politics on Arabic News Portal</title>
-    <link>http://localhost:1313/categories/politics/</link>
+    <link>http://example.org/categories/politics/</link>
     <description>Recent content in Politics on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar-sa</language>
     <lastBuildDate>Sun, 26 Nov 2023 10:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/politics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://example.org/categories/politics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>قمة المناخ تخرج بتوصيات تاريخية للحفاظ على البيئة</title>
-      <link>http://localhost:1313/posts/featured-story/</link>
+      <link>http://example.org/posts/featured-story/</link>
       <pubDate>Sun, 26 Nov 2023 10:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/featured-story/</guid>
+      <guid>http://example.org/posts/featured-story/</guid>
       <description>&lt;p&gt;بعد مفاوضات استمرت لأسبوعين، توصل قادة العالم إلى اتفاق شامل يهدف إلى خفض الانبعاثات الكربونية بنسبة 50% بحلول عام 2030. الاتفاق يُعد خطوة محورية في جهود مكافحة التغير المناخي.&lt;/p&gt;&#xA;&lt;p&gt;شهدت القمة العالمية للمناخ نقاشات مكثفة بين ممثلي أكثر من 190 دولة، تمحورت حول ضرورة اتخاذ إجراءات عاجلة للحد من تداعيات التغير المناخي. وقد أكد المشاركون على أهمية التعاون الدولي في مواجهة هذا التحدي الذي يهدد مستقبل كوكب الأرض.&lt;/p&gt;&#xA;&lt;p&gt;تضمنت التوصيات النهائية التزامات ملزمة بخفض الانبعاثات الكربونية، وزيادة الاستثمار في الطاقة المتجددة، بالإضافة إلى إنشاء صندوق دولي لدعم الدول النامية في جهودها للتكيف مع آثار التغير المناخي.&lt;/p&gt;</description>
     </item>
   </channel>

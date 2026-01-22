@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>تكنولوجيا on Arabic News Portal</title>
-    <link>http://localhost:1313/tags/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/</link>
+    <link>http://example.org/tags/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/</link>
     <description>Recent content in تكنولوجيا on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar-sa</language>
     <lastBuildDate>Wed, 26 Nov 2025 14:30:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://example.org/tags/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>التعليم في العصر الرقمي: فرص وتحديات</title>
-      <link>http://localhost:1313/opinion/opinion-3/</link>
+      <link>http://example.org/opinion/opinion-3/</link>
       <pubDate>Wed, 26 Nov 2025 14:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/opinion/opinion-3/</guid>
+      <guid>http://example.org/opinion/opinion-3/</guid>
       <description>&lt;p&gt;التحول الرقمي في التعليم لم يعد خياراً بل ضرورة. نحتاج إلى إعادة التفكير في أساليبنا التعليمية لمواكبة العصر مع الحفاظ على القيم التربوية الأساسية.&lt;/p&gt;</description>
     </item>
   </channel>

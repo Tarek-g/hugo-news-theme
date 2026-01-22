@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar-sa" dir="rtl">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<script>
+  (function() {
+    const saved = localStorage.getItem('hugo-news-theme');
+    const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.classList.add(theme);
+  })();
+</script>
 <title>Posts | Arabic News Portal</title>
 
 
 <meta name="description" content="بوابة أخبار عربية شاملة تغطي آخر المستجدات في السياسة والاقتصاد والرياضة والتكنولوجيا." />
 <meta name="keywords" content="أخبار, سياسة, اقتصاد, رياضة, تكنولوجيا, ثقافة" />
-<link rel="canonical" href="http://localhost:1313/posts/" />
+<link rel="canonical" href="http://example.org/posts/" />
 
 
-
-<link rel="prev" href="/posts/page/2/" />
-
-<link rel="next" href="/posts/page/4/" />
+  
+    <link rel="prev" href="/posts/page/2/" />
+    
+  
 
 
 
@@ -23,15 +32,18 @@
 <meta property="og:title" content="Posts" />
 <meta property="og:description" content="بوابة أخبار عربية شاملة تغطي آخر المستجدات في السياسة والاقتصاد والرياضة والتكنولوجيا." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:url" content="http://example.org/posts/" />
 <meta property="og:site_name" content="Arabic News Portal" />
-
+<meta property="og:image" content="http://example.org/images/og-default.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="ar_SA" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Posts" />
 <meta name="twitter:description" content="بوابة أخبار عربية شاملة تغطي آخر المستجدات في السياسة والاقتصاد والرياضة والتكنولوجيا." />
-
+<meta name="twitter:image" content="http://example.org/images/og-default.png" />
 
 <link rel="icon" type="image/png" href="/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,82 +56,27 @@
 
 <style>
   :root {
-      {
-        {
-        with site.Params.colors
-      }
-    }
-
-    --primary: {
-        {
-        .primary
-      }
-    }
-
-    ;
-
-    --secondary: {
-        {
-        .secondary
-      }
-    }
-
-    ;
-
-    --background: {
-        {
-        .background
-      }
-    }
-
-    ;
-
-    --foreground: {
-        {
-        .foreground
-      }
-    }
-
-    ;
-
-      {
-        {
-        end
-      }
-    }
-
-      {
-        {
-        with site.Params.fonts
-      }
-    }
-
-    --font-sans: {
-        {
-        .heading_font | safeCSS
-      }
-    }
-
-    ;
-
-    --font-serif: {
-        {
-        .body_font | safeCSS
-      }
-    }
-
-    ;
-
-      {
-        {
-        end
-      }
-    }
+    
+    --primary: 221 83% 53%;
+    --secondary: 210 40% 96.1%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    
+    
+    --font-sans: 'IBM Plex Sans Arabic', sans-serif;
+    --font-serif: 'IBM Plex Sans Arabic', sans-serif;
+    
   }
 </style>
 
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/main.1bde401f03b10be1b333bb7d43401ae492eb5019e46d8bdf610076df4c49824b.css">
+
+
+
+
+<script defer src="/js/theme.min.e9c9af782cdcc14a646abeda9e8cf599016903dbb4cc41f9214e4d2993deb20a.js"></script>
+<script defer src="/js/search.min.dffd8f489db36ea61e045ce1907db145bc996621e426b9f9735fb3c2e2548d1a.js"></script>
 
 
 <script type="application/ld+json">
@@ -128,7 +85,7 @@
   "@type": "NewsArticle",
   "headline": "Posts",
   "description": "بوابة أخبار عربية شاملة تغطي آخر المستجدات في السياسة والاقتصاد والرياضة والتكنولوجيا.",
-  "url": "http:\/\/localhost:1313\/posts\/",
+  "url": "http:\/\/example.org\/posts\/",
   "author": {
     "@type": "Person",
     "name": "Arabic News Portal"
@@ -138,10 +95,10 @@
     "name": "Arabic News Portal",
     "logo": {
       "@type": "ImageObject",
-      "url": "http:\/\/localhost:1313\/favicon.png"
+      "url": "http:\/\/example.org\/favicon.png"
     }
   },
-  "datePublished": "2025-11-27"
+  "datePublished": "2026-01-22"
 }
 </script>
 
@@ -155,17 +112,18 @@
       "@type": "ListItem",
       "position": 1,
       "name": "الرئيسية",
-      "item": "http:\/\/localhost:1313\/"
+      "item": "http:\/\/example.org\/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Posts",
-      "item": "http:\/\/localhost:1313\/posts\/"
+      "item": "http:\/\/example.org\/posts\/"
     }
   ]
 }
 </script>
+
 </head>
 
 <body>
@@ -174,10 +132,22 @@
 
 <div class="min-h-screen bg-background font-sans flex flex-col transition-colors duration-300">
     
-    <header class="border-b border-border bg-card/50">
+    <header class="sticky-header border-b border-border bg-card/50">
         <div class="container mx-auto px-4 h-12 flex items-center justify-between text-sm text-muted-foreground">
-            <span>2025-12-15</span>
+            <span>2026-01-22</span>
             <div class="flex items-center gap-4">
+                
+                <button id="theme-toggle" 
+                    class="p-2 rounded-full hover:bg-secondary transition-colors"
+                    aria-label="تبديل الوضع الداكن">
+                    <svg class="sun-icon h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    </svg>
+                    <svg class="moon-icon h-4 w-4 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
                 
                 <a href="/about" class="cursor-pointer hover:text-primary transition-colors">من نحن</a>
                 
@@ -201,7 +171,7 @@
                 </svg>
             </button>
 
-            <a href="http://localhost:1313/">
+            <a href="http://example.org/">
                 <h1 class="text-5xl md:text-7xl font-black tracking-tighter cursor-pointer text-foreground">
                     Arabic News Portal
                 </h1>
@@ -313,75 +283,59 @@
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/tech-ai-industry/" class="hover:underline transition-colors">
-                    الذكاء الاصطناعي يغير وجه الصناعة
+                <a href="/posts/new-1/" class="hover:underline transition-colors">
+                    اجتماع وزراء الخارجية العرب لبحث التطورات الإقليمية
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/science-planet/" class="hover:underline transition-colors">
-                    اكتشاف كوكب جديد يشبه الأرض
+                <a href="/posts/new-2/" class="hover:underline transition-colors">
+                    انطلاق معرض الابتكار التقني في دبي
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/health-sleep/" class="hover:underline transition-colors">
-                    فوائد النوم الجيد على الصحة العقلية
+                <a href="/posts/new-3/" class="hover:underline transition-colors">
+                    ارتفاع أسعار النفط مع تصاعد التوترات الجيوسياسية
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/tech-ar-apps/" class="hover:underline transition-colors">
-                    تطبيقات الواقع المعزز في التعليم والطب
+                <a href="/posts/new-4/" class="hover:underline transition-colors">
+                    المنتخب الوطني يتأهل لنهائيات كأس آسيا
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/health-nutrition/" class="hover:underline transition-colors">
-                    التغذية السليمة: مفتاح الوقاية من الأمراض
+                <a href="/posts/new-5/" class="hover:underline transition-colors">
+                    إطلاق مبادرة وطنية لتشجير المدن الكبرى
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/science-water/" class="hover:underline transition-colors">
-                    علماء يطورون طريقة جديدة لتنقية الماء
+                <a href="/posts/new-6/" class="hover:underline transition-colors">
+                    افتتاح أكبر مكتبة رقمية في الشرق الأوسط
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/science-climate/" class="hover:underline transition-colors">
-                    دراسة جديدة عن التغير المناخي وتأثيره
+                <a href="/posts/new-7/" class="hover:underline transition-colors">
+                    دراسة جديدة: القهوة تقلل مخاطر أمراض القلب
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/tech-quantum/" class="hover:underline transition-colors">
-                    الحوسبة الكمومية: المستقبل القريب
+                <a href="/posts/new-8/" class="hover:underline transition-colors">
+                    شركة سعودية تطور سيارة كهربائية محلية الصنع
                 </a>
             </span>
-            
-            <span class="inline-flex items-center gap-2 mx-4">
-                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/health-exercise/" class="hover:underline transition-colors">
-                    الرياضة اليومية: 30 دقيقة تحدث الفرق
-                </a>
-            </span>
-            
-            <span class="inline-flex items-center gap-2 mx-4">
-                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/dummy-10/" class="hover:underline transition-colors">
-                    Article 10 Test Scalability
-                </a>
-            </span>
-            
-            
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
@@ -397,59 +351,75 @@
                 </a>
             </span>
             
+            
+            
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/health-sleep/" class="hover:underline transition-colors">
-                    فوائد النوم الجيد على الصحة العقلية
+                <a href="/posts/new-1/" class="hover:underline transition-colors">
+                    اجتماع وزراء الخارجية العرب لبحث التطورات الإقليمية
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/tech-ar-apps/" class="hover:underline transition-colors">
-                    تطبيقات الواقع المعزز في التعليم والطب
+                <a href="/posts/new-2/" class="hover:underline transition-colors">
+                    انطلاق معرض الابتكار التقني في دبي
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/health-nutrition/" class="hover:underline transition-colors">
-                    التغذية السليمة: مفتاح الوقاية من الأمراض
+                <a href="/posts/new-3/" class="hover:underline transition-colors">
+                    ارتفاع أسعار النفط مع تصاعد التوترات الجيوسياسية
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/science-water/" class="hover:underline transition-colors">
-                    علماء يطورون طريقة جديدة لتنقية الماء
+                <a href="/posts/new-4/" class="hover:underline transition-colors">
+                    المنتخب الوطني يتأهل لنهائيات كأس آسيا
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/science-climate/" class="hover:underline transition-colors">
-                    دراسة جديدة عن التغير المناخي وتأثيره
+                <a href="/posts/new-5/" class="hover:underline transition-colors">
+                    إطلاق مبادرة وطنية لتشجير المدن الكبرى
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/tech-quantum/" class="hover:underline transition-colors">
-                    الحوسبة الكمومية: المستقبل القريب
+                <a href="/posts/new-6/" class="hover:underline transition-colors">
+                    افتتاح أكبر مكتبة رقمية في الشرق الأوسط
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/health-exercise/" class="hover:underline transition-colors">
-                    الرياضة اليومية: 30 دقيقة تحدث الفرق
+                <a href="/posts/new-7/" class="hover:underline transition-colors">
+                    دراسة جديدة: القهوة تقلل مخاطر أمراض القلب
                 </a>
             </span>
             
             <span class="inline-flex items-center gap-2 mx-4">
                 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="/posts/dummy-10/" class="hover:underline transition-colors">
-                    Article 10 Test Scalability
+                <a href="/posts/new-8/" class="hover:underline transition-colors">
+                    شركة سعودية تطور سيارة كهربائية محلية الصنع
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                <a href="/posts/tech-ai-industry/" class="hover:underline transition-colors">
+                    الذكاء الاصطناعي يغير وجه الصناعة
+                </a>
+            </span>
+            
+            <span class="inline-flex items-center gap-2 mx-4">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                <a href="/posts/science-planet/" class="hover:underline transition-colors">
+                    اكتشاف كوكب جديد يشبه الأرض
                 </a>
             </span>
             
@@ -470,7 +440,7 @@
                 </svg>
             </button>
             <div class="relative">
-                <input type="text" id="search-input" placeholder="اكتب للبحث..."
+                <input type="text" id="search-input" placeholder="اكتب للبحث... (Ctrl+K)"
                     class="w-full bg-transparent border-b-2 border-primary py-4 text-3xl outline-none placeholder:text-muted-foreground/50 text-foreground font-bold"
                     autofocus>
                 
@@ -490,18 +460,22 @@
         
         
         <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-21/"
+            <a href="/posts/sub-featured-1/"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-center gap-2 mb-4 flex-shrink-0">
                     
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
+                    <span
+                        class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">اقتصاد</span>
+                    
+                    <span class="text-muted-foreground text-xs">2023-11-26</span>
                 </div>
                 <h2
                     class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 21 Test Scalability
+                    البنك المركزي يرفع أسعار الفائدة للمرة الثالثة هذا العام
                 </h2>
                 <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 21
+                    <p>في محاولة لكبح جماح التضخم، أعلن البنك المركزي اليوم عن رفع جديد لأسعار الفائدة، مما أثار ردود فعل متباينة في الأوساط الاقتصادية.</p>
+<p>جاء القرار ضمن سياسة نقدية تقييدية تهدف إلى السيطرة على معدلات التضخم المتصاعدة. وأشار محافظ البنك المركزي في بيان صحفي إلى أن هذه الخطوة ضرورية للحفاظ على استقرار الاقتصاد الوطني.</p>
                 </p>
                 <div
                     class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
@@ -512,18 +486,22 @@
         </div>
         
         <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-22/"
+            <a href="/posts/sub-featured-2/"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-center gap-2 mb-4 flex-shrink-0">
                     
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
+                    <span
+                        class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">تكنولوجيا</span>
+                    
+                    <span class="text-muted-foreground text-xs">2023-11-26</span>
                 </div>
                 <h2
                     class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 22 Test Scalability
+                    إطلاق جيل جديد من المعالجات الذكية يغير قواعد اللعبة
                 </h2>
                 <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 22
+                    <p>الشركة الرائدة في مجال التكنولوجيا تكشف عن رقاقة جديدة تعتمد على الذكاء الاصطناعي لتحسين الأداء وتقليل استهلاك الطاقة.</p>
+<p>تمثل المعالجات الجديدة قفزة نوعية في عالم الحوسبة، حيث تجمع بين السرعة الفائقة والكفاءة في استهلاك الطاقة. وتعد بتغيير جذري في طريقة معالجة البيانات والتطبيقات الذكية.</p>
                 </p>
                 <div
                     class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
@@ -534,18 +512,22 @@
         </div>
         
         <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-23/"
+            <a href="/posts/sub-featured-3/"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-center gap-2 mb-4 flex-shrink-0">
                     
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
+                    <span
+                        class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">اقتصاد</span>
+                    
+                    <span class="text-muted-foreground text-xs">2023-11-25</span>
                 </div>
                 <h2
                     class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 23 Test Scalability
+                    الاستثمار في الطاقة المتجددة: فرص واعدة للمستقبل
                 </h2>
                 <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 23
+                    <p>يشهد قطاع الطاقة المتجددة نمواً متسارعاً مع توجه الدول والشركات نحو الاستدامة. الاستثمار في هذا المجال يعد بعوائد مجزية على المدى الطويل.</p>
+<p>التحول نحو الاقتصاد الأخضر يفتح آفاقاً جديدة للمستثمرين، حيث تتزايد الفرص في مشاريع الطاقة الشمسية وطاقة الرياح والهيدروجين الأخضر.</p>
                 </p>
                 <div
                     class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
@@ -556,18 +538,22 @@
         </div>
         
         <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-24/"
+            <a href="/posts/sub-featured-4/"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-center gap-2 mb-4 flex-shrink-0">
                     
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
+                    <span
+                        class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">تكنولوجيا</span>
+                    
+                    <span class="text-muted-foreground text-xs">2023-11-25</span>
                 </div>
                 <h2
                     class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 24 Test Scalability
+                    تطورات جديدة في عالم السيارات الكهربائية
                 </h2>
                 <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 24
+                    <p>شركات السيارات العالمية تتسابق لطرح موديلات جديدة من السيارات الكهربائية بمدى أطول وتقنيات شحن أسرع، مما يعزز من انتشارها في الأسواق.</p>
+<p>المنافسة تشتد بين العمالقة التقليديين والشركات الناشئة، مما يصب في مصلحة المستهلك من خلال تقديم خيارات متنوعة وأسعار تنافسية.</p>
                 </p>
                 <div
                     class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
@@ -578,18 +564,21 @@
         </div>
         
         <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-25/"
+            <a href="/posts/news-3/"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-center gap-2 mb-4 flex-shrink-0">
                     
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
+                    <span
+                        class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">علوم</span>
+                    
+                    <span class="text-muted-foreground text-xs">2023-11-25</span>
                 </div>
                 <h2
                     class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 25 Test Scalability
+                    ناسا تكتشف كوكباً جديداً صالحاً للحياة
                 </h2>
                 <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 25
+                    <p>اكتشاف علمي جديد.</p>
                 </p>
                 <div
                     class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
@@ -600,18 +589,25 @@
         </div>
         
         <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-26/"
+            <a href="/posts/tech-news/"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-center gap-2 mb-4 flex-shrink-0">
                     
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
+                    <span
+                        class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">تكنولوجيا</span>
+                    
+                    <span class="text-muted-foreground text-xs">2023-10-27</span>
                 </div>
                 <h2
                     class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 26 Test Scalability
+                    ثورة الذكاء الاصطناعي: كيف تغير التكنولوجيا حياتنا اليومية
                 </h2>
                 <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 26
+                    <p>يشهد العالم اليوم تحولاً جذرياً بفضل التطور المتسارع في مجال الذكاء الاصطناعي. لم تعد هذه التكنولوجيا مجرد خيال علمي، بل أصبحت جزءاً لا يتجزأ من واقعنا اليومي.</p>
+<h2 id="التأثير-على-سوق-العمل">التأثير على سوق العمل</h2>
+<p>تُظهر الدراسات الحديثة أن الذكاء الاصطناعي سيغير طبيعة الوظائف بشكل كبير. فبينما قد تختفي بعض الوظائف التقليدية، ستظهر فرص عمل جديدة تتطلب مهارات مختلفة تماماً، تركز على الإبداع وحل المشكلات المعقدة.</p>
+<h2 id="في-المجال-الطبي">في المجال الطبي</h2>
+<p>يساهم الذكاء الاصطناعي في إحداث ثورة في مجال الرعاية الصحية، من التشخيص المبكر للأمراض إلى تطوير علاجات مخصصة لكل مريض. الخوارزميات الذكية قادرة الآن على تحليل صور الأشعة بدقة تفوق أحياناً دقة الأطباء البشر.</p>
                 </p>
                 <div
                     class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
@@ -622,84 +618,25 @@
         </div>
         
         <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-27/"
+            <a href="/posts/sports-update/"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-center gap-2 mb-4 flex-shrink-0">
                     
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
-                </div>
-                <h2
-                    class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 27 Test Scalability
-                </h2>
-                <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 27
-                </p>
-                <div
-                    class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
-                    <span>اقرأ المزيد</span>
-                    <span class="group-hover:-translate-x-1 transition-transform">←</span>
-                </div>
-            </a>
-        </div>
-        
-        <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-28/"
-                class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
-                <div class="flex items-center gap-2 mb-4 flex-shrink-0">
+                    <span
+                        class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">رياضة</span>
                     
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
+                    <span class="text-muted-foreground text-xs">2023-10-26</span>
                 </div>
                 <h2
                     class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 28 Test Scalability
+                    نهائي الكأس: مباراة للتاريخ وتنظيم استثنائي
                 </h2>
                 <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 28
-                </p>
-                <div
-                    class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
-                    <span>اقرأ المزيد</span>
-                    <span class="group-hover:-translate-x-1 transition-transform">←</span>
-                </div>
-            </a>
-        </div>
-        
-        <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-29/"
-                class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
-                <div class="flex items-center gap-2 mb-4 flex-shrink-0">
-                    
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
-                </div>
-                <h2
-                    class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 29 Test Scalability
-                </h2>
-                <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 29
-                </p>
-                <div
-                    class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
-                    <span>اقرأ المزيد</span>
-                    <span class="group-hover:-translate-x-1 transition-transform">←</span>
-                </div>
-            </a>
-        </div>
-        
-        <div class="group cursor-pointer h-full">
-            <a href="/posts/dummy-30/"
-                class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
-                <div class="flex items-center gap-2 mb-4 flex-shrink-0">
-                    
-                    <span class="text-muted-foreground text-xs">2024-01-01</span>
-                </div>
-                <h2
-                    class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors flex-shrink-0">
-                    Article 30 Test Scalability
-                </h2>
-                <p class="text-muted-foreground font-serif leading-relaxed line-clamp-4">
-                    Test article 30
+                    <p>شهد ملعب العاصمة أمس أمسية كروية لا تُنسى، حيث التقى عملاقا الكرة المحلية في نهائي الكأس المنتظر. المباراة لم تكن مجرد تنافس رياضي، بل كانت احتفالية جماهيرية بامتياز.</p>
+<h2 id="الشوط-الأول">الشوط الأول</h2>
+<p>بدأت المباراة بحذر من الفريقين، حيث سيطر التكتيك الدفاعي على مجريات اللعب في الدقائق الأولى. ومع ذلك، سرعان ما ارتفع النسق وتبادل الفريقان الهجمات الخطيرة.</p>
+<h2 id="هدف-الحسم">هدف الحسم</h2>
+<p>في الدقيقة الأخيرة من الوقت بدل الضائع، تمكن المهاجم الشاب من تسجيل هدف الفوز القاتل، ليشعل مدرجات الملعب فرحاً. هذا الهدف سيبقى محفوراً في ذاكرة الجماهير لسنوات طويلة.</p>
                 </p>
                 <div
                     class="mt-4 pt-4 border-t border-border flex items-center justify-between text-sm text-primary font-bold mt-auto">
@@ -720,12 +657,9 @@
         
 
         <span class="px-4 py-2 font-bold text-primary flex items-center">
-            صفحة 3 من 5
+            صفحة 3 من 3
         </span>
 
-        
-        <a href="/posts/page/4/"
-            class="px-4 py-2 border border-border rounded hover:bg-secondary transition-colors font-bold">التالي</a>
         
     </div>
     
@@ -780,7 +714,7 @@
         جميع الحقوق محفوظة © 2024
     </div>
     
-    <script src="/js/search.min.4af2f11186c7dc6e0ef80deeeecdca3a69cba1097a29b4d3cb3580d1764a7c7f.js"></script>
+    <script src="/js/search.min.dffd8f489db36ea61e045ce1907db145bc996621e426b9f9735fb3c2e2548d1a.js"></script>
 </footer>
 </body>
 

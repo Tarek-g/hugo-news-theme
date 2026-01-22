@@ -1,6 +1,23 @@
 {{ define "main" }}
 <div class="container mx-auto px-4 py-12">
 
+    {{/* --- جلب كل المقالات مرة واحدة مرتبة بالتاريخ --- */}}
+    {{ $allPosts := where .Site.RegularPages "Section" "posts" }}
+    {{ $opinionPosts := where .Site.RegularPages "Section" "opinion" }}
+    
+    {{/* --- إعدادات الصفحة الرئيسية --- */}}
+    {{ $heroCount := site.Params.homepage.hero_count | default 1 }}
+    {{ $subCount := site.Params.homepage.sub_count | default 4 }}
+    {{ $sidebarLatestCount := site.Params.homepage.sidebar_latest_count | default 5 }}
+    {{ $opinionCount := site.Params.homepage.opinion_count | default 4 }}
+    
+    {{/* --- تقسيم المقالات بدون تكرار --- */}}
+    {{ $heroPosts := first $heroCount $allPosts }}
+    {{ $afterHero := after $heroCount $allPosts }}
+    {{ $subPosts := first $subCount $afterHero }}
+    {{ $afterSub := after $subCount $afterHero }}
+    {{ $sidebarPosts := first $sidebarLatestCount $afterSub }}
+
     {{ range site.Params.homepage.sections }}
 
     {{/* --- HERO SECTION (Featured + Sidebar) --- */}}
@@ -10,10 +27,9 @@
 
         {{/* Main Featured Area */}}
         <div class="{{ if .sidebar.enable }}lg:col-span-8{{ else }}col-span-12{{ end }}">
-            {{ $featuredCount := .featured.count | default 5 }}
-            {{ $featuredPosts := first 1 (where $.Site.RegularPages "Params.featured" true) }}
-
-            {{ range $featuredPosts }}
+            
+            {{/* المقال الرئيسي - أحدث مقال */}}
+            {{ range $heroPosts }}
             <div class="group cursor-pointer">
                 <a href="{{ .RelPermalink }}">
                     <div class="flex items-center gap-2 mb-4">
@@ -43,11 +59,9 @@
 
             <div class="my-12 h-[1px] bg-border w-full"></div>
 
-            {{/* Sub Featured Grid */}}
+            {{/* المقالات الفرعية - المقالات التالية */}}
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {{ $subFeatured := first (sub $featuredCount 1) (where $.Site.RegularPages "Params.sub_featured" true)
-                }}
-                {{ range $subFeatured }}
+                {{ range $subPosts }}
                 <div class="group cursor-pointer">
                     <a href="{{ .RelPermalink }}">
                         <div class="flex items-center gap-2 mb-3">
@@ -77,8 +91,7 @@
             <div>
                 <h4 class="text-2xl font-black mb-6 pb-2 border-b-4 border-primary inline-block">{{ .title }}</h4>
                 <div class="space-y-6">
-                    {{ $opinions := first .count (where $.Site.RegularPages "Section" .source) }}
-                    {{ range $opinions }}
+                    {{ range first $opinionCount $opinionPosts }}
                     <div class="group cursor-pointer border-b border-border pb-4 last:border-0">
                         <a href="{{ .RelPermalink }}">
                             <h5 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
@@ -94,13 +107,12 @@
             </div>
             {{ end }}
 
-            {{/* Latest News Widget */}}
+            {{/* Latest News Widget - مقالات مختلفة */}}
             {{ with .sidebar.latest }}
             <div class="bg-secondary/50 p-6 rounded-sm border border-border">
                 <h4 class="text-xl font-black mb-6 text-primary">{{ .title }}</h4>
                 <div class="space-y-4">
-                    {{ $latest := first .count (where $.Site.RegularPages "Section" .source) }}
-                    {{ range $latest }}
+                    {{ range $sidebarPosts }}
                     <div class="flex justify-between items-start gap-4 group cursor-pointer">
                         <a href="{{ .RelPermalink }}" class="block w-full">
                             <div>
@@ -115,10 +127,10 @@
                     </div>
                     {{ end }}
                 </div>
-                <button
-                    class="w-full mt-6 border border-primary text-primary py-3 text-sm font-bold hover:bg-primary hover:text-primary-foreground transition-colors uppercase tracking-widest rounded-sm">
+                <a href="/posts/"
+                    class="block w-full mt-6 border border-primary text-primary py-3 text-sm font-bold hover:bg-primary hover:text-primary-foreground transition-colors uppercase tracking-widest rounded-sm text-center">
                     المزيد من الأخبار
-                </button>
+                </a>
             </div>
             {{ end }}
 

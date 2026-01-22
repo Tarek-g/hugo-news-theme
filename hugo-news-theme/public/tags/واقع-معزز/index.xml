@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>واقع معزز on Arabic News Portal</title>
-    <link>http://localhost:1313/tags/%D9%88%D8%A7%D9%82%D8%B9-%D9%85%D8%B9%D8%B2%D8%B2/</link>
+    <link>http://example.org/tags/%D9%88%D8%A7%D9%82%D8%B9-%D9%85%D8%B9%D8%B2%D8%B2/</link>
     <description>Recent content in واقع معزز on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar-sa</language>
     <lastBuildDate>Wed, 26 Nov 2025 16:20:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%D9%88%D8%A7%D9%82%D8%B9-%D9%85%D8%B9%D8%B2%D8%B2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://example.org/tags/%D9%88%D8%A7%D9%82%D8%B9-%D9%85%D8%B9%D8%B2%D8%B2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>تطبيقات الواقع المعزز في التعليم والطب</title>
-      <link>http://localhost:1313/posts/tech-ar-apps/</link>
+      <link>http://example.org/posts/tech-ar-apps/</link>
       <pubDate>Wed, 26 Nov 2025 16:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/tech-ar-apps/</guid>
+      <guid>http://example.org/posts/tech-ar-apps/</guid>
       <description>&lt;p&gt;الواقع المعزز يفتح آفاقاً جديدة في مجالات التعليم والطب، موفراً تجارب تفاعلية غير مسبوقة للمتعلمين والأطباء.&lt;/p&gt;</description>
     </item>
   </channel>
