@@ -4,6 +4,15 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+
+<script>
+  (function() {
+    const saved = localStorage.getItem('hugo-news-theme');
+    const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.classList.add(theme);
+  })();
+</script>
 <title>People | Arabic News Portal</title>
 
 
@@ -57,7 +66,13 @@
 </style>
 
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/main.1bde401f03b10be1b333bb7d43401ae492eb5019e46d8bdf610076df4c49824b.css">
+
+
+
+
+<script defer src="/js/theme.min.e9c9af782cdcc14a646abeda9e8cf599016903dbb4cc41f9214e4d2993deb20a.js"></script>
+<script defer src="/js/search.min.dffd8f489db36ea61e045ce1907db145bc996621e426b9f9735fb3c2e2548d1a.js"></script>
 
 
 <script type="application/ld+json">
@@ -115,8 +130,20 @@
     
     <header class="sticky-header border-b border-border bg-card/50">
         <div class="container mx-auto px-4 h-12 flex items-center justify-between text-sm text-muted-foreground">
-            <span>2025-12-15</span>
+            <span>2026-01-22</span>
             <div class="flex items-center gap-4">
+                
+                <button id="theme-toggle" 
+                    class="p-2 rounded-full hover:bg-secondary transition-colors"
+                    aria-label="تبديل الوضع الداكن">
+                    <svg class="sun-icon h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    </svg>
+                    <svg class="moon-icon h-4 w-4 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
                 
                 <a href="/about" class="cursor-pointer hover:text-primary transition-colors">من نحن</a>
                 
@@ -409,7 +436,7 @@
                 </svg>
             </button>
             <div class="relative">
-                <input type="text" id="search-input" placeholder="اكتب للبحث..."
+                <input type="text" id="search-input" placeholder="اكتب للبحث... (Ctrl+K)"
                     class="w-full bg-transparent border-b-2 border-primary py-4 text-3xl outline-none placeholder:text-muted-foreground/50 text-foreground font-bold"
                     autofocus>
                 
@@ -495,7 +522,7 @@
         جميع الحقوق محفوظة © 2024
     </div>
     
-    <script src="/js/search.min.024b9342044367ff56a3112cda947102b1fd479daac088878d31edc5ee7bba91.js"></script>
+    <script src="/js/search.min.dffd8f489db36ea61e045ce1907db145bc996621e426b9f9735fb3c2e2548d1a.js"></script>
 </footer>
 </body>
 

@@ -1,5 +1,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+{{/* --- DARK MODE: Prevent FOUC (Flash of Unstyled Content) --- */}}
+<script>
+  (function() {
+    const saved = localStorage.getItem('hugo-news-theme');
+    const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.classList.add(theme);
+  })();
+</script>
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
 {{/* --- SEO META TAGS --- */}}
@@ -52,8 +61,14 @@
   }
 </style>
 
-{{ $style := resources.Get "css/main.css" | css.PostCSS }}
+{{ $style := resources.Get "css/main.css" | css.PostCSS | fingerprint "sha256" }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+{{/* --- LOAD JS: Theme & Search --- */}}
+{{ $themeJS := resources.Get "js/theme.js" | minify | fingerprint "sha256" }}
+{{ $searchJS := resources.Get "js/search.js" | minify | fingerprint "sha256" }}
+<script defer src="{{ $themeJS.RelPermalink }}"></script>
+<script defer src="{{ $searchJS.RelPermalink }}"></script>
 
 {{/* --- SCHEMA.ORG JSON-LD --- */}}
 <script type="application/ld+json">
