@@ -13,6 +13,39 @@
     </main>
 
     {{ partial "footer.html" . }}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tocDesktop = document.querySelector('.toc-desktop');
+            const tocSticky = document.querySelector('.toc-sticky');
+            const tocStickyHeader = document.querySelector('.toc-sticky-header');
+            const tocStickyContent = document.querySelector('.toc-sticky-content');
+            
+            if (!tocDesktop || !tocSticky) return;
+            
+            const triggerPoint = tocDesktop.offsetTop + tocDesktop.offsetHeight;
+            
+            // Scroll event to show/hide sticky TOC
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > triggerPoint) {
+                    tocDesktop.style.display = 'none';
+                    tocSticky.classList.remove('hidden');
+                } else {
+                    tocDesktop.style.display = 'block';
+                    tocSticky.classList.add('hidden');
+                }
+            });
+            
+            // Hover event for sticky TOC
+            tocStickyHeader.addEventListener('mouseenter', () => {
+                tocStickyContent.classList.remove('hidden');
+            });
+            
+            tocSticky.addEventListener('mouseleave', () => {
+                tocStickyContent.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 
 </html>
