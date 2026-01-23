@@ -9,7 +9,7 @@
             <a href="{{ .RelPermalink }}"
                 class="h-full flex flex-col bg-card border border-border rounded-sm p-6 hover:shadow-md transition-shadow">
                 <div class="flex items-center gap-2 mb-4 flex-shrink-0">
-                    {{ with .Params.category }}
+                    {{ with index .Params.categories 0 }}
                     <span
                         class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">{{
                         . }}</span>

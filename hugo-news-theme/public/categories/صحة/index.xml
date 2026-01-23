@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>صحة on Arabic News Portal</title>
+    <link>http://localhost:1313/categories/%D8%B5%D8%AD%D8%A9/</link>
+    <description>Recent content in صحة on Arabic News Portal</description>
+    <generator>Hugo</generator>
+    <language>ar-sa</language>
+    <lastBuildDate>Thu, 22 Jan 2026 11:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%D8%B5%D8%AD%D8%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>دراسة جديدة: القهوة تقلل مخاطر أمراض القلب</title>
+      <link>http://localhost:1313/posts/new-7/</link>
+      <pubDate>Thu, 22 Jan 2026 11:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/new-7/</guid>
+      <description>&lt;p&gt;كشفت دراسة علمية حديثة أن تناول 3 أكواب من القهوة يومياً يمكن أن يقلل من مخاطر الإصابة بأمراض القلب بنسبة 15%.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>فوائد النوم الجيد على الصحة العقلية</title>
+      <link>http://localhost:1313/posts/health-sleep/</link>
+      <pubDate>Thu, 27 Nov 2025 08:30:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/health-sleep/</guid>
+      <description>&lt;p&gt;الأبحاث الحديثة تؤكد العلاقة القوية بين جودة النوم والصحة العقلية، وتقدم نصائح عملية لتحسين نوعية النوم.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>التغذية السليمة: مفتاح الوقاية من الأمراض</title>
+      <link>http://localhost:1313/posts/health-nutrition/</link>
+      <pubDate>Wed, 26 Nov 2025 13:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/health-nutrition/</guid>
+      <description>&lt;p&gt;خبراء التغذية يشددون على أهمية النظام الغذائي المتوازن في الوقاية من الأمراض المزمنة وتعزيز المناعة.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>الرياضة اليومية: 30 دقيقة تحدث الفرق</title>
+      <link>http://localhost:1313/posts/health-exercise/</link>
+      <pubDate>Tue, 25 Nov 2025 10:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/health-exercise/</guid>
+      <description>&lt;p&gt;دراسات علمية تثبت أن ممارسة الرياضة لمدة 30 دقيقة يومياً كافية لتحسين الصحة العامة والوقاية من العديد من الأمراض.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

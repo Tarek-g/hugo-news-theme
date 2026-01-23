@@ -3,22 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2026-01-22T18:19:51&#43;01:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-23T16:08:26&#43;01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   
   <url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2026-01-22T18:00:00&#43;03:00</lastmod>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-01-23T12:00:00&#43;03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://example.org/opinion/</loc>
+    <loc>http://localhost:1313/opinion/</loc>
     <lastmod>2025-11-26T14:30:00&#43;01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -27,231 +27,238 @@
   
   
   <url>
-    <loc>http://example.org/posts/new-1/</loc>
+    <loc>http://localhost:1313/posts/test-table-of-contents/</loc>
+    <lastmod>2026-01-23T12:00:00&#43;03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/posts/new-1/</loc>
     <lastmod>2026-01-22T18:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/new-2/</loc>
+    <loc>http://localhost:1313/posts/new-2/</loc>
     <lastmod>2026-01-22T17:30:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/new-3/</loc>
+    <loc>http://localhost:1313/posts/new-3/</loc>
     <lastmod>2026-01-22T16:45:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/new-4/</loc>
+    <loc>http://localhost:1313/posts/new-4/</loc>
     <lastmod>2026-01-22T15:20:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/new-5/</loc>
+    <loc>http://localhost:1313/posts/new-5/</loc>
     <lastmod>2026-01-22T14:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/new-6/</loc>
+    <loc>http://localhost:1313/posts/new-6/</loc>
     <lastmod>2026-01-22T12:30:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/new-7/</loc>
+    <loc>http://localhost:1313/posts/new-7/</loc>
     <lastmod>2026-01-22T11:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/new-8/</loc>
+    <loc>http://localhost:1313/posts/new-8/</loc>
     <lastmod>2026-01-22T09:15:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/tech-ai-industry/</loc>
+    <loc>http://localhost:1313/posts/tech-ai-industry/</loc>
     <lastmod>2025-11-27T10:15:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/science-planet/</loc>
+    <loc>http://localhost:1313/posts/science-planet/</loc>
     <lastmod>2025-11-27T09:00:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/health-sleep/</loc>
+    <loc>http://localhost:1313/posts/health-sleep/</loc>
     <lastmod>2025-11-27T08:30:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/tech-ar-apps/</loc>
+    <loc>http://localhost:1313/posts/tech-ar-apps/</loc>
     <lastmod>2025-11-26T16:20:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/opinion/opinion-3/</loc>
+    <loc>http://localhost:1313/opinion/opinion-3/</loc>
     <lastmod>2025-11-26T14:30:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/health-nutrition/</loc>
+    <loc>http://localhost:1313/posts/health-nutrition/</loc>
     <lastmod>2025-11-26T13:00:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/science-water/</loc>
+    <loc>http://localhost:1313/posts/science-water/</loc>
     <lastmod>2025-11-26T11:30:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/science-climate/</loc>
+    <loc>http://localhost:1313/posts/science-climate/</loc>
     <lastmod>2025-11-25T15:45:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/tech-quantum/</loc>
+    <loc>http://localhost:1313/posts/tech-quantum/</loc>
     <lastmod>2025-11-25T14:00:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/health-exercise/</loc>
+    <loc>http://localhost:1313/posts/health-exercise/</loc>
     <lastmod>2025-11-25T10:00:00&#43;01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2024-12-11T00:00:00&#43;00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-12-11T00:00:00&#43;00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/news-1/</loc>
+    <loc>http://localhost:1313/posts/news-1/</loc>
     <lastmod>2023-11-26T10:30:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/featured-story/</loc>
+    <loc>http://localhost:1313/posts/featured-story/</loc>
     <lastmod>2023-11-26T10:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/news-2/</loc>
+    <loc>http://localhost:1313/posts/news-2/</loc>
     <lastmod>2023-11-26T09:15:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/opinion/opinion-2/</loc>
+    <loc>http://localhost:1313/opinion/opinion-2/</loc>
     <lastmod>2023-11-26T09:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/opinion/opinion-1/</loc>
+    <loc>http://localhost:1313/opinion/opinion-1/</loc>
     <lastmod>2023-11-26T09:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/sub-featured-1/</loc>
+    <loc>http://localhost:1313/posts/sub-featured-1/</loc>
     <lastmod>2023-11-26T08:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/sub-featured-2/</loc>
+    <loc>http://localhost:1313/posts/sub-featured-2/</loc>
     <lastmod>2023-11-26T06:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/sub-featured-3/</loc>
+    <loc>http://localhost:1313/posts/sub-featured-3/</loc>
     <lastmod>2023-11-25T14:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/sub-featured-4/</loc>
+    <loc>http://localhost:1313/posts/sub-featured-4/</loc>
     <lastmod>2023-11-25T12:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/news-3/</loc>
+    <loc>http://localhost:1313/posts/news-3/</loc>
     <lastmod>2023-11-25T10:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/tech-news/</loc>
+    <loc>http://localhost:1313/posts/tech-news/</loc>
     <lastmod>2023-10-27T10:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/sports-update/</loc>
+    <loc>http://localhost:1313/posts/sports-update/</loc>
     <lastmod>2023-10-26T20:30:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.org/opinion/editorial/</loc>
+    <loc>http://localhost:1313/opinion/editorial/</loc>
     <lastmod>2023-10-25T09:00:00&#43;03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

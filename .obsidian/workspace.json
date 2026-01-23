@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "1b9207ff2500e55b",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a3e4d993793b027",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a93d2ae0ee43e13",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db21f290d1890cfd",
+    "type": "split",
+    "children": [
+      {
+        "id": "d61199926f07e98f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13180d2f98155c88",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4ed8a07b6c56eb35",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f4de73aba7002595",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b2af6d59d4c38e59",
+    "type": "split",
+    "children": [
+      {
+        "id": "035d8b31d8f5138c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2151392d89e94e7f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "61e2582700cb2b00",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "39446df9c60c64e8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8db1e064ec68aa7e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "38af2b6b3a6a2ab3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Clippings/كيف سخّرت حركة الشباب الصومالية الذكاء الاصطناعي لـ''التجنيد وتفخيخ العقول''؟ - رصيف22.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of كيف سخّرت حركة الشباب الصومالية الذكاء الاصطناعي لـ''التجنيد وتفخيخ العقول''؟ - رصيف22"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "13180d2f98155c88",
+  "lastOpenFiles": [
+    "Clippings/كيف سخّرت حركة الشباب الصومالية الذكاء الاصطناعي لـ''التجنيد وتفخيخ العقول''؟ - رصيف22.md",
+    "Clippings",
+    "docs/updates/README.md",
+    "README.md",
+    "QUICK_START.md",
+    "docs/updates/VERIFICATION_CHECKLIST.md",
+    "docs/updates/TEST_REPORT.md",
+    "docs/updates/TABLE_OF_CONTENTS_FIX.md",
+    "docs/updates/SUMMARY_OF_CHANGES.md",
+    "docs/updates/START_HERE.md",
+    "docs/updates/README_UPDATES.md",
+    "docs/updates/QUICK_START.md",
+    "docs/updates/IMPROVEMENTS_IMPLEMENTED.md",
+    "docs/updates/FINAL_SUMMARY.md",
+    "docs/updates/EDITOR_GUIDE.md",
+    "docs/updates/ARTICLE_PAGE_IMPROVEMENTS.md",
+    "docs/updates",
+    "hugo-news-theme/public/css/main.d9a4fda0f9ca3329141cba1e5250149f9926311685d26e448e066b1fc6b4498c.css",
+    "dist/index.js",
+    "dist/public/index.html",
+    "dist/public/assets/index-DVVpJngq.js",
+    "dist/public/assets/index-ClyRMR4V.css",
+    "dist/public/assets",
+    "dist/public/hugo-theme/layouts/partials/footer.html",
+    "dist/public/hugo-theme/layouts/partials/head.html",
+    "dist/public/favicon.png",
+    "TABLE_OF_CONTENTS_FIX.md",
+    "IMPROVEMENTS_IMPLEMENTED.md",
+    "ARTICLE_PAGE_IMPROVEMENTS.md",
+    "EDITOR_GUIDE.md",
+    "FINAL_SUMMARY.md",
+    "START_HERE.md"
+  ]
+}

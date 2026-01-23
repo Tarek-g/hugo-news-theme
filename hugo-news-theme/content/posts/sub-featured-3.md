@@ -2,9 +2,7 @@
 title: "الاستثمار في الطاقة المتجددة: فرص واعدة للمستقبل"
 date: 2023-11-25T14:00:00+03:00
 draft: false
-categories: ["economy"]
-sub_featured: true
-category: "اقتصاد"
+categories: ["اقتصاد"]
 author: "خبير اقتصادي"
 ---
 

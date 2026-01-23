@@ -2,9 +2,7 @@
 title: "قمة المناخ تخرج بتوصيات تاريخية للحفاظ على البيئة"
 date: 2023-11-26T10:00:00+03:00
 draft: false
-categories: ["politics"]
-featured: true
-category: "سياسة"
+categories: ["سياسة"]
 author: "أحمد محمد"
 ---
 

@@ -34,7 +34,7 @@
                 <a href="{{ .RelPermalink }}">
                     <div class="flex items-center gap-2 mb-4">
                         <span class="bg-primary text-primary-foreground px-3 py-1 text-sm font-bold rounded-sm">{{
-                            .Params.category }}</span>
+                            index .Params.categories 0 }}</span>
                         {{ if $section.featured.show_date }}<span class="text-muted-foreground text-sm">{{ .Date.Format
                             "2006-01-02"
                             }}</span>{{ end }}
@@ -67,7 +67,7 @@
                         <div class="flex items-center gap-2 mb-3">
                             <span
                                 class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">{{
-                                .Params.category }}</span>
+                                index .Params.categories 0 }}</span>
                             <span class="text-muted-foreground text-xs">{{ .Date.Format "2006-01-02" }}</span>
                         </div>
                         <h3 class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">
@@ -116,7 +116,7 @@
                     <div class="flex justify-between items-start gap-4 group cursor-pointer">
                         <a href="{{ .RelPermalink }}" class="block w-full">
                             <div>
-                                <span class="text-xs font-bold text-primary/80 block mb-1">{{ .Params.category }}</span>
+                                <span class="text-xs font-bold text-primary/80 block mb-1">{{ index .Params.categories 0 }}</span>
                                 <h6 class="font-medium leading-snug group-hover:text-primary transition-colors">{{
                                     .Title }}</h6>
                             </div>
@@ -160,12 +160,12 @@
         <div>
             <h4 class="text-2xl font-black mb-6 pb-2 border-b border-border flex justify-between items-end">
                 {{ $catName }}
-                <a href="/categories/{{ $catName }}"
+                <a href="/ar/categories/{{ $catName | urlize }}/"
                     class="text-sm font-normal text-muted-foreground cursor-pointer hover:text-primary transition-colors">عرض
                     الكل</a>
             </h4>
             <div class="space-y-8">
-                {{ $catPosts := first $count (where $.Site.RegularPages "Params.category" $catName) }}
+                {{ $catPosts := first $count (where $.Site.RegularPages "Params.categories" "intersect" (slice $catName)) }}
                 {{ range $catPosts }}
                 <div class="group cursor-pointer">
                     <a href="{{ .RelPermalink }}">

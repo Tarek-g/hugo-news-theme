@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>حوسبة كمومية on Arabic News Portal</title>
-    <link>http://example.org/tags/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9-%D9%83%D9%85%D9%88%D9%85%D9%8A%D8%A9/</link>
+    <link>http://localhost:1313/tags/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9-%D9%83%D9%85%D9%88%D9%85%D9%8A%D8%A9/</link>
     <description>Recent content in حوسبة كمومية on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar-sa</language>
     <lastBuildDate>Tue, 25 Nov 2025 14:00:00 +0100</lastBuildDate>
-    <atom:link href="http://example.org/tags/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9-%D9%83%D9%85%D9%88%D9%85%D9%8A%D8%A9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9-%D9%83%D9%85%D9%88%D9%85%D9%8A%D8%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>الحوسبة الكمومية: المستقبل القريب</title>
-      <link>http://example.org/posts/tech-quantum/</link>
+      <link>http://localhost:1313/posts/tech-quantum/</link>
       <pubDate>Tue, 25 Nov 2025 14:00:00 +0100</pubDate>
-      <guid>http://example.org/posts/tech-quantum/</guid>
+      <guid>http://localhost:1313/posts/tech-quantum/</guid>
       <description>&lt;p&gt;الحوسبة الكمومية تقترب من أن تصبح واقعاً عملياً، مما سيحدث ثورة في معالجة البيانات وحل المشكلات المعقدة.&lt;/p&gt;</description>
     </item>
   </channel>

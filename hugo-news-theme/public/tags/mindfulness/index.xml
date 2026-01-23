@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mindfulness on Arabic News Portal</title>
-    <link>http://example.org/tags/mindfulness/</link>
+    <link>http://localhost:1313/tags/mindfulness/</link>
     <description>Recent content in Mindfulness on Arabic News Portal</description>
     <generator>Hugo</generator>
     <language>ar-sa</language>
     <lastBuildDate>Wed, 25 Oct 2023 09:00:00 +0300</lastBuildDate>
-    <atom:link href="http://example.org/tags/mindfulness/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mindfulness/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>أهمية القراءة في عصر السرعة</title>
-      <link>http://example.org/opinion/editorial/</link>
+      <link>http://localhost:1313/opinion/editorial/</link>
       <pubDate>Wed, 25 Oct 2023 09:00:00 +0300</pubDate>
-      <guid>http://example.org/opinion/editorial/</guid>
+      <guid>http://localhost:1313/opinion/editorial/</guid>
       <description>&lt;p&gt;في ظل تسارع وتيرة الحياة وهيمنة وسائل التواصل الاجتماعي، يبدو أن عادة القراءة العميقة بدأت تتلاشى تدريجياً. نحن نستهلك كميات هائلة من المعلومات يومياً، ولكن هل نقرأ حقاً؟&lt;/p&gt;&#xA;&lt;h2 id=&#34;القراءة-كغذاء-للروح&#34;&gt;القراءة كغذاء للروح&lt;/h2&gt;&#xA;&lt;p&gt;القراءة ليست مجرد وسيلة للحصول على المعلومات، بل هي تمرين للعقل وتهذيب للنفس. الكتاب الجيد يأخذك في رحلة إلى عوالم أخرى، ويمنحك فرصة لعيش تجارب لم تمر بها من قبل.&lt;/p&gt;&#xA;&lt;h2 id=&#34;التحدي-الرقمي&#34;&gt;التحدي الرقمي&lt;/h2&gt;&#xA;&lt;p&gt;التحدي الأكبر الذي يواجهنا اليوم هو تشتت الانتباه. الإشعارات المستمرة والمحتوى القصير السريع يجعل من الصعب التركيز على كتاب واحد لفترة طويلة. لكن هذا بالضبط ما نحتاجه: التباطؤ والتركيز.&lt;/p&gt;</description>
     </item>
   </channel>

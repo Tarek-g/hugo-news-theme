@@ -2,9 +2,7 @@
 title: "نهائي الكأس: مباراة للتاريخ وتنظيم استثنائي"
 date: 2023-10-26T20:30:00+03:00
 draft: false
-categories: ["sports"]
-category: "رياضة"
-sub_featured: true
+categories: ["رياضة"]
 tags: ["Football", "Championship", "Local"]
 author: "سارة علي"
 description: "تغطية شاملة لأحداث المباراة النهائية للكأس، واللحظات الحاسمة التي غيرت مجرى اللعب."

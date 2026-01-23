@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>بيئة on Arabic News Portal</title>
+    <link>http://localhost:1313/categories/%D8%A8%D9%8A%D8%A6%D8%A9/</link>
+    <description>Recent content in بيئة on Arabic News Portal</description>
+    <generator>Hugo</generator>
+    <language>ar-sa</language>
+    <lastBuildDate>Thu, 22 Jan 2026 14:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%D8%A8%D9%8A%D8%A6%D8%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>إطلاق مبادرة وطنية لتشجير المدن الكبرى</title>
+      <link>http://localhost:1313/posts/new-5/</link>
+      <pubDate>Thu, 22 Jan 2026 14:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/new-5/</guid>
+      <description>&lt;p&gt;أعلنت وزارة البيئة عن إطلاق مبادرة وطنية طموحة لزراعة مليون شجرة في المدن الكبرى خلال العامين القادمين.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

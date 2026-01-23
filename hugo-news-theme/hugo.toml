@@ -94,35 +94,35 @@ paginate = 20
     weight = 10
   [[menus.main]]
     name = 'سياسة'
-    url = '/categories/politics'
+    url = '/categories/سياسة/'
     weight = 20
   [[menus.main]]
     name = 'اقتصاد'
-    url = '/categories/economy'
+    url = '/categories/اقتصاد/'
     weight = 30
   [[menus.main]]
     name = 'رياضة'
-    url = '/categories/sports'
+    url = '/categories/رياضة/'
     weight = 40
   [[menus.main]]
     name = 'ثقافة'
-    url = '/categories/culture'
+    url = '/categories/ثقافة/'
     weight = 50
   [[menus.main]]
     name = 'تكنولوجيا'
-    url = '/categories/technology'
+    url = '/categories/تكنولوجيا/'
     weight = 60
   [[menus.main]]
     name = 'آراء'
-    url = '/opinion'
+    url = '/opinion/'
     weight = 70
   [[menus.main]]
     name = 'من نحن'
-    url = '/about'
+    url = '/about/'
     weight = 80
   [[menus.main]]
     name = 'اتصل بنا'
-    url = '/contact'
+    url = '/contact/'
     weight = 90
 
   # Top Bar Menu
@@ -159,6 +159,7 @@ paginate = 20
     show_ads = true
     show_tags = true
     show_recent = true
+    max_tags = 15           # أقصى عدد للوسوم المعروضة
 
 [taxonomies]
   category = "categories"

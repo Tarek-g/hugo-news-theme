@@ -2,9 +2,7 @@
 title: "تطورات جديدة في عالم السيارات الكهربائية"
 date: 2023-11-25T12:00:00+03:00
 draft: false
-categories: ["technology"]
-sub_featured: true
-category: "تكنولوجيا"
+categories: ["تكنولوجيا"]
 author: "محرر السيارات"
 ---
 

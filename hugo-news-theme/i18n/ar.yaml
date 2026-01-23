@@ -16,3 +16,13 @@ minute:
   other: "دقيقة"
 by:
   other: "بقلـم"
+table_of_contents:
+  other: "محتويات المقال"
+author_bio:
+  other: "متخصص في الأخبار والتقارير الحصرية والمحتوى الجودة."
+newsletter_title:
+  other: "هل أعجبك هذا المقال؟"
+newsletter_description:
+  other: "اشترك في النشرة البريدية لتلقي أحدث الأخبار والمقالات الحصرية"
+subscribe:
+  other: "اشترك الآن"

@@ -2,9 +2,7 @@
 title: "ثورة الذكاء الاصطناعي: كيف تغير التكنولوجيا حياتنا اليومية"
 date: 2023-10-27T10:00:00+03:00
 draft: false
-categories: ["technology"]
-category: "تكنولوجيا"
-featured: true
+categories: ["تكنولوجيا"]
 tags: ["AI", "Future", "Innovation"]
 author: "أحمد محمد"
 description: "استكشاف تأثير الذكاء الاصطناعي المتزايد على مختلف جوانب حياتنا، من العمل إلى الترفيه."
