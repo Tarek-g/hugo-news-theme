@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fix for TOC navigation with sticky header */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* Accounts for sticky header height (~49px) + padding */
+}
+
 @layer base {
   :root {
     /* Light Mode: Blue & Slate */
@@ -95,6 +102,8 @@
     @apply font-bold tracking-tight;
     font-family: var(--font-sans) !important;
     /* Enforce Heading Font */
+    scroll-margin-top: 80px;
+    /* Fix for TOC with sticky header */
   }
 }
 

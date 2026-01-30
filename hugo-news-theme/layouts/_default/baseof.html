@@ -23,27 +23,57 @@
             
             if (!tocDesktop || !tocSticky) return;
             
-            const triggerPoint = tocDesktop.offsetTop + tocDesktop.offsetHeight;
+            // Calculate trigger point once - based on the bottom of toc-desktop
+            const tocDesktopRect = tocDesktop.getBoundingClientRect();
+            const triggerPoint = window.scrollY + tocDesktopRect.bottom;
             
-            // Scroll event to show/hide sticky TOC
+            let isSticky = false;
+            let ticking = false;
+            
+            // Scroll event with throttling to prevent flickering
+            function updateTocVisibility() {
+                const shouldBeSticky = window.scrollY > triggerPoint;
+                
+                // Only update if state actually changed
+                if (shouldBeSticky !== isSticky) {
+                    isSticky = shouldBeSticky;
+                    
+                    if (isSticky) {
+                        // Use visibility instead of display to preserve layout
+                        tocDesktop.style.visibility = 'hidden';
+                        tocDesktop.style.opacity = '0';
+                        tocSticky.classList.remove('hidden');
+                    } else {
+                        tocDesktop.style.visibility = 'visible';
+                        tocDesktop.style.opacity = '1';
+                        tocSticky.classList.add('hidden');
+                    }
+                }
+                ticking = false;
+            }
+            
             window.addEventListener('scroll', () => {
-                if (window.scrollY > triggerPoint) {
-                    tocDesktop.style.display = 'none';
-                    tocSticky.classList.remove('hidden');
-                } else {
-                    tocDesktop.style.display = 'block';
-                    tocSticky.classList.add('hidden');
+                if (!ticking) {
+                    requestAnimationFrame(updateTocVisibility);
+                    ticking = true;
                 }
             });
             
-            // Hover event for sticky TOC
-            tocStickyHeader.addEventListener('mouseenter', () => {
-                tocStickyContent.classList.remove('hidden');
-            });
+            // Initial check
+            updateTocVisibility();
             
-            tocSticky.addEventListener('mouseleave', () => {
-                tocStickyContent.classList.add('hidden');
-            });
+            // Hover event for sticky TOC
+            if (tocStickyHeader) {
+                tocStickyHeader.addEventListener('mouseenter', () => {
+                    tocStickyContent.classList.remove('hidden');
+                });
+            }
+            
+            if (tocSticky) {
+                tocSticky.addEventListener('mouseleave', () => {
+                    tocStickyContent.classList.add('hidden');
+                });
+            }
         });
     </script>
 </body>
