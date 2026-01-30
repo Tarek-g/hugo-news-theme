@@ -4,13 +4,13 @@
     {{/* --- جلب كل المقالات مرة واحدة مرتبة بالتاريخ --- */}}
     {{ $allPosts := where .Site.RegularPages "Section" "posts" }}
     {{ $opinionPosts := where .Site.RegularPages "Section" "opinion" }}
-    
+
     {{/* --- إعدادات الصفحة الرئيسية --- */}}
     {{ $heroCount := site.Params.homepage.hero_count | default 1 }}
     {{ $subCount := site.Params.homepage.sub_count | default 4 }}
     {{ $sidebarLatestCount := site.Params.homepage.sidebar_latest_count | default 5 }}
     {{ $opinionCount := site.Params.homepage.opinion_count | default 4 }}
-    
+
     {{/* --- تقسيم المقالات بدون تكرار --- */}}
     {{ $heroPosts := first $heroCount $allPosts }}
     {{ $afterHero := after $heroCount $allPosts }}
@@ -26,21 +26,27 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
 
         {{/* Main Featured Area */}}
-        <div class="{{ if .sidebar.enable }}lg:col-span-8{{ else }}col-span-12{{ end }}">
-            
+        <div class="{{ if .sidebar.enable }}lg:col-span-8{{ else }}col-span-12{{ end }} stagger-container">
+
             {{/* المقال الرئيسي - أحدث مقال */}}
             {{ range $heroPosts }}
-            <div class="group cursor-pointer">
-                <a href="{{ .RelPermalink }}">
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="bg-primary text-primary-foreground px-3 py-1 text-sm font-bold rounded-sm">{{
+            <div class="group cursor-pointer relative">
+                <!-- Premium gradient background -->
+                <div
+                    class="absolute -inset-4 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+
+                <a href="{{ .RelPermalink }}" class="relative block">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span
+                            class="bg-primary text-primary-foreground px-4 py-1.5 text-sm font-bold rounded-sm shadow-glow">{{
                             index .Params.categories 0 }}</span>
-                        {{ if $section.featured.show_date }}<span class="text-muted-foreground text-sm">{{ .Date.Format
-                            "2006-01-02"
-                            }}</span>{{ end }}
+                        {{ if $section.featured.show_date }}
+                        <span class="text-muted-foreground text-sm font-mono">{{ .Date.Format "2006-01-02" }}</span>
+                        {{ end }}
                     </div>
                     <h2
-                        class="text-4xl md:text-6xl font-black leading-tight mb-6 group-hover:text-primary transition-colors">
+                        class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 group-hover:text-primary transition-colors duration-300 tracking-tight">
                         {{ .Title }}
                     </h2>
                     {{ if $section.featured.show_summary }}
@@ -50,6 +56,7 @@
                     {{ end }}
                     {{ if $section.featured.show_author }}
                     <div class="flex items-center gap-2 text-sm font-bold text-primary">
+                        <span class="w-8 h-0.5 bg-primary"></span>
                         <span>بقلـم: {{ .Params.author }}</span>
                     </div>
                     {{ end }}
@@ -57,20 +64,21 @@
             </div>
             {{ end }}
 
-            <div class="my-12 h-[1px] bg-border w-full"></div>
+            <div class="my-12 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
 
             {{/* المقالات الفرعية - المقالات التالية */}}
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {{ range $subPosts }}
-                <div class="group cursor-pointer">
+                <div class="group cursor-pointer glass-card p-6 hover-lift">
                     <a href="{{ .RelPermalink }}">
                         <div class="flex items-center gap-2 mb-3">
                             <span
-                                class="text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-0.5 rounded-sm">{{
+                                class="text-xs font-bold uppercase tracking-wider text-primary border border-primary/30 px-2 py-0.5 rounded-sm group-hover:border-primary group-hover:bg-primary/10 transition-all duration-300">{{
                                 index .Params.categories 0 }}</span>
-                            <span class="text-muted-foreground text-xs">{{ .Date.Format "2006-01-02" }}</span>
+                            <span class="text-muted-foreground text-xs font-mono">{{ .Date.Format "2006-01-02" }}</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">
+                        <h3
+                            class="text-2xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors duration-300">
                             {{ .Title }}
                         </h3>
                         <p class="text-muted-foreground font-serif leading-relaxed">
@@ -84,20 +92,21 @@
 
         {{/* Sidebar Area */}}
         {{ if .sidebar.enable }}
-        <div class="lg:col-span-4 flex flex-col gap-12 border-r border-border pr-0 lg:pr-12">
+        <div class="lg:col-span-4 flex flex-col gap-12 lg:border-r border-border lg:pr-12">
 
-            {{/* Opinion Widget */}}
+            {{/* Opinion Widget - Glass */}}
             {{ with .sidebar.opinion }}
-            <div>
+            <div class="glass-card p-6">
                 <h4 class="text-2xl font-black mb-6 pb-2 border-b-4 border-primary inline-block">{{ .title }}</h4>
-                <div class="space-y-6">
+                <div class="space-y-6 stagger-container">
                     {{ range first $opinionCount $opinionPosts }}
-                    <div class="group cursor-pointer border-b border-border pb-4 last:border-0">
+                    <div class="group cursor-pointer border-b border-border/50 pb-4 last:border-0 last:pb-0">
                         <a href="{{ .RelPermalink }}">
-                            <h5 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+                            <h5 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors duration-300">
                                 {{ .Title }}
                             </h5>
-                            <span class="text-sm text-muted-foreground font-serif italic">
+                            <span class="text-sm text-muted-foreground font-serif italic flex items-center gap-2">
+                                <span class="w-4 h-0.5 bg-primary/50"></span>
                                 {{ .Params.author }}
                             </span>
                         </a>
@@ -107,17 +116,24 @@
             </div>
             {{ end }}
 
-            {{/* Latest News Widget - مقالات مختلفة */}}
+            {{/* Latest News Widget - Premium Glass */}}
             {{ with .sidebar.latest }}
-            <div class="bg-secondary/50 p-6 rounded-sm border border-border">
-                <h4 class="text-xl font-black mb-6 text-primary">{{ .title }}</h4>
+            <div class="glass-elevated p-6 rounded-lg">
+                <h4 class="text-xl font-black mb-6 text-primary flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-glow-pulse"></span>
+                    {{ .title }}
+                </h4>
                 <div class="space-y-4">
                     {{ range $sidebarPosts }}
-                    <div class="flex justify-between items-start gap-4 group cursor-pointer">
+                    <div
+                        class="flex justify-between items-start gap-4 group cursor-pointer p-3 -mx-3 rounded-lg hover:bg-glass-hover transition-colors duration-300">
                         <a href="{{ .RelPermalink }}" class="block w-full">
                             <div>
-                                <span class="text-xs font-bold text-primary/80 block mb-1">{{ index .Params.categories 0 }}</span>
-                                <h6 class="font-medium leading-snug group-hover:text-primary transition-colors">{{
+                                <span class="text-xs font-bold text-primary/80 block mb-1">{{ index .Params.categories 0
+                                    }}</span>
+                                <h6
+                                    class="font-medium leading-snug group-hover:text-primary transition-colors duration-300">
+                                    {{
                                     .Title }}</h6>
                             </div>
                             <span
@@ -128,7 +144,7 @@
                     {{ end }}
                 </div>
                 <a href="/posts/"
-                    class="block w-full mt-6 border border-primary text-primary py-3 text-sm font-bold hover:bg-primary hover:text-primary-foreground transition-colors uppercase tracking-widest rounded-sm text-center">
+                    class="block w-full mt-6 neon-border text-primary py-3 text-sm font-bold hover:bg-primary hover:text-primary-foreground transition-all duration-300 uppercase tracking-widest rounded-sm text-center">
                     المزيد من الأخبار
                 </a>
             </div>
@@ -139,37 +155,53 @@
     </div>
     {{ end }}
 
-    {{/* --- QUOTE SECTION --- */}}
+    {{/* --- QUOTE SECTION - Premium with neon --- */}}
     {{ if eq .type "quote" }}
-    <div class="border-y-4 border-primary/20 py-16 text-center my-20 bg-secondary/10">
-        <h3 class="text-3xl md:text-5xl font-black leading-tight max-w-4xl mx-auto text-primary">
-            "{{ .text }}"
-        </h3>
-        {{ with .author }}
-        <p class="mt-4 text-muted-foreground font-serif italic">- {{ . }}</p>
-        {{ end }}
+    <div class="relative border-y-2 border-primary/20 py-20 text-center my-20 overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-primary/5"></div>
+        <div class="absolute inset-0 tech-grid opacity-30"></div>
+
+        <div class="relative z-10">
+            <h3 class="text-3xl md:text-5xl font-black leading-tight max-w-4xl mx-auto text-primary neon-text">
+                "{{ .text }}"
+            </h3>
+            {{ with .author }}
+            <p class="mt-6 text-muted-foreground font-serif italic flex items-center justify-center gap-3">
+                <span class="w-8 h-0.5 bg-primary/50"></span>
+                {{ . }}
+                <span class="w-8 h-0.5 bg-primary/50"></span>
+            </p>
+            {{ end }}
+        </div>
     </div>
     {{ end }}
 
-    {{/* --- CATEGORY GRID SECTION --- */}}
+    {{/* --- CATEGORY GRID SECTION - Staggered with glass --- */}}
     {{ if eq .type "grid" }}
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
         {{ $count := .count_per_category | default 3 }}
         {{ range .categories }}
         {{ $catName := . }}
-        <div>
+        <div class="glass-card p-6">
             <h4 class="text-2xl font-black mb-6 pb-2 border-b border-border flex justify-between items-end">
-                {{ $catName }}
+                <span class="text-foreground">{{ $catName }}</span>
                 <a href="/ar/categories/{{ $catName | urlize }}/"
-                    class="text-sm font-normal text-muted-foreground cursor-pointer hover:text-primary transition-colors">عرض
-                    الكل</a>
+                    class="text-sm font-normal text-muted-foreground cursor-pointer hover:text-primary transition-colors duration-300 group">
+                    عرض الكل
+                    <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">←</span>
+                </a>
             </h4>
-            <div class="space-y-8">
-                {{ $catPosts := first $count (where $.Site.RegularPages "Params.categories" "intersect" (slice $catName)) }}
+            <div class="space-y-6 stagger-container">
+                {{ $catPosts := first $count (where $.Site.RegularPages "Params.categories" "intersect" (slice
+                $catName)) }}
                 {{ range $catPosts }}
-                <div class="group cursor-pointer">
+                <div
+                    class="group cursor-pointer p-3 -mx-3 rounded-lg hover:bg-glass-hover transition-colors duration-300">
                     <a href="{{ .RelPermalink }}">
-                        <h5 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors leading-snug">{{
+                        <h5
+                            class="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
+                            {{
                             .Title }}</h5>
                         <p class="text-muted-foreground text-sm font-serif line-clamp-2">
                             {{ .Summary | truncate 80 }}

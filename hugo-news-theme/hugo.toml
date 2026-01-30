@@ -19,7 +19,7 @@ direction = 'rtl'
   # Site Fonts
   [params.fonts]
     # Google Fonts URL (Load all weights needed)
-    google_fonts_url = "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    google_fonts_url = "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
     
     # Font Families (CSS values)
     heading_font = "'IBM Plex Sans Arabic', sans-serif"

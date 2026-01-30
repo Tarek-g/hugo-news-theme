@@ -1,26 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ابتكار on Arabic News Portal</title>
-    <link>http://localhost:1313/tags/%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1/</link>
-    <description>Recent content in ابتكار on Arabic News Portal</description>
-    <generator>Hugo</generator>
-    <language>ar-sa</language>
-    <lastBuildDate>Fri, 23 Jan 2026 12:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>اختبار جدول المحتويات - الذكاء الاصطناعي والمستقبل</title>
-      <link>http://localhost:1313/posts/test-table-of-contents/</link>
-      <pubDate>Fri, 23 Jan 2026 12:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/test-table-of-contents/</guid>
-      <description>&lt;p&gt;مقدمة عن الموضوع: الذكاء الاصطناعي أصبح جزءاً من حياتنا اليومية، ويتطور بسرعة فائقة. في هذا المقال سنستكشف تطبيقاته المختلفة وتأثيره على المستقبل.&lt;/p&gt;&#xA;&lt;h2 id=&#34;تعريف-الذكاء-الاصطناعي&#34;&gt;تعريف الذكاء الاصطناعي&lt;/h2&gt;&#xA;&lt;p&gt;الذكاء الاصطناعي (AI) هو مجال من علوم الحاسوب يهدف إلى إنشاء أنظمة قادرة على أداء مهام تتطلب عادة ذكاءً بشرياً. تشمل هذه المهام التعلم من التجارب، التعرف على الأنماط، وفهم اللغة الطبيعية.&lt;/p&gt;&#xA;&lt;p&gt;يعتمد الذكاء الاصطناعي على خوارزميات معقدة وكميات ضخمة من البيانات لتدريب النماذج التي تحسّن أدائها بمرور الوقت.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>علماء يطورون طريقة جديدة لتنقية الماء</title>
-      <link>http://localhost:1313/posts/science-water/</link>
-      <pubDate>Wed, 26 Nov 2025 11:30:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/science-water/</guid>
-      <description>&lt;p&gt;تقنية جديدة ومبتكرة لتنقية المياه باستخدام مواد نانوية قد تحل أزمة المياه النظيفة في العديد من المناطق حول العالم.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ابتكار on Arabic News Portal</title><link>http://example.org/tags/%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1/</link><description>Recent content in ابتكار on Arabic News Portal</description><generator>Hugo</generator><language>ar-sa</language><lastBuildDate>Fri, 23 Jan 2026 12:00:00 +0300</lastBuildDate><atom:link href="http://example.org/tags/%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>اختبار جدول المحتويات - الذكاء الاصطناعي والمستقبل</title><link>http://example.org/posts/test-table-of-contents/</link><pubDate>Fri, 23 Jan 2026 12:00:00 +0300</pubDate><guid>http://example.org/posts/test-table-of-contents/</guid><description>&lt;p&gt;مقدمة عن الموضوع: الذكاء الاصطناعي أصبح جزءاً من حياتنا اليومية، ويتطور بسرعة فائقة. في هذا المقال سنستكشف تطبيقاته المختلفة وتأثيره على المستقبل.&lt;/p&gt;
+&lt;h2 id="تعريف-الذكاء-الاصطناعي"&gt;تعريف الذكاء الاصطناعي&lt;/h2&gt;
+&lt;p&gt;الذكاء الاصطناعي (AI) هو مجال من علوم الحاسوب يهدف إلى إنشاء أنظمة قادرة على أداء مهام تتطلب عادة ذكاءً بشرياً. تشمل هذه المهام التعلم من التجارب، التعرف على الأنماط، وفهم اللغة الطبيعية.&lt;/p&gt;
+&lt;p&gt;يعتمد الذكاء الاصطناعي على خوارزميات معقدة وكميات ضخمة من البيانات لتدريب النماذج التي تحسّن أدائها بمرور الوقت.&lt;/p&gt;</description></item><item><title>علماء يطورون طريقة جديدة لتنقية الماء</title><link>http://example.org/posts/science-water/</link><pubDate>Wed, 26 Nov 2025 11:30:00 +0100</pubDate><guid>http://example.org/posts/science-water/</guid><description>&lt;p&gt;تقنية جديدة ومبتكرة لتنقية المياه باستخدام مواد نانوية قد تحل أزمة المياه النظيفة في العديد من المناطق حول العالم.&lt;/p&gt;</description></item></channel></rss>

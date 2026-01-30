@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>سياسة on Arabic News Portal</title>
-    <link>http://localhost:1313/categories/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/</link>
-    <description>Recent content in سياسة on Arabic News Portal</description>
-    <generator>Hugo</generator>
-    <language>ar-sa</language>
-    <lastBuildDate>Thu, 22 Jan 2026 18:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>اجتماع وزراء الخارجية العرب لبحث التطورات الإقليمية</title>
-      <link>http://localhost:1313/posts/new-1/</link>
-      <pubDate>Thu, 22 Jan 2026 18:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/new-1/</guid>
-      <description>&lt;p&gt;عقد وزراء الخارجية العرب اجتماعاً طارئاً في القاهرة لمناقشة آخر التطورات الإقليمية والتحديات المشتركة التي تواجه المنطقة العربية.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>قمة المناخ تخرج بتوصيات تاريخية للحفاظ على البيئة</title>
-      <link>http://localhost:1313/posts/featured-story/</link>
-      <pubDate>Sun, 26 Nov 2023 10:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/featured-story/</guid>
-      <description>&lt;p&gt;بعد مفاوضات استمرت لأسبوعين، توصل قادة العالم إلى اتفاق شامل يهدف إلى خفض الانبعاثات الكربونية بنسبة 50% بحلول عام 2030. الاتفاق يُعد خطوة محورية في جهود مكافحة التغير المناخي.&lt;/p&gt;&#xA;&lt;p&gt;شهدت القمة العالمية للمناخ نقاشات مكثفة بين ممثلي أكثر من 190 دولة، تمحورت حول ضرورة اتخاذ إجراءات عاجلة للحد من تداعيات التغير المناخي. وقد أكد المشاركون على أهمية التعاون الدولي في مواجهة هذا التحدي الذي يهدد مستقبل كوكب الأرض.&lt;/p&gt;&#xA;&lt;p&gt;تضمنت التوصيات النهائية التزامات ملزمة بخفض الانبعاثات الكربونية، وزيادة الاستثمار في الطاقة المتجددة، بالإضافة إلى إنشاء صندوق دولي لدعم الدول النامية في جهودها للتكيف مع آثار التغير المناخي.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>سياسة on Arabic News Portal</title><link>http://example.org/categories/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/</link><description>Recent content in سياسة on Arabic News Portal</description><generator>Hugo</generator><language>ar-sa</language><lastBuildDate>Thu, 22 Jan 2026 18:00:00 +0300</lastBuildDate><atom:link href="http://example.org/categories/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>اجتماع وزراء الخارجية العرب لبحث التطورات الإقليمية</title><link>http://example.org/posts/new-1/</link><pubDate>Thu, 22 Jan 2026 18:00:00 +0300</pubDate><guid>http://example.org/posts/new-1/</guid><description>&lt;p&gt;عقد وزراء الخارجية العرب اجتماعاً طارئاً في القاهرة لمناقشة آخر التطورات الإقليمية والتحديات المشتركة التي تواجه المنطقة العربية.&lt;/p&gt;</description></item><item><title>قمة المناخ تخرج بتوصيات تاريخية للحفاظ على البيئة</title><link>http://example.org/posts/featured-story/</link><pubDate>Sun, 26 Nov 2023 10:00:00 +0300</pubDate><guid>http://example.org/posts/featured-story/</guid><description>&lt;p&gt;بعد مفاوضات استمرت لأسبوعين، توصل قادة العالم إلى اتفاق شامل يهدف إلى خفض الانبعاثات الكربونية بنسبة 50% بحلول عام 2030. الاتفاق يُعد خطوة محورية في جهود مكافحة التغير المناخي.&lt;/p&gt;
+&lt;p&gt;شهدت القمة العالمية للمناخ نقاشات مكثفة بين ممثلي أكثر من 190 دولة، تمحورت حول ضرورة اتخاذ إجراءات عاجلة للحد من تداعيات التغير المناخي. وقد أكد المشاركون على أهمية التعاون الدولي في مواجهة هذا التحدي الذي يهدد مستقبل كوكب الأرض.&lt;/p&gt;
+&lt;p&gt;تضمنت التوصيات النهائية التزامات ملزمة بخفض الانبعاثات الكربونية، وزيادة الاستثمار في الطاقة المتجددة، بالإضافة إلى إنشاء صندوق دولي لدعم الدول النامية في جهودها للتكيف مع آثار التغير المناخي.&lt;/p&gt;</description></item></channel></rss>

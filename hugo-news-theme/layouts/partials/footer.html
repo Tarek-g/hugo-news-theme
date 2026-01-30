@@ -1,31 +1,72 @@
-<footer class="border-t border-border mt-20 py-12 bg-secondary text-secondary-foreground">
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div class="col-span-1 md:col-span-2">
-            <h2 class="text-3xl font-bold mb-4">{{ .Site.Title }}</h2>
-            <p class="text-muted-foreground max-w-md leading-relaxed font-serif text-lg">
-                {{ .Site.Params.footer.description | default "وصف الموقع الإفتراضي" }}
+<footer class="border-t border-border mt-20 py-16 bg-card relative overflow-hidden">
+    <!-- Tech grid background -->
+    <div class="absolute inset-0 tech-grid opacity-30"></div>
+
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 stagger-container">
+            <!-- Logo and Description -->
+            <div class="col-span-1 md:col-span-2">
+                <h2 class="text-3xl font-bold mb-4 text-foreground">{{ .Site.Title }}</h2>
+                <p class="text-muted-foreground max-w-md leading-relaxed font-serif text-lg mb-6">
+                    {{ .Site.Params.footer.description | default "وصف الموقع الإفتراضي" }}
+                </p>
+                <!-- Decorative line -->
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-primary/30 rounded-full"></div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div>
+                <h3 class="font-bold mb-6 text-lg text-foreground flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+                    أقسام
+                </h3>
+                <ul class="space-y-3 text-muted-foreground">
+                    {{ range .Site.Menus.main }}
+                    <li>
+                        <a href="{{ .URL }}"
+                            class="hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block">
+                            {{ .Name }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div>
+                <h3 class="font-bold mb-6 text-lg text-foreground flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-glow-pulse"></span>
+                    تابعنا
+                </h3>
+                <ul class="space-y-3 text-muted-foreground">
+                    {{ range .Site.Params.footer.social }}
+                    <li>
+                        <a href="{{ .url }}"
+                            class="hover:text-primary hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-2 group"
+                            target="_blank" rel="noopener noreferrer">
+                            <span
+                                class="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors duration-300"></span>
+                            {{ .name }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-16 pt-8 border-t border-border/30 text-center">
+            <p class="text-sm text-muted-foreground">
+                {{ .Site.Params.footer.copyright | default (printf "&copy; %d جميع الحقوق محفوظة" now.Year) }}
             </p>
-        </div>
-        <div>
-            <h3 class="font-bold mb-4 text-lg">أقسام</h3>
-            <ul class="space-y-2 text-muted-foreground">
-                {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL }}" class="hover:text-foreground">{{ .Name }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
-        <div>
-            <h3 class="font-bold mb-4 text-lg">تابعنا</h3>
-            <ul class="space-y-2 text-muted-foreground">
-                {{ range .Site.Params.footer.social }}
-                <li><a href="{{ .url }}" class="hover:text-foreground">{{ .name }}</a></li>
-                {{ end }}
-            </ul>
+            <!-- Decorative glow line -->
+            <div class="w-32 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto mt-4"></div>
         </div>
     </div>
-    <div class="container mx-auto px-4 mt-12 pt-8 border-t border-border/20 text-center text-sm text-muted-foreground">
-        {{ .Site.Params.footer.copyright | default (printf "&copy; %d جميع الحقوق محفوظة" now.Year) }}
-    </div>
+
     {{ $searchJS := resources.Get "js/search.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ $searchJS.RelPermalink }}"></script>
 </footer>

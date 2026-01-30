@@ -1,36 +1,43 @@
 {{ $currentDate := now.Format "Monday, 2 January, 2006" }}
-<!-- Note: Date formatting in Hugo uses Go's reference time. Localization needs i18n but for now we'll hardcode or use simple formatting. 
-     Ideally, we should use {{ now | time.Format ":date_long" }} with proper locale setup. -->
 
 <div class="min-h-screen bg-background font-sans flex flex-col transition-colors duration-300">
-    <!-- Top Bar -->
-    <header class="sticky-header border-b border-border bg-card/50">
+    <!-- Top Bar - Premium with glass effect -->
+    <header class="sticky-header border-b border-glass-border">
         <div class="container mx-auto px-4 h-12 flex items-center justify-between text-sm text-muted-foreground">
-            <span>{{ now | time.Format "2006-01-02" }}</span>
+            <span class="font-mono text-xs opacity-80">{{ now | time.Format "2006-01-02" }}</span>
             <div class="flex items-center gap-4">
-                {{/* Theme Toggle Button */}}
-                <button id="theme-toggle" 
-                    class="p-2 rounded-full hover:bg-secondary transition-colors"
+                {{/* Theme Toggle Button with glow */}}
+                <button id="theme-toggle"
+                    class="p-2 rounded-full hover:bg-primary/10 hover-glow transition-all duration-300"
                     aria-label="تبديل الوضع الداكن">
-                    <svg class="sun-icon h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="4"/>
-                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    <svg class="sun-icon h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
                     </svg>
-                    <svg class="moon-icon h-4 w-4 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    <svg class="moon-icon h-4 w-4 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                     </svg>
                 </button>
                 {{ range site.Menus.topbar }}
-                <a href="{{ .URL }}" class="cursor-pointer hover:text-primary transition-colors">{{ .Name }}</a>
+                <a href="{{ .URL }}"
+                    class="cursor-pointer hover:text-primary transition-colors duration-300 hover-glow rounded px-2 py-1">{{
+                    .Name }}</a>
                 {{ end }}
             </div>
         </div>
     </header>
 
-    <!-- Main Header -->
-    <div class="border-b border-border py-8 bg-card">
-        <div class="container mx-auto px-4 flex items-center justify-between">
-            <button class="md:hidden ghost icon">
+    <!-- Main Header - Premium typography -->
+    <div class="border-b border-border py-8 bg-card relative overflow-hidden">
+        <!-- Subtle gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 flex items-center justify-between relative z-10">
+            <button class="md:hidden ghost icon p-2 rounded-lg hover:bg-secondary transition-colors">
                 <!-- Menu Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -41,13 +48,15 @@
                 </svg>
             </button>
 
-            <a href="{{ .Site.BaseURL }}">
-                <h1 class="text-5xl md:text-7xl font-black tracking-tighter cursor-pointer text-foreground">
+            <a href="{{ .Site.BaseURL }}" class="group">
+                <h1
+                    class="text-5xl md:text-7xl font-black tracking-tighter cursor-pointer text-foreground transition-all duration-300 group-hover:text-primary">
                     {{ .Site.Title }}
                 </h1>
             </a>
 
-            <button id="search-toggle" class="ghost icon">
+            <button id="search-toggle"
+                class="p-2 rounded-lg hover:bg-primary/10 hover-glow transition-all duration-300">
                 <!-- Search Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -59,15 +68,16 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50 hidden md:block shadow-sm">
+    <!-- Navigation - Glassmorphic -->
+    <nav class="border-b border-glass-border sticky top-0 z-50 hidden md:block glass">
         <div class="container mx-auto px-4">
-            <ul class="flex justify-center gap-8 py-4 text-lg font-medium">
+            <ul class="flex justify-center gap-8 py-4 text-lg font-medium stagger-container">
                 {{ range .Site.Menus.main }}
                 <li>
-                    <a href="{{ .URL }}"
-                        class="hover:text-primary hover:underline decoration-2 underline-offset-4 decoration-primary transition-all">
+                    <a href="{{ .URL }}" class="relative hover:text-primary transition-all duration-300 py-2 group">
                         {{ .Name }}
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full neon-border"></span>
                     </a>
                 </li>
                 {{ end }}
@@ -75,38 +85,25 @@
         </div>
     </nav>
 
-    <style>
-        @keyframes marquee {
-            0% {
-                transform: translateX(0);
-            }
+    <!-- Ticker - Enhanced with glow -->
+    <div class="bg-primary/95 text-primary-foreground py-2.5 overflow-hidden relative shadow-lg">
+        <!-- Glow overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary opacity-90"></div>
 
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-marquee {
-            animation: marquee 40s linear infinite;
-        }
-    </style>
-
-    <!-- Ticker -->
-    <div class="bg-primary text-primary-foreground py-2 overflow-hidden relative shadow-inner">
-        <div class="animate-marquee whitespace-nowrap inline-flex">
+        <div class="animate-marquee whitespace-nowrap inline-flex relative z-10">
             {{ range first 10 (where .Site.RegularPages "Type" "posts") }}
-            <span class="inline-flex items-center gap-2 mx-4">
-                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="{{ .RelPermalink }}" class="hover:underline transition-colors">
+            <span class="inline-flex items-center gap-3 mx-6">
+                <span class="w-2 h-2 rounded-full bg-white/80 animate-glow-pulse shadow-glow"></span>
+                <a href="{{ .RelPermalink }}" class="hover:underline transition-colors font-medium">
                     {{ .Title }}
                 </a>
             </span>
             {{ end }}
             <!-- Duplicate for seamless loop -->
             {{ range first 10 (where .Site.RegularPages "Type" "posts") }}
-            <span class="inline-flex items-center gap-2 mx-4">
-                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                <a href="{{ .RelPermalink }}" class="hover:underline transition-colors">
+            <span class="inline-flex items-center gap-3 mx-6">
+                <span class="w-2 h-2 rounded-full bg-white/80 animate-glow-pulse shadow-glow"></span>
+                <a href="{{ .RelPermalink }}" class="hover:underline transition-colors font-medium">
                     {{ .Title }}
                 </a>
             </span>
@@ -114,12 +111,13 @@
         </div>
     </div>
 
-    <!-- Search Modal -->
+    <!-- Search Modal - Glassmorphic -->
     <div id="search-modal"
         class="fixed inset-0 bg-background/80 backdrop-blur-sm z-[100] hidden flex items-start justify-center pt-20 transition-all duration-300 opacity-0 pointer-events-none">
         <div
-            class="bg-card w-full max-w-3xl border border-border rounded-lg shadow-2xl p-6 relative transform scale-95 transition-all duration-300">
-            <button id="search-close" class="absolute top-4 left-4 p-2 hover:bg-muted rounded-full transition-colors">
+            class="glass-elevated w-full max-w-3xl rounded-xl shadow-2xl p-6 relative transform scale-95 transition-all duration-300">
+            <button id="search-close"
+                class="absolute top-4 left-4 p-2 hover:bg-muted rounded-full transition-colors hover-glow">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-x">
@@ -129,7 +127,7 @@
             </button>
             <div class="relative">
                 <input type="text" id="search-input" placeholder="اكتب للبحث... (Ctrl+K)"
-                    class="w-full bg-transparent border-b-2 border-primary py-4 text-3xl outline-none placeholder:text-muted-foreground/50 text-foreground font-bold"
+                    class="w-full bg-transparent border-b-2 border-primary py-4 text-3xl outline-none placeholder:text-muted-foreground/50 text-foreground font-bold focus:border-primary/80 transition-colors"
                     autofocus>
                 <!-- Search Results -->
                 <div id="search-results" class="mt-8 max-h-[60vh] overflow-y-auto space-y-4 custom-scrollbar">

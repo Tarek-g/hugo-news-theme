@@ -1,0 +1,58 @@
+Watching for changes in /Users/gho/Downloads/khbrlkhTwT/hugo-news-theme/{archetypes,assets,content,i18n,layouts,package.json,postcss.config.js,static,tailwind.config.js}
+Watching for config changes in /Users/gho/Downloads/khbrlkhTwT/hugo-news-theme/hugo.toml
+Start building sites … 
+hugo v0.152.2+extended+withdeploy darwin/arm64 BuildDate=2025-10-24T15:31:49Z VendorInfo=brew
+
+
+                  │ AR  
+──────────────────┼─────
+ Pages            │ 156 
+ Paginator pages  │  11 
+ Non-page files   │   0 
+ Static files     │   4 
+ Processed images │   0 
+ Aliases          │  61 
+ Cleaned          │   0 
+
+Built in 896 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0) 
+Press Ctrl+C to stop
+
+Change detected, rebuilding site (#1).
+2026-01-30 14:30:04.747 +0100
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0)
+Total in 17 ms
+
+Change detected, rebuilding site (#2).
+2026-01-30 14:33:24.749 +0100
+Asset changed /css/main.css
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0)
+Total in 857 ms
+
+Change detected, rebuilding site (#3).
+2026-01-30 14:33:44.249 +0100
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0)
+Total in 23 ms
+
+Change detected, rebuilding site (#4).
+2026-01-30 14:43:32.755 +0100
+Asset changed /js/toc.js
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0)
+Total in 5 ms
+
+Change detected, rebuilding site (#5).
+2026-01-30 14:44:30.263 +0100
+Template changed /_default/single.html
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0)
+Total in 29 ms
+
+Change detected, rebuilding site (#6).
+2026-01-30 14:52:55.771 +0100
+Asset changed /css/main.css
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0)
+Total in 958 ms

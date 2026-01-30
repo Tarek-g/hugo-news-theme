@@ -1,33 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>اقتصاد on Arabic News Portal</title>
-    <link>http://localhost:1313/categories/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/</link>
-    <description>Recent content in اقتصاد on Arabic News Portal</description>
-    <generator>Hugo</generator>
-    <language>ar-sa</language>
-    <lastBuildDate>Thu, 22 Jan 2026 16:45:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ارتفاع أسعار النفط مع تصاعد التوترات الجيوسياسية</title>
-      <link>http://localhost:1313/posts/new-3/</link>
-      <pubDate>Thu, 22 Jan 2026 16:45:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/new-3/</guid>
-      <description>&lt;p&gt;شهدت أسواق النفط العالمية ارتفاعاً ملحوظاً في الأسعار اليوم مع تزايد المخاوف بشأن الإمدادات وسط التوترات الجيوسياسية المتصاعدة.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>البنك المركزي يرفع أسعار الفائدة للمرة الثالثة هذا العام</title>
-      <link>http://localhost:1313/posts/sub-featured-1/</link>
-      <pubDate>Sun, 26 Nov 2023 08:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/sub-featured-1/</guid>
-      <description>&lt;p&gt;في محاولة لكبح جماح التضخم، أعلن البنك المركزي اليوم عن رفع جديد لأسعار الفائدة، مما أثار ردود فعل متباينة في الأوساط الاقتصادية.&lt;/p&gt;&#xA;&lt;p&gt;جاء القرار ضمن سياسة نقدية تقييدية تهدف إلى السيطرة على معدلات التضخم المتصاعدة. وأشار محافظ البنك المركزي في بيان صحفي إلى أن هذه الخطوة ضرورية للحفاظ على استقرار الاقتصاد الوطني.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>الاستثمار في الطاقة المتجددة: فرص واعدة للمستقبل</title>
-      <link>http://localhost:1313/posts/sub-featured-3/</link>
-      <pubDate>Sat, 25 Nov 2023 14:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/sub-featured-3/</guid>
-      <description>&lt;p&gt;يشهد قطاع الطاقة المتجددة نمواً متسارعاً مع توجه الدول والشركات نحو الاستدامة. الاستثمار في هذا المجال يعد بعوائد مجزية على المدى الطويل.&lt;/p&gt;&#xA;&lt;p&gt;التحول نحو الاقتصاد الأخضر يفتح آفاقاً جديدة للمستثمرين، حيث تتزايد الفرص في مشاريع الطاقة الشمسية وطاقة الرياح والهيدروجين الأخضر.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>اقتصاد on Arabic News Portal</title><link>http://example.org/categories/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/</link><description>Recent content in اقتصاد on Arabic News Portal</description><generator>Hugo</generator><language>ar-sa</language><lastBuildDate>Thu, 22 Jan 2026 16:45:00 +0300</lastBuildDate><atom:link href="http://example.org/categories/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>ارتفاع أسعار النفط مع تصاعد التوترات الجيوسياسية</title><link>http://example.org/posts/new-3/</link><pubDate>Thu, 22 Jan 2026 16:45:00 +0300</pubDate><guid>http://example.org/posts/new-3/</guid><description>&lt;p&gt;شهدت أسواق النفط العالمية ارتفاعاً ملحوظاً في الأسعار اليوم مع تزايد المخاوف بشأن الإمدادات وسط التوترات الجيوسياسية المتصاعدة.&lt;/p&gt;</description></item><item><title>البنك المركزي يرفع أسعار الفائدة للمرة الثالثة هذا العام</title><link>http://example.org/posts/sub-featured-1/</link><pubDate>Sun, 26 Nov 2023 08:00:00 +0300</pubDate><guid>http://example.org/posts/sub-featured-1/</guid><description>&lt;p&gt;في محاولة لكبح جماح التضخم، أعلن البنك المركزي اليوم عن رفع جديد لأسعار الفائدة، مما أثار ردود فعل متباينة في الأوساط الاقتصادية.&lt;/p&gt;
+&lt;p&gt;جاء القرار ضمن سياسة نقدية تقييدية تهدف إلى السيطرة على معدلات التضخم المتصاعدة. وأشار محافظ البنك المركزي في بيان صحفي إلى أن هذه الخطوة ضرورية للحفاظ على استقرار الاقتصاد الوطني.&lt;/p&gt;</description></item><item><title>الاستثمار في الطاقة المتجددة: فرص واعدة للمستقبل</title><link>http://example.org/posts/sub-featured-3/</link><pubDate>Sat, 25 Nov 2023 14:00:00 +0300</pubDate><guid>http://example.org/posts/sub-featured-3/</guid><description>&lt;p&gt;يشهد قطاع الطاقة المتجددة نمواً متسارعاً مع توجه الدول والشركات نحو الاستدامة. الاستثمار في هذا المجال يعد بعوائد مجزية على المدى الطويل.&lt;/p&gt;
+&lt;p&gt;التحول نحو الاقتصاد الأخضر يفتح آفاقاً جديدة للمستثمرين، حيث تتزايد الفرص في مشاريع الطاقة الشمسية وطاقة الرياح والهيدروجين الأخضر.&lt;/p&gt;</description></item></channel></rss>
